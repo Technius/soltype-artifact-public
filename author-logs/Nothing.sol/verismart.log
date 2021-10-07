@@ -1,0 +1,42 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+- all funcs : 30
+- reachable : 14
+* Generating Paths ... took 0.002075s
+- paths : 135
+
+=== Report ===
+[1] [IO] line 243, (balances[_owner] + locks[_owner].lockBalance) : unproven
+[2] [IO] line 256, (now - locks[_owner].lastUnlockTime) : unproven
+[3] [IO] line 258, (locks[_owner].onceUnlockValue * number) : unproven
+[4] [IO] line 262, (locks[_owner].lockBalance - unlockValue) : proven
+[5] [IO] line 263, (balances[_owner] + unlockValue) : unproven
+[6] [IO] line 264, (locks[_owner].lastUnlockTime + (locks[_owner].unlockInterval * number)) : unproven
+[7] [IO] line 264, (locks[_owner].unlockInterval * number) : unproven
+[8] [IO] line 277, (balances[msg.sender] - _value) : proven
+[9] [IO] line 278, (balances[_to] + _value) : unproven
+[10] [IO] line 287, (balances[_to] - _lockValue) : proven
+[11] [IO] line 289, (locks[_to].lockBalance + _lockValue) : unproven
+[12] [IO] line 318, (balances[_from] - _value) : proven
+[13] [IO] line 319, (balances[_to] + _value) : unproven
+[14] [IO] line 320, (allowed[_from][msg.sender] - _value) : proven
+[15] [DZ] line 256, ((now - locks[_owner].lastUnlockTime) / locks[_owner].unlockInterval) : unproven
+
+=== Result Summary ===
+# Queries                : 15
+- integer over/underflow : 14
+- division-by-zero       : 1
+- assertion              : 0
+
+# Alarms                 : 10
+- integer over/underflow : 9
+- division-by-zero       : 1
+- assertion              : 0
+
+# Proven                 : 5
+- integer over/underflow : 5
+- division-by-zero       : 0
+- assertion              : 0
+
+Time Elapsed : 511.343131

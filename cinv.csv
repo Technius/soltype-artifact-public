@@ -1,0 +1,7 @@
+name,cinv
+sanity_test.sol,x <= 100
+0xd2946be786f35c3cc402c29b323647abda799071.sol,totalDistributed >= sum(balances)
+0x1ccaa0f2a7210d76e1fdec740d5f323e2e1b1672.sol,sum(balances) <= totalSupply_ && sum(balances) <= 1000000000000000000000000000
+2018-10706.sol,sum(balanceOf) + sum(fld(FreezeInfo, amount, flatten(freezeOf))) <= totalSupply
+Nothing.sol,sum(balances) + sum(fld(Lock, lockBalance, locks)) <= 1000000000000000000000000000000
+2018-11687.sol,sum(blances) <= 2100000000000000
