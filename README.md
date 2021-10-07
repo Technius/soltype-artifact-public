@@ -64,7 +64,7 @@ Two versions of `solc` are available in the image: `solc_0.4.26` and `solc_0.5.1
 To ensure that everything works correctly, try the sanity test:
 
 ```bash
-$ solid --solc solc_0.4.26 ./sanity_test.sol
+$ solid --solc solc_0.4.26 data/sanity_test.sol
 
 Now running on SanityTest
 
@@ -128,7 +128,7 @@ The syntax of the contract invariant is:
 For example:
 
 ```bash
-$ solid --solc solc_0.4.26 ./sanity_test.sol --task check -i 'x <= 100'
+$ solid --solc solc_0.4.26 data/sanity_test.sol --task check -i 'x <= 100'
 
 Now running on SanityTest
 VIOLATED
@@ -139,7 +139,7 @@ If we set the contract invariant to `true`, line 12 should no longer be marked
 as safe:
 
 ```bash
-$ solid --solc solc_0.4.26 ./sanity_test.sol --task check -i true
+$ solid --solc solc_0.4.26 data/sanity_test.sol --task check -i true
 
 Now running on SanityTest
 VIOLATED
@@ -202,5 +202,5 @@ The image contains two solc binaries named `solc_0.4.26` and `solc_0.5.17`. They
 must be explicitly passed to solid, e.g.
 
 ```
-solid --solc solc_0.5.17 sanity_test.sol
+solid --solc solc_0.5.17 data/sanity_test.sol
 ```
