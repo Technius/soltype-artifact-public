@@ -119,8 +119,8 @@ The syntax of the contract invariant is:
 
 * variables, e.g. `totalSupply`, `balances`
 * constants: `true`, `false`, `1`, `1000`, etc.
-* arithmetic, boolean, and relation expressions, e.g. `x + y`, `foo - bar`, `x
-  >= y`, `5 == 10`, `true && false`
+* arithmetic, boolean, and relation expressions, e.g. `x + y`, `foo - bar`,
+  `x >= y`, `5 == 10`, `true && false`
 * sum of a mapping of uint: `sum(balances)`
 * sum of a field in a mapping of struct: `sum(fld(StructName, fieldName, term))`
 * sum of a nested mapping: `sum(flatten(term))`
