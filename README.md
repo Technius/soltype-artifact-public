@@ -29,12 +29,12 @@ In a shell, navigate to this directory.
 Then, launch the prepackaged environment using docker:
 
 ```bash
-sudo docker run --rm -it -v "$PWD":/opt/eval soltype-artifact:latest
+sudo docker run --rm -it -v "$PWD":/opt/eval technius/soltype-artifact:latest
 ```
 
-This will mount the `./soltype-data` folder into the image and then place you
-into a bash shell. Make sure you are able to locate `sanity_test.sol` using the
-`ls` command.
+This will mount the artifact data folder into the image and then place you
+into a bash shell. Make sure you are able to locate `data/sanity_test.sol`
+using the `ls` command.
 
 Now, check that the `solid` command produces help output:
 
@@ -56,6 +56,8 @@ SemiSolid can be run using:
 ```bash
 solid --solc <path_to_solc> --only-last <contract name> --task check -i <contract invariant>
 ```
+
+Two versions of `solc` are available in the image: `solc_0.4.26` and `solc_0.5.17`.
 
 ### AutoSolid
 
@@ -193,8 +195,8 @@ system and CPU. You may need to adjust the `QUERY_TIMEOUT` variable in
 reviewers experiment with both lower and higher timeouts.
 
 > ```
-  solid: solc: createProcess: runInteractiveProcess: exec: does not exist (No such file or directory)
-  ```
+> solid: solc: createProcess: runInteractiveProcess: exec: does not exist (No such file or directory)
+> ```
 
 The image contains two solc binaries named `solc_0.4.26` and `solc_0.5.17`. They
 must be explicitly passed to solid, e.g.
