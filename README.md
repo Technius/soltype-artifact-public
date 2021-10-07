@@ -73,20 +73,17 @@ Trying templates...
 []
 end templates
 Iteration 0
-Unsat: ({v:bool | v == ((x$2 + a$0) <= 115792089237316195423570985008687907853269984665640564039457584007913129639935)},{v:bool | v == true})
-Iteration 1
-safe: [9,4,2]
+safe: [8,3,2]
 List [Atom "not",List [Atom ">=",Atom "x!0",Atom "101"]]
-Total math ops: 4
+Total math ops: 3
 Provably safe math ops: 3
 Inferred contract invariant: (not (>= x 101 ) )
 The following safe math checks are redundant:
-bar: line 12: {v:bool | v == ((x$3 + (cast[uint256](5))) <= 115792089237316195423570985008687907853269984665640564039457584007913129639935)} ==> {v:bool | v == true}
-foo: line 8: {v:bool | v == ((x$2 + a$0) <= 115792089237316195423570985008687907853269984665640564039457584007913129639935)} ==> {v:bool | v == true}
-foo: line 6: {v:bool | v == ((x$1 + 1) <= 115792089237316195423570985008687907853269984665640564039457584007913129639935)} ==> {v:bool | v == true}
+bar: line 14: {v:bool | v == ((x$3 + (cast[uint256](5))) <= 115792089237316195423570985008687907853269984665640564039457584007913129639935)} ==> {v:bool | v == true}
+foo: line 10: {v:bool | v == ((x$2 + a$0) <= 115792089237316195423570985008687907853269984665640564039457584007913129639935)} ==> {v:bool | v == true}
+foo: line 8: {v:bool | v == ((x$1 + 1) <= 115792089237316195423570985008687907853269984665640564039457584007913129639935)} ==> {v:bool | v == true}
 The following safe math checks are necessary:
-foo: line 7: {v:bool | v == ((x$2 + a$0) <= 115792089237316195423570985008687907853269984665640564039457584007913129639935)} ==> {v:bool | v == true}
-Solving time: 0.067637545s
+Solving time: 0.030567557s
 ```
 
 This will run Solid in automated mode. The output is divided into the following
@@ -105,10 +102,10 @@ sections:
    contract and generating constraints only incurs a small overhead and is
    therefore not counted in this number.
 
-The output here says that the ops on lines 6, 8, and 12 are safe (due to the
-contract invariant, require, and contract invariant, resp.). Line 7 has an
-operation in a `require` statement that is marked as "necessary"; this can be
-safely ignored since we know that it is in fact a runtime overflow check.
+The output here says that the ops on lines 8, 10, and 14 are safe (due to the
+contract invariant, require, and contract invariant, resp.). Note that line 9
+is heuristically detected as a runtime overflow check and is not checked for
+safety.
 
 ### SemiSolid
 
@@ -131,11 +128,10 @@ For example:
 $ solid --solc solc_0.4.26 data/sanity_test.sol --task check -i 'x <= 100'
 
 Now running on SanityTest
-VIOLATED
-ERR safe math: foo: line 7: {v:bool | v == ((x$2 + a$0) <= 115792089237316195423570985008687907853269984665640564039457584007913129639935)} ==> {v:bool | 
+OK
 ```
 
-If we set the contract invariant to `true`, line 12 should no longer be marked
+If we set the contract invariant to `true`, line 14 should no longer be marked
 as safe:
 
 ```bash
@@ -143,12 +139,11 @@ $ solid --solc solc_0.4.26 data/sanity_test.sol --task check -i true
 
 Now running on SanityTest
 VIOLATED
-ERR safe math: foo: line 7: {v:bool | v == ((x$2 + a$0) <= 115792089237316195423570985008687907853269984665640564039457584007913129639935)} ==> {v:bool | v == true}
-ERR safe math: bar: line 12: {v:bool | v == ((x$3 + (cast[uint256](5))) <= 115792089237316195423570985008687907853269984665640564039457584007913129639935)} ==> {v:bool | v == true}
+ERR safe math: bar: line 14: {v:bool | v == ((x$3 + (cast[uint256](5))) <= 115792089237316195423570985008687907853269984665640564039457584007913129639935)} ==> {v:bool | v == true}
 ```
 
-Note: SemiSolid currently does not distinguish between UNSAT and timeout, and
-simply assumes that timeouts are unsafe.
+Note: The output of SemiSolid currently does not distinguish between UNSAT and
+timeout, and all timeouts are marked as unsafe.
 
 ## Claims and Evaluation Steps
 
@@ -165,8 +160,12 @@ We make the following claims in our paper:
 To evaluate these claims, we suggest following the evaluation steps listed
 below.
 
-1. Run `bash run_benchmarks.sh`. This will generate output in the `output/`
-   folder.
+1. Run `bash run_benchmarks.sh` to generate output in the `output/` folder.
+   This may take up to 10 minutes (or more) to run depending on the value of
+   `QUERY_TIMEOUT` in the script (see section below).
+
+   Note that `run_benchmarks.sh` will skip a Solid run on a contract if the
+   corresponding log file already exists.
 2. Each contract will have a corresponding folder in the `output/` folder, e.g.
    `output/sanity_test.sol/`. In this folder, locate `auto.log` and
    `semi-true.log`. The former is for AutoSolid results and the latter is
@@ -180,19 +179,22 @@ below.
    contract source code, where each comment is prefixed by `EVAL: `.
 4. Using the contract invariants in `output/$NAME/auto.log` (or a stronger one
    that you can determine yourself), run Solid in SemiSolid mode on each
-   contract. Verify claim 3 by comparing the results to
+   contract. Make sure that the query timeout is set to the same value used in
+   `run_benchmarks.sh`. Verify claim 3 by comparing the results to
    `output/$NAME/semi-true.log`.
 
 ## Additional information
 
-> Why is the running time different from those in the provided log files? Or why
-> might it take so long?
+> On running time
 
 Most of the running time is spent invoking the CHC solver. The running time of
 the tool (and therefore the results) may vary greatly depending on operating
 system and CPU. You may need to adjust the `QUERY_TIMEOUT` variable in
 `run_benchmarks.sh`, where the timeout is in milliseconds. We recommend that the
-reviewers experiment with both lower and higher timeouts.
+reviewers experiment with timeouts of `1000`, `5000`, and `10000` (default).
+
+For comparison, the experiments in the paper were conducted with an AMD Ryzen 9
+5900X CPU and 32GB of RAM with a `QUERY_TIMEOUT` of 10000 ms.
 
 > ```
 > solid: solc: createProcess: runInteractiveProcess: exec: does not exist (No such file or directory)
