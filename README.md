@@ -177,13 +177,39 @@ below.
    Verify claim 2 by checking that Solid has comparable or fewer false
    positives. We've inserted ground truth annotations as comments in the
    contract source code, where each comment is prefixed by `EVAL: `.
+   
+   This is a labor-intensive step and may require as much as 1 hour to complete.
 4. Using the contract invariants in `output/$NAME/auto.log` (or a stronger one
    that you can determine yourself), run Solid in SemiSolid mode on each
-   contract. Make sure that the query timeout is set to the same value used in
-   `run_benchmarks.sh`. Verify claim 3 by comparing the results to
-   `output/$NAME/semi-true.log`.
+   contract. This can be done either by manually invoking `solid` or by using
+   the `semisolid.sh` script. Make sure that the query timeout is set to the
+   same value used in `run_benchmarks.sh` (either as an argument to `solid` or
+   set as a variable at the top of `semisolid.sh`). For example, the following
+   commands will perform this step on `sanity_test.sol` and log the output to
+   `output/sanity_test.sol/semi.log`:
+   
+   ```bash
+   # manually invoking solid
+   (time solid --solc solc_0.4.26 --only-last --query-timeout 10000 --total-timeout 600 data/sanity_test.sol --task check -i 'x <= 100') 2>&1 | tee output/sanity_test.sol/semi.log
+   
+   # using semisolid.sh
+   bash ./semisolid.sh data/sanity_test.sol 'x <= 100'
+   ```
+   
+   These commands will overwrite an existing log file, so be careful when running them.
+   
+   Verify claim 3 by comparing the results to `output/$NAME/semi-true.log`.
 
 ## Additional information
+
+> Possible differences in the number of operations reported by VeriSmart and Solid
+
+Solid's frontend contains transformation which may add or delete operations:
+
+* Solid may inline internal function calls (up to depth 1). This is currently accomplished by copying the body of the inlined function into the enclosing function, leading to duplicated operations.
+* Solid may partially evaluate expressions involving constants such as `10**8`, effectively removing operations.
+
+The operations reported by Solid correspond to the `[IO]` category in VeriSmart.
 
 > On running time
 
