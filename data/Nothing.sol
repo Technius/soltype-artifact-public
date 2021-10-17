@@ -240,7 +240,7 @@ contract Nothing {
     }
 
     function balanceOf(address _owner) public view returns (uint256) {
-        return ((balances[_owner]) + (locks[_owner].lockBalance));
+        return ((balances[_owner]) + (locks[_owner].lockBalance)); // EVAL: safe
     }
 
     function transferOwner(address _to) public returns (bool success) {
@@ -253,15 +253,15 @@ contract Nothing {
     function _unlockIfRequired(address _owner) public returns (bool success) {
         // Lock storage lock = locks[_owner];
       if(locks[_owner].lockBalance != 0){
-        uint number = (now - locks[_owner].lastUnlockTime) / (locks[_owner].unlockInterval);
+        uint number = (now - locks[_owner].lastUnlockTime) / (locks[_owner].unlockInterval); // EVAL: safe
         if(number >= 1){
-          uint256 unlockValue = ((locks[_owner].onceUnlockValue) * number);
+          uint256 unlockValue = ((locks[_owner].onceUnlockValue) * number); // EVAL: unsafe
           if(unlockValue > locks[_owner].lockBalance){
             unlockValue = locks[_owner].lockBalance;
           }
-          locks[_owner].lockBalance = ((locks[_owner].lockBalance) - unlockValue);
-          balances[_owner] = ((balances[_owner]) + unlockValue);
-          locks[_owner].lastUnlockTime = locks[_owner].lastUnlockTime+locks[_owner].unlockInterval * number;
+          locks[_owner].lockBalance = ((locks[_owner].lockBalance) - unlockValue); // EVAL: unsafe
+          balances[_owner] = ((balances[_owner]) + unlockValue); // EVAL: safe
+          locks[_owner].lastUnlockTime = locks[_owner].lastUnlockTime+locks[_owner].unlockInterval * number; // EVAL: safe, unsafe
         }
       }
       
@@ -274,8 +274,8 @@ contract Nothing {
 
       require(balances[msg.sender] >= _value);
 
-      balances[msg.sender] = ((balances[msg.sender]) - _value);
-      balances[_to] =  ((balances[_to]) + _value);
+      balances[msg.sender] = ((balances[msg.sender]) - _value); // EVAL: safe
+      balances[_to] =  ((balances[_to]) + _value); // EVAL: safe
       emit Transfer(msg.sender, _to, _value);
       return true;
     }
@@ -284,9 +284,9 @@ contract Nothing {
       require(msg.sender == owner);
       require(balances[_to] >= _lockValue);
 
-      balances[_to] = ((balances[_to]) - _lockValue);
+      balances[_to] = ((balances[_to]) - _lockValue); // EVAL: safe
       //Lock storage lock = locks[_to];
-      locks[_to].lockBalance = ((locks[_to].lockBalance) + _lockValue);
+      locks[_to].lockBalance = ((locks[_to].lockBalance) + _lockValue); // EVAL: safe
       locks[_to].onceUnlockValue = _onceUnlockValue;
       if(locks[_to].lastUnlockTime==0){
         locks[_to].lastUnlockTime = now;
@@ -315,9 +315,9 @@ contract Nothing {
         require(_value <= balances[_from]);
         require(_value <= allowed[_from][msg.sender]);
 
-        balances[_from] = ((balances[_from]) - _value);
-        balances[_to] = ((balances[_to]) + _value);
-        allowed[_from][msg.sender] =  ((allowed[_from][msg.sender]) - _value); 
+        balances[_from] = ((balances[_from]) - _value); // EVAL: safe
+        balances[_to] = ((balances[_to]) + _value); // EVAL: safe
+        allowed[_from][msg.sender] =  ((allowed[_from][msg.sender]) - _value); // EVAL: safe
         emit Transfer(_from, _to, _value);
         return true;
     }
