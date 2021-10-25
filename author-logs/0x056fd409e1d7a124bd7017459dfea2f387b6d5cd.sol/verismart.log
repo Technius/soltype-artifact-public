@@ -1,0 +1,137 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+0x056fd409e1d7a124bd7017459dfea2f387b6d5cd_tmp.sol:21:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function LockRequestable() public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x056fd409e1d7a124bd7017459dfea2f387b6d5cd_tmp.sol:73:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function CustodianUpgradeable(
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x056fd409e1d7a124bd7017459dfea2f387b6d5cd_tmp.sol:181:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function ERC20ImplUpgradeable(address _custodian) CustodianUpgradeable(_custodian) public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x056fd409e1d7a124bd7017459dfea2f387b6d5cd_tmp.sol:325:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function ERC20Proxy(
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x056fd409e1d7a124bd7017459dfea2f387b6d5cd_tmp.sol:502:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function ERC20Impl(
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x056fd409e1d7a124bd7017459dfea2f387b6d5cd_tmp.sol:949:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function ERC20Store(address _custodian) ERC20ImplUpgradeable(_custodian) public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x056fd409e1d7a124bd7017459dfea2f387b6d5cd_tmp.sol:40:16: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        return keccak256(block.blockhash(block.number - 1), address(this), lockRequestCount);
+               ^---------------------------------------------------------------------------^
+0x056fd409e1d7a124bd7017459dfea2f387b6d5cd_tmp.sol:516:20: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        sweepMsg = keccak256(address(this), "sweep");
+                   ^-------------------------------^
+0x056fd409e1d7a124bd7017459dfea2f387b6d5cd_tmp.sol:40:26: Warning: "block.blockhash()" has been deprecated in favor of "blockhash()"
+        return keccak256(block.blockhash(block.number - 1), address(this), lockRequestCount);
+                         ^-------------^
+- all funcs : 117
+- reachable : 12
+* Generating Paths ... took 3.4e-05s
+- paths : 22
+
+Iter : 10 To explore : 75 Explored : 84 Total elapsed : 0.510558
+Iter : 20 To explore : 122 Explored : 141 Total elapsed : 1.367996
+Iter : 30 To explore : 206 Explored : 235 Total elapsed : 2.509944
+Iter : 40 To explore : 277 Explored : 316 Total elapsed : 3.386395
+Iter : 50 To explore : 329 Explored : 378 Total elapsed : 4.233839
+Iter : 60 To explore : 357 Explored : 416 Total elapsed : 5.064589
+Iter : 70 To explore : 399 Explored : 468 Total elapsed : 5.916101
+Iter : 80 To explore : 420 Explored : 499 Total elapsed : 6.643675
+Iter : 90 To explore : 460 Explored : 549 Total elapsed : 7.717989
+Iter : 100 To explore : 486 Explored : 585 Total elapsed : 14.550958
+Iter : 110 To explore : 503 Explored : 612 Total elapsed : 15.606633
+Iter : 120 To explore : 504 Explored : 623 Total elapsed : 16.32248
+Iter : 130 To explore : 507 Explored : 636 Total elapsed : 17.240935
+Iter : 140 To explore : 499 Explored : 638 Total elapsed : 17.917926
+Iter : 150 To explore : 572 Explored : 721 Total elapsed : 19.864811
+Iter : 160 To explore : 633 Explored : 792 Total elapsed : 21.632542
+Iter : 170 To explore : 689 Explored : 858 Total elapsed : 23.099732
+Iter : 180 To explore : 734 Explored : 913 Total elapsed : 25.511313
+Iter : 190 To explore : 786 Explored : 975 Total elapsed : 50.808152
+Iter : 200 To explore : 809 Explored : 1008 Total elapsed : 51.573694
+Iter : 210 To explore : 849 Explored : 1058 Total elapsed : 65.256574
+Iter : 220 To explore : 899 Explored : 1118 Total elapsed : 67.476712
+Iter : 230 To explore : 937 Explored : 1166 Total elapsed : 69.543868
+Iter : 240 To explore : 956 Explored : 1195 Total elapsed : 70.455215
+Iter : 250 To explore : 994 Explored : 1243 Total elapsed : 72.775635
+Iter : 260 To explore : 1017 Explored : 1276 Total elapsed : 98.826842
+Iter : 270 To explore : 1042 Explored : 1311 Total elapsed : 123.275598
+Iter : 280 To explore : 1080 Explored : 1359 Total elapsed : 124.262026
+Iter : 290 To explore : 1098 Explored : 1387 Total elapsed : 125.213591
+Iter : 300 To explore : 1121 Explored : 1420 Total elapsed : 132.251986
+Iter : 310 To explore : 1140 Explored : 1449 Total elapsed : 133.340095
+Iter : 320 To explore : 1165 Explored : 1484 Total elapsed : 140.132569
+Iter : 330 To explore : 1195 Explored : 1524 Total elapsed : 141.206056
+Iter : 340 To explore : 1195 Explored : 1534 Total elapsed : 141.91256
+Iter : 350 To explore : 1200 Explored : 1549 Total elapsed : 142.635977
+Iter : 360 To explore : 1205 Explored : 1564 Total elapsed : 143.546756
+Iter : 370 To explore : 1216 Explored : 1585 Total elapsed : 144.231156
+Iter : 380 To explore : 1239 Explored : 1618 Total elapsed : 151.227307
+Iter : 390 To explore : 1251 Explored : 1640 Total elapsed : 152.104707
+Iter : 400 To explore : 1273 Explored : 1672 Total elapsed : 159.255553
+Iter : 410 To explore : 1291 Explored : 1700 Total elapsed : 160.560264
+Iter : 420 To explore : 1293 Explored : 1712 Total elapsed : 161.318727
+Iter : 430 To explore : 1293 Explored : 1722 Total elapsed : 162.056558
+Iter : 440 To explore : 1301 Explored : 1740 Total elapsed : 162.808727
+Iter : 450 To explore : 1313 Explored : 1762 Total elapsed : 163.550348
+Iter : 460 To explore : 1316 Explored : 1775 Total elapsed : 170.775718
+Iter : 470 To explore : 1315 Explored : 1784 Total elapsed : 171.721088
+Iter : 480 To explore : 1314 Explored : 1793 Total elapsed : 178.417136
+Iter : 490 To explore : 1308 Explored : 1797 Total elapsed : 179.281983
+Iter : 500 To explore : 1303 Explored : 1802 Total elapsed : 179.958489
+Iter : 510 To explore : 1294 Explored : 1803 Total elapsed : 180.640736
+Iter : 520 To explore : 1285 Explored : 1804 Total elapsed : 181.353127
+Iter : 530 To explore : 1279 Explored : 1808 Total elapsed : 182.317521
+Iter : 540 To explore : 1279 Explored : 1818 Total elapsed : 183.230911
+Iter : 550 To explore : 1281 Explored : 1830 Total elapsed : 190.714996
+Iter : 560 To explore : 1288 Explored : 1847 Total elapsed : 204.22278
+Iter : 570 To explore : 1308 Explored : 1877 Total elapsed : 205.396652
+Iter : 580 To explore : 1309 Explored : 1888 Total elapsed : 212.719277
+Iter : 590 To explore : 1314 Explored : 1903 Total elapsed : 220.092325
+Iter : 600 To explore : 1311 Explored : 1910 Total elapsed : 220.785853
+Iter : 610 To explore : 1310 Explored : 1919 Total elapsed : 221.626579
+Iter : 620 To explore : 1306 Explored : 1925 Total elapsed : 222.465944
+Iter : 630 To explore : 1303 Explored : 1932 Total elapsed : 223.303668
+Iter : 640 To explore : 1293 Explored : 1932 Total elapsed : 223.976953
+Iter : 650 To explore : 1343 Explored : 1992 Total elapsed : 226.863121
+Iter : 660 To explore : 1395 Explored : 2054 Total elapsed : 230.512922
+Iter : 670 To explore : 1441 Explored : 2110 Total elapsed : 270.00052
+Iter : 680 To explore : 1485 Explored : 2164 Total elapsed : 271.221514
+Iter : 690 To explore : 1528 Explored : 2217 Total elapsed : 310.710877
+Iter : 700 To explore : 1555 Explored : 2254 Total elapsed : 312.503878
+Iter : 710 To explore : 1599 Explored : 2308 Total elapsed : 362.702777
+Iter : 720 To explore : 1609 Explored : 2328 Total elapsed : 390.289202
+Iter : 730 To explore : 1640 Explored : 2369 Total elapsed : 403.22626
+Iter : 740 To explore : 1674 Explored : 2413 Total elapsed : 416.420436
+Iter : 750 To explore : 1695 Explored : 2444 Total elapsed : 418.656041
+Iter : 760 To explore : 1724 Explored : 2483 Total elapsed : 420.01884
+Iter : 770 To explore : 1766 Explored : 2535 Total elapsed : 427.525274
+Iter : 780 To explore : 1775 Explored : 2554 Total elapsed : 465.087035
+Iter : 790 To explore : 1781 Explored : 2570 Total elapsed : 526.157846
+Iter : 800 To explore : 1797 Explored : 2596 Total elapsed : 527.148025
+=== Report ===
+[1] [IO] line 39, (lockRequestCount + 1) : unproven
+[2] [IO] line 40, (block.number - 1) : unproven
+[3] [IO] line 1032, (balances[_owner] + _balanceIncrease) : unproven
+
+=== Result Summary ===
+# Queries                : 3
+- integer over/underflow : 3
+- division-by-zero       : 0
+- assertion              : 0
+
+# Alarms                 : 3
+- integer over/underflow : 3
+- division-by-zero       : 0
+- assertion              : 0
+
+# Proven                 : 0
+- integer over/underflow : 0
+- division-by-zero       : 0
+- assertion              : 0
+
+Time Elapsed : 540.328009

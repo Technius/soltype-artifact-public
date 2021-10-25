@@ -1,0 +1,329 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:85:67: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+          if ((freezeblock != 0) && (block.number > freezeblock)) throw;
+                                                                  ^---^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:89:53: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+          if (msg.data.length != numwords * 32 + 4) throw;
+                                                    ^---^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:94:16: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+               throw;
+               ^---^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:99:16: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+               throw;
+               ^---^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:133:6: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+     function QRL_Token(){
+     ^ (Relevant source part starts here and spans across multiple lines).
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:45:16: Warning: Invoking events without "emit" prefix is deprecated.
+               Transfer(msg.sender, _to, _value);
+               ^-------------------------------^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:56:16: Warning: Invoking events without "emit" prefix is deprecated.
+               Transfer(_from, _to, _value);
+               ^--------------------------^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:67:11: Warning: Invoking events without "emit" prefix is deprecated.
+          Approval(msg.sender, _spender, _value);
+          ^------------------------------------^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:107:16: Warning: Invoking events without "emit" prefix is deprecated.
+               Transfer(msg.sender, _to, _value);
+               ^-------------------------------^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:118:16: Warning: Invoking events without "emit" prefix is deprecated.
+               Transfer(_from, _to, _value);
+               ^--------------------------^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:130:11: Warning: Invoking events without "emit" prefix is deprecated.
+          Approval(msg.sender, _spender, _value);
+          ^------------------------------------^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:7:5: Warning: No visibility specified. Defaulting to "public". 
+    function totalSupply() constant returns (uint256 supply) {}
+    ^---------------------------------------------------------^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:7:46: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function totalSupply() constant returns (uint256 supply) {}
+                                             ^------------^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:10:5: Warning: No visibility specified. Defaulting to "public". 
+    function balanceOf(address _owner) constant returns (uint256 balance) {}
+    ^----------------------------------------------------------------------^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:10:24: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function balanceOf(address _owner) constant returns (uint256 balance) {}
+                       ^------------^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:10:58: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function balanceOf(address _owner) constant returns (uint256 balance) {}
+                                                         ^-------------^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:15:5: Warning: No visibility specified. Defaulting to "public". 
+    function transfer(address _to, uint256 _value) returns (bool success) {}
+    ^----------------------------------------------------------------------^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:15:23: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function transfer(address _to, uint256 _value) returns (bool success) {}
+                      ^---------^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:15:36: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function transfer(address _to, uint256 _value) returns (bool success) {}
+                                   ^------------^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:15:61: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function transfer(address _to, uint256 _value) returns (bool success) {}
+                                                            ^----------^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:21:5: Warning: No visibility specified. Defaulting to "public". 
+    function transferFrom(address _from, address _to, uint256 _value) returns (bool success) {}
+    ^-----------------------------------------------------------------------------------------^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:21:27: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function transferFrom(address _from, address _to, uint256 _value) returns (bool success) {}
+                          ^-----------^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:21:42: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function transferFrom(address _from, address _to, uint256 _value) returns (bool success) {}
+                                         ^---------^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:21:55: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function transferFrom(address _from, address _to, uint256 _value) returns (bool success) {}
+                                                      ^------------^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:21:80: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function transferFrom(address _from, address _to, uint256 _value) returns (bool success) {}
+                                                                               ^----------^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:26:5: Warning: No visibility specified. Defaulting to "public". 
+    function approve(address _spender, uint256 _value) returns (bool success) {}
+    ^--------------------------------------------------------------------------^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:26:22: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function approve(address _spender, uint256 _value) returns (bool success) {}
+                     ^--------------^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:26:40: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function approve(address _spender, uint256 _value) returns (bool success) {}
+                                       ^------------^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:26:65: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function approve(address _spender, uint256 _value) returns (bool success) {}
+                                                                ^----------^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:30:5: Warning: No visibility specified. Defaulting to "public". 
+    function allowance(address _owner, address _spender) constant returns (uint256 remaining) {}
+    ^------------------------------------------------------------------------------------------^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:30:24: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function allowance(address _owner, address _spender) constant returns (uint256 remaining) {}
+                       ^------------^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:30:40: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function allowance(address _owner, address _spender) constant returns (uint256 remaining) {}
+                                       ^--------------^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:30:76: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function allowance(address _owner, address _spender) constant returns (uint256 remaining) {}
+                                                                           ^---------------^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:41:6: Warning: No visibility specified. Defaulting to "public". 
+     function transfer(address _to, uint256 _value) returns (bool success) {
+     ^ (Relevant source part starts here and spans across multiple lines).
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:51:6: Warning: No visibility specified. Defaulting to "public". 
+     function transferFrom(address _from, address _to, uint256 _value) returns (bool success) {
+     ^ (Relevant source part starts here and spans across multiple lines).
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:62:6: Warning: No visibility specified. Defaulting to "public". 
+     function balanceOf(address _owner) constant returns (uint256 balance) {
+     ^ (Relevant source part starts here and spans across multiple lines).
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:65:6: Warning: No visibility specified. Defaulting to "public". 
+     function approve(address _spender, uint256 _value) returns (bool success) {
+     ^ (Relevant source part starts here and spans across multiple lines).
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:70:6: Warning: No visibility specified. Defaulting to "public". 
+     function allowance(address _owner, address _spender) constant returns (uint256 remaining) {
+     ^ (Relevant source part starts here and spans across multiple lines).
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:73:6: Warning: No visibility specified. Defaulting to "public". 
+     function totalSupply() constant returns (uint256 supplyOut) {
+     ^ (Relevant source part starts here and spans across multiple lines).
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:103:6: Warning: No visibility specified. Defaulting to "public". 
+     function transfer(address _to, uint256 _value) notFrozen onlyPayloadSize(2) returns (bool success) {
+     ^ (Relevant source part starts here and spans across multiple lines).
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:113:6: Warning: No visibility specified. Defaulting to "public". 
+     function transferFrom(address _from, address _to, uint256 _value) notFrozen onlyPayloadSize(2) returns (bool success) {
+     ^ (Relevant source part starts here and spans across multiple lines).
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:124:6: Warning: No visibility specified. Defaulting to "public". 
+     function approve(address _spender, uint256 _value) returns (bool success) {
+     ^ (Relevant source part starts here and spans across multiple lines).
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:133:6: Warning: No visibility specified. Defaulting to "public". 
+     function QRL_Token(){
+     ^ (Relevant source part starts here and spans across multiple lines).
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:141:6: Warning: No visibility specified. Defaulting to "public". 
+     function freeze(uint fb) onlyByCreator {
+     ^ (Relevant source part starts here and spans across multiple lines).
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:144:6: Warning: No visibility specified. Defaulting to "public". 
+     function issueTokens(address forAddress, uint tokenCount) onlyInState(State.Start) onlyByCreator{
+     ^ (Relevant source part starts here and spans across multiple lines).
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:153:6: Warning: No visibility specified. Defaulting to "public". 
+     function close() onlyInState(State.Start) onlyByCreator{
+     ^ (Relevant source part starts here and spans across multiple lines).
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:156:6: Warning: No visibility specified. Defaulting to "public". 
+     function setAllSupply(uint data) onlyInState(State.Start) onlyByCreator{
+     ^ (Relevant source part starts here and spans across multiple lines).
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:159:6: Warning: No visibility specified. Defaulting to "public". 
+     function changeCreator(address newCreator) onlyByCreator{
+     ^ (Relevant source part starts here and spans across multiple lines).
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:7:5: Warning: Function state mutability can be restricted to pure
+    function totalSupply() constant returns (uint256 supply) {}
+    ^---------------------------------------------------------^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:10:5: Warning: Function state mutability can be restricted to pure
+    function balanceOf(address _owner) constant returns (uint256 balance) {}
+    ^----------------------------------------------------------------------^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:15:5: Warning: Function state mutability can be restricted to pure
+    function transfer(address _to, uint256 _value) returns (bool success) {}
+    ^----------------------------------------------------------------------^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:21:5: Warning: Function state mutability can be restricted to pure
+    function transferFrom(address _from, address _to, uint256 _value) returns (bool success) {}
+    ^-----------------------------------------------------------------------------------------^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:26:5: Warning: Function state mutability can be restricted to pure
+    function approve(address _spender, uint256 _value) returns (bool success) {}
+    ^--------------------------------------------------------------------------^
+0x697beac28b09e122c4332d163985e8a73121b97f_tmp.sol:30:5: Warning: Function state mutability can be restricted to pure
+    function allowance(address _owner, address _spender) constant returns (uint256 remaining) {}
+    ^------------------------------------------------------------------------------------------^
+- all funcs : 40
+- reachable : 15
+* Generating Paths ... took 9.3e-05s
+- paths : 43
+
+Iter : 10 To explore : 277 Explored : 286 Total elapsed : 1.991552
+Iter : 20 To explore : 432 Explored : 875 Total elapsed : 3.337673
+Iter : 30 To explore : 331 Explored : 1199 Total elapsed : 4.829642
+Iter : 40 To explore : 442 Explored : 1320 Total elapsed : 6.479694
+Iter : 50 To explore : 589 Explored : 1477 Total elapsed : 8.1248
+Iter : 60 To explore : 684 Explored : 1582 Total elapsed : 9.751057
+Iter : 70 To explore : 726 Explored : 1634 Total elapsed : 11.375415
+Iter : 80 To explore : 949 Explored : 1867 Total elapsed : 13.309996
+Iter : 90 To explore : 1149 Explored : 2077 Total elapsed : 15.267813
+Iter : 100 To explore : 1362 Explored : 2300 Total elapsed : 17.079902
+Iter : 110 To explore : 1531 Explored : 2479 Total elapsed : 18.769611
+Iter : 120 To explore : 1666 Explored : 2624 Total elapsed : 20.481001
+Iter : 130 To explore : 1809 Explored : 2777 Total elapsed : 22.187486
+Iter : 140 To explore : 1929 Explored : 2907 Total elapsed : 23.888411
+Iter : 150 To explore : 2044 Explored : 3032 Total elapsed : 25.581106
+Iter : 160 To explore : 2120 Explored : 3118 Total elapsed : 27.262467
+Iter : 170 To explore : 2238 Explored : 3246 Total elapsed : 28.972946
+Iter : 180 To explore : 2378 Explored : 3396 Total elapsed : 30.688732
+Iter : 190 To explore : 2531 Explored : 3559 Total elapsed : 32.420196
+Iter : 200 To explore : 2650 Explored : 3688 Total elapsed : 34.117575
+Iter : 210 To explore : 2733 Explored : 3781 Total elapsed : 35.823175
+Iter : 220 To explore : 2796 Explored : 3854 Total elapsed : 37.550706
+Iter : 230 To explore : 2832 Explored : 3900 Total elapsed : 39.26471
+Iter : 240 To explore : 2884 Explored : 3962 Total elapsed : 40.971359
+Iter : 250 To explore : 2906 Explored : 3994 Total elapsed : 42.699964
+Iter : 260 To explore : 2951 Explored : 4049 Total elapsed : 44.388597
+Iter : 270 To explore : 2975 Explored : 4083 Total elapsed : 46.14875
+Iter : 280 To explore : 3021 Explored : 4139 Total elapsed : 47.87708
+Iter : 290 To explore : 3028 Explored : 4156 Total elapsed : 49.602546
+Iter : 300 To explore : 3064 Explored : 4202 Total elapsed : 51.259098
+Iter : 310 To explore : 3173 Explored : 4321 Total elapsed : 52.892754
+Iter : 320 To explore : 3328 Explored : 4486 Total elapsed : 54.520141
+Iter : 330 To explore : 3485 Explored : 4653 Total elapsed : 56.156797
+Iter : 340 To explore : 3688 Explored : 4866 Total elapsed : 57.852829
+Iter : 350 To explore : 3865 Explored : 5053 Total elapsed : 59.549561
+Iter : 360 To explore : 4048 Explored : 5246 Total elapsed : 61.244502
+Iter : 370 To explore : 4221 Explored : 5429 Total elapsed : 62.951608
+Iter : 380 To explore : 4402 Explored : 5620 Total elapsed : 64.608748
+Iter : 390 To explore : 4565 Explored : 5793 Total elapsed : 66.285887
+Iter : 400 To explore : 4697 Explored : 5935 Total elapsed : 67.974531
+Iter : 410 To explore : 4808 Explored : 6056 Total elapsed : 80.980987
+Iter : 420 To explore : 4931 Explored : 6189 Total elapsed : 83.048667
+Iter : 430 To explore : 5016 Explored : 6284 Total elapsed : 84.830597
+Iter : 440 To explore : 5090 Explored : 6368 Total elapsed : 86.660209
+Iter : 450 To explore : 5122 Explored : 6410 Total elapsed : 88.451211
+Iter : 460 To explore : 5166 Explored : 6464 Total elapsed : 90.147477
+Iter : 470 To explore : 5237 Explored : 6545 Total elapsed : 91.934005
+Iter : 480 To explore : 5273 Explored : 6591 Total elapsed : 93.641299
+Iter : 490 To explore : 5329 Explored : 6657 Total elapsed : 95.371425
+Iter : 500 To explore : 5403 Explored : 6741 Total elapsed : 102.850019
+Iter : 510 To explore : 5505 Explored : 6853 Total elapsed : 110.438316
+Iter : 520 To explore : 5565 Explored : 6923 Total elapsed : 112.169648
+Iter : 530 To explore : 5637 Explored : 7005 Total elapsed : 113.869265
+Iter : 540 To explore : 5679 Explored : 7057 Total elapsed : 115.661868
+Iter : 550 To explore : 5725 Explored : 7113 Total elapsed : 117.475524
+Iter : 560 To explore : 5761 Explored : 7159 Total elapsed : 119.278636
+Iter : 570 To explore : 5798 Explored : 7206 Total elapsed : 120.976568
+Iter : 580 To explore : 5876 Explored : 7294 Total elapsed : 122.707458
+Iter : 590 To explore : 5928 Explored : 7356 Total elapsed : 130.137428
+Iter : 600 To explore : 5962 Explored : 7400 Total elapsed : 132.00111
+Iter : 610 To explore : 5976 Explored : 7424 Total elapsed : 139.700049
+Iter : 620 To explore : 5981 Explored : 7439 Total elapsed : 141.388931
+Iter : 630 To explore : 6052 Explored : 7520 Total elapsed : 143.117154
+Iter : 640 To explore : 6061 Explored : 7539 Total elapsed : 144.831078
+Iter : 650 To explore : 6058 Explored : 7546 Total elapsed : 146.630007
+Iter : 660 To explore : 6166 Explored : 7664 Total elapsed : 148.485362
+Iter : 670 To explore : 6191 Explored : 7699 Total elapsed : 155.60798
+Iter : 680 To explore : 6199 Explored : 7717 Total elapsed : 157.31726
+Iter : 690 To explore : 6261 Explored : 7789 Total elapsed : 164.510333
+Iter : 700 To explore : 6284 Explored : 7822 Total elapsed : 166.2191
+Iter : 710 To explore : 6314 Explored : 7862 Total elapsed : 168.000037
+Iter : 720 To explore : 6335 Explored : 7893 Total elapsed : 169.88097
+Iter : 730 To explore : 6377 Explored : 7945 Total elapsed : 183.103719
+Iter : 740 To explore : 6412 Explored : 7990 Total elapsed : 184.812338
+Iter : 750 To explore : 6426 Explored : 8014 Total elapsed : 186.513368
+Iter : 760 To explore : 6445 Explored : 8043 Total elapsed : 188.342026
+Iter : 770 To explore : 6455 Explored : 8063 Total elapsed : 190.02743
+Iter : 780 To explore : 6480 Explored : 8098 Total elapsed : 191.833581
+Iter : 790 To explore : 6498 Explored : 8126 Total elapsed : 193.495917
+Iter : 800 To explore : 6510 Explored : 8148 Total elapsed : 195.41691
+Iter : 810 To explore : 6501 Explored : 8149 Total elapsed : 197.111031
+Iter : 820 To explore : 6541 Explored : 8199 Total elapsed : 198.813012
+Iter : 830 To explore : 6596 Explored : 8264 Total elapsed : 200.685826
+Iter : 840 To explore : 6596 Explored : 8274 Total elapsed : 202.361051
+Iter : 850 To explore : 6808 Explored : 8496 Total elapsed : 204.428645
+Iter : 860 To explore : 7014 Explored : 8712 Total elapsed : 206.866586
+Iter : 870 To explore : 7210 Explored : 8918 Total elapsed : 209.041135
+Iter : 880 To explore : 7404 Explored : 9122 Total elapsed : 211.198809
+Iter : 890 To explore : 7612 Explored : 9340 Total elapsed : 213.240994
+Iter : 900 To explore : 7811 Explored : 9549 Total elapsed : 215.079052
+Iter : 910 To explore : 7981 Explored : 9729 Total elapsed : 216.824969
+Iter : 920 To explore : 8048 Explored : 9806 Total elapsed : 242.130955
+Iter : 930 To explore : 8187 Explored : 9955 Total elapsed : 243.833072
+Iter : 940 To explore : 8313 Explored : 10091 Total elapsed : 245.553286
+Iter : 950 To explore : 8400 Explored : 10188 Total elapsed : 258.906567
+Iter : 960 To explore : 8442 Explored : 10240 Total elapsed : 272.567236
+Iter : 970 To explore : 8474 Explored : 10282 Total elapsed : 274.261935
+Iter : 980 To explore : 8574 Explored : 10392 Total elapsed : 299.770285
+Iter : 990 To explore : 8688 Explored : 10516 Total elapsed : 301.431476
+Iter : 1000 To explore : 8753 Explored : 10591 Total elapsed : 303.37135
+Iter : 1010 To explore : 8877 Explored : 10725 Total elapsed : 305.083812
+Iter : 1020 To explore : 8988 Explored : 10846 Total elapsed : 307.522358
+Iter : 1030 To explore : 9030 Explored : 10898 Total elapsed : 310.493295
+Iter : 1040 To explore : 9157 Explored : 11035 Total elapsed : 324.000389
+Iter : 1050 To explore : 9258 Explored : 11146 Total elapsed : 325.697226
+Iter : 1060 To explore : 9304 Explored : 11202 Total elapsed : 350.875515
+Iter : 1070 To explore : 9409 Explored : 11317 Total elapsed : 352.592717
+Iter : 1080 To explore : 9485 Explored : 11403 Total elapsed : 354.286881
+Iter : 1090 To explore : 9527 Explored : 11455 Total elapsed : 355.972149
+Iter : 1100 To explore : 9621 Explored : 11559 Total elapsed : 357.648487
+Iter : 1110 To explore : 9649 Explored : 11597 Total elapsed : 359.332388
+Iter : 1120 To explore : 9727 Explored : 11685 Total elapsed : 361.004094
+Iter : 1130 To explore : 9784 Explored : 11752 Total elapsed : 362.703436
+Iter : 1140 To explore : 9819 Explored : 11797 Total elapsed : 364.384076
+Iter : 1150 To explore : 9905 Explored : 11893 Total elapsed : 377.65609
+Iter : 1160 To explore : 9996 Explored : 11994 Total elapsed : 391.526801
+Iter : 1170 To explore : 10155 Explored : 12163 Total elapsed : 404.435553
+Iter : 1180 To explore : 10312 Explored : 12330 Total elapsed : 406.447916
+Iter : 1190 To explore : 10487 Explored : 12515 Total elapsed : 408.568508
+Iter : 1200 To explore : 10614 Explored : 12652 Total elapsed : 433.277362
+Iter : 1210 To explore : 10700 Explored : 12748 Total elapsed : 434.940613
+Iter : 1220 To explore : 10771 Explored : 12829 Total elapsed : 436.628075
+Iter : 1230 To explore : 10847 Explored : 12915 Total elapsed : 461.408013
+Iter : 1240 To explore : 10938 Explored : 13016 Total elapsed : 463.104182
+Iter : 1250 To explore : 10956 Explored : 13044 Total elapsed : 464.891156
+Iter : 1260 To explore : 10990 Explored : 13088 Total elapsed : 478.37246
+Iter : 1270 To explore : 11070 Explored : 13178 Total elapsed : 480.097719
+Iter : 1280 To explore : 11096 Explored : 13214 Total elapsed : 482.034683
+Iter : 1290 To explore : 11205 Explored : 13333 Total elapsed : 483.717165
+Iter : 1300 To explore : 11228 Explored : 13366 Total elapsed : 485.392784
+Iter : 1310 To explore : 11371 Explored : 13519 Total elapsed : 538.07826
+=== Report ===
+[1] [IO] line 89, ((numwords * 32) + 4) : proven
+[2] [IO] line 89, (numwords * 32) : proven
+[3] [IO] line 104, (balances[_to] + _value) : unproven
+[4] [IO] line 105, (balances[msg.sender] - _value) : proven
+[5] [IO] line 106, (balances[_to] + _value) : proven
+[6] [IO] line 114, (balances[_to] + _value) : unproven
+[7] [IO] line 115, (balances[_to] + _value) : proven
+[8] [IO] line 116, (balances[_from] - _value) : proven
+[9] [IO] line 117, (allowed[_from][msg.sender] - _value) : proven
+
+=== Result Summary ===
+# Queries                : 9
+- integer over/underflow : 9
+- division-by-zero       : 0
+- assertion              : 0
+
+# Alarms                 : 2
+- integer over/underflow : 2
+- division-by-zero       : 0
+- assertion              : 0
+
+# Proven                 : 7
+- integer over/underflow : 7
+- division-by-zero       : 0
+- assertion              : 0
+
+Time Elapsed : 538.078631

@@ -1,0 +1,161 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+0xc56b13ebbcffa67cfb7979b900b736b3fb480d78_tmp.sol:114:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function SocialActivityToken() public
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xc56b13ebbcffa67cfb7979b900b736b3fb480d78_tmp.sol:120:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(0, owner, balances[owner]);
+        ^---------------------------------^
+0xc56b13ebbcffa67cfb7979b900b736b3fb480d78_tmp.sol:121:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(0, address(this), balances[address(this)]);
+        ^-------------------------------------------------^
+0xc56b13ebbcffa67cfb7979b900b736b3fb480d78_tmp.sol:269:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(address(this), 0x0, _amount);
+        ^-----------------------------------^
+0xc56b13ebbcffa67cfb7979b900b736b3fb480d78_tmp.sol:308:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(_from, _to, _amount);
+        ^---------------------------^
+0xc56b13ebbcffa67cfb7979b900b736b3fb480d78_tmp.sol:321:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Approval(msg.sender, _spender, _amount);
+        ^-------------------------------------^
+0xc56b13ebbcffa67cfb7979b900b736b3fb480d78_tmp.sol:342:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(msg.sender, _to, _amount);
+        ^--------------------------------^
+0xc56b13ebbcffa67cfb7979b900b736b3fb480d78_tmp.sol:361:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(_from, _to, _amount);
+        ^---------------------------^
+0xc56b13ebbcffa67cfb7979b900b736b3fb480d78_tmp.sol:377:24: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+        owner.transfer(this.balance);
+                       ^----------^
+0xc56b13ebbcffa67cfb7979b900b736b3fb480d78_tmp.sol:58:5: Warning: No visibility specified. Defaulting to "public". 
+    function USD(uint _id) constant returns (uint256);
+    ^------------------------------------------------^
+- all funcs : 42
+- reachable : 22
+* Generating Paths ... took 0.001849s
+- paths : 147
+
+Iter : 10 To explore : 2226 Explored : 2235 Total elapsed : 277.117
+Iter : 20 To explore : 4307 Explored : 4326 Total elapsed : 380.515421
+Iter : 30 To explore : 6357 Explored : 6386 Total elapsed : 497.213262
+=== Report ===
+[1] [IO] line 73, (1000000000 * (uint256(10) ** 8)) : proven
+[2] [IO] line 73, (uint256(10) ** 8) : proven
+[3] [IO] line 117, (350000000 * (uint256(10) ** 8)) : proven
+[4] [IO] line 117, (uint256(10) ** 8) : proven
+[5] [IO] line 118, (650000000 * (uint256(10) ** 8)) : proven
+[6] [IO] line 118, (uint256(10) ** 8) : proven
+[7] [IO] line 129, (10 ** 13) : proven
+[8] [IO] line 129, (37 * (10 ** 13)) : proven
+[9] [IO] line 130, (ethCent * 14) : proven
+[10] [IO] line 132, (10 ** 8) : proven
+[11] [IO] line 140, (2000 * (uint256(10) ** 8)) : proven
+[12] [IO] line 140, (uint256(10) ** 8) : proven
+[13] [IO] line 141, (19999 * (uint256(10) ** 8)) : proven
+[14] [IO] line 141, (uint256(10) ** 8) : proven
+[15] [IO] line 143, (no_of_tokens * 50) : unproven
+[16] [IO] line 145, (19999 * (uint256(10) ** 8)) : proven
+[17] [IO] line 145, (uint256(10) ** 8) : proven
+[18] [IO] line 146, (149999 * (uint256(10) ** 8)) : proven
+[19] [IO] line 146, (uint256(10) ** 8) : proven
+[20] [IO] line 148, (no_of_tokens * 55) : unproven
+[21] [IO] line 150, (149999 * (uint256(10) ** 8)) : proven
+[22] [IO] line 150, (uint256(10) ** 8) : proven
+[23] [IO] line 152, (no_of_tokens * 60) : unproven
+[24] [IO] line 156, (no_of_tokens * 45) : unproven
+[25] [IO] line 161, (2000 * (uint256(10) ** 8)) : proven
+[26] [IO] line 161, (uint256(10) ** 8) : proven
+[27] [IO] line 162, (19999 * (uint256(10) ** 8)) : proven
+[28] [IO] line 162, (uint256(10) ** 8) : proven
+[29] [IO] line 164, (no_of_tokens * 40) : unproven
+[30] [IO] line 166, (19999 * (uint256(10) ** 8)) : proven
+[31] [IO] line 166, (uint256(10) ** 8) : proven
+[32] [IO] line 167, (149999 * (uint256(10) ** 8)) : proven
+[33] [IO] line 167, (uint256(10) ** 8) : proven
+[34] [IO] line 169, (no_of_tokens * 45) : unproven
+[35] [IO] line 171, (149999 * (uint256(10) ** 8)) : proven
+[36] [IO] line 171, (uint256(10) ** 8) : proven
+[37] [IO] line 173, (no_of_tokens * 50) : unproven
+[38] [IO] line 177, (no_of_tokens * 35) : unproven
+[39] [IO] line 182, (2000 * (uint256(10) ** 8)) : proven
+[40] [IO] line 182, (uint256(10) ** 8) : proven
+[41] [IO] line 183, (19999 * (uint256(10) ** 8)) : proven
+[42] [IO] line 183, (uint256(10) ** 8) : proven
+[43] [IO] line 185, (no_of_tokens * 30) : unproven
+[44] [IO] line 187, (19999 * (uint256(10) ** 8)) : proven
+[45] [IO] line 187, (uint256(10) ** 8) : proven
+[46] [IO] line 188, (149999 * (uint256(10) ** 8)) : proven
+[47] [IO] line 188, (uint256(10) ** 8) : proven
+[48] [IO] line 190, (no_of_tokens * 35) : unproven
+[49] [IO] line 192, (149999 * (uint256(10) ** 8)) : proven
+[50] [IO] line 192, (uint256(10) ** 8) : proven
+[51] [IO] line 194, (no_of_tokens * 40) : unproven
+[52] [IO] line 198, (no_of_tokens * 25) : unproven
+[53] [IO] line 203, (2000 * (uint256(10) ** 8)) : proven
+[54] [IO] line 203, (uint256(10) ** 8) : proven
+[55] [IO] line 204, (19999 * (uint256(10) ** 8)) : proven
+[56] [IO] line 204, (uint256(10) ** 8) : proven
+[57] [IO] line 206, (no_of_tokens * 20) : unproven
+[58] [IO] line 208, (19999 * (uint256(10) ** 8)) : proven
+[59] [IO] line 208, (uint256(10) ** 8) : proven
+[60] [IO] line 209, (149999 * (uint256(10) ** 8)) : proven
+[61] [IO] line 209, (uint256(10) ** 8) : proven
+[62] [IO] line 211, (no_of_tokens * 25) : unproven
+[63] [IO] line 213, (149999 * (uint256(10) ** 8)) : proven
+[64] [IO] line 213, (uint256(10) ** 8) : proven
+[65] [IO] line 215, (no_of_tokens * 30) : unproven
+[66] [IO] line 219, (no_of_tokens * 15) : unproven
+[67] [IO] line 223, (no_of_tokens + bonus_token) : unproven
+[68] [IO] line 232, (now + 1209600) : unproven
+[69] [IO] line 233, (ico_first + 1209600) : unproven
+[70] [IO] line 234, (ico_second + 1209600) : unproven
+[71] [IO] line 235, (ico_third + 1209600) : unproven
+[72] [IO] line 266, (_totalsupply - _amount) : unproven
+[73] [IO] line 267, (balances[address(this)] - _amount) : proven
+[74] [IO] line 268, (balances[address(0)] + _amount) : unproven
+[75] [IO] line 304, (balances[_from] - _amount) : unproven
+[76] [IO] line 305, (allowed[_from][msg.sender] - _amount) : unproven
+[77] [IO] line 306, (balances[_to] + _amount) : unproven
+[78] [IO] line 339, (balances[msg.sender] - _amount) : unproven
+[79] [IO] line 340, (balances[_to] + _amount) : unproven
+[80] [IO] line 354, (balances[_from] - _amount) : unproven
+[81] [IO] line 355, (balances[_to] + _amount) : unproven
+[82] [IO] line 358, (_totalsupply + _amount) : unproven
+[83] [IO] line 369, (balances[newOwner] + balances[owner]) : unproven
+[84] [DZ] line 132, (tokPrice / (10 ** 8)) : proven
+[85] [DZ] line 133, (msg.value / tokPrice) : proven
+[86] [DZ] line 143, ((no_of_tokens * 50) / 100) : proven
+[87] [DZ] line 148, ((no_of_tokens * 55) / 100) : proven
+[88] [DZ] line 152, ((no_of_tokens * 60) / 100) : proven
+[89] [DZ] line 156, ((no_of_tokens * 45) / 100) : proven
+[90] [DZ] line 164, ((no_of_tokens * 40) / 100) : proven
+[91] [DZ] line 169, ((no_of_tokens * 45) / 100) : proven
+[92] [DZ] line 173, ((no_of_tokens * 50) / 100) : proven
+[93] [DZ] line 177, ((no_of_tokens * 35) / 100) : proven
+[94] [DZ] line 185, ((no_of_tokens * 30) / 100) : proven
+[95] [DZ] line 190, ((no_of_tokens * 35) / 100) : proven
+[96] [DZ] line 194, ((no_of_tokens * 40) / 100) : proven
+[97] [DZ] line 198, ((no_of_tokens * 25) / 100) : proven
+[98] [DZ] line 206, ((no_of_tokens * 20) / 100) : proven
+[99] [DZ] line 211, ((no_of_tokens * 25) / 100) : proven
+[100] [DZ] line 215, ((no_of_tokens * 30) / 100) : proven
+[101] [DZ] line 219, ((no_of_tokens * 15) / 100) : proven
+
+=== Result Summary ===
+# Queries                : 101
+- integer over/underflow : 83
+- division-by-zero       : 18
+- assertion              : 0
+
+# Alarms                 : 32
+- integer over/underflow : 32
+- division-by-zero       : 0
+- assertion              : 0
+
+# Proven                 : 69
+- integer over/underflow : 51
+- division-by-zero       : 18
+- assertion              : 0
+
+Time Elapsed : 536.200502

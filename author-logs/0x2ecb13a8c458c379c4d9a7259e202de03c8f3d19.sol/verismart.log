@@ -1,0 +1,240 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+0x2ecb13a8c458c379c4d9a7259e202de03c8f3d19_tmp.sol:222:3: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+  function Ownable() public {
+  ^ (Relevant source part starts here and spans across multiple lines).
+0x2ecb13a8c458c379c4d9a7259e202de03c8f3d19_tmp.sol:688:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function MainToken() public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x2ecb13a8c458c379c4d9a7259e202de03c8f3d19_tmp.sol:93:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(msg.sender, _to, _value);
+    ^-------------------------------^
+0x2ecb13a8c458c379c4d9a7259e202de03c8f3d19_tmp.sol:149:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(_from, _to, _value);
+    ^--------------------------^
+0x2ecb13a8c458c379c4d9a7259e202de03c8f3d19_tmp.sol:165:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Approval(msg.sender, _spender, _value);
+    ^------------------------------------^
+0x2ecb13a8c458c379c4d9a7259e202de03c8f3d19_tmp.sol:187:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Approval(msg.sender, _spender, allowed[msg.sender][_spender]);
+    ^-----------------------------------------------------------^
+0x2ecb13a8c458c379c4d9a7259e202de03c8f3d19_tmp.sol:198:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Approval(msg.sender, _spender, allowed[msg.sender][_spender]);
+    ^-----------------------------------------------------------^
+0x2ecb13a8c458c379c4d9a7259e202de03c8f3d19_tmp.sol:242:5: Warning: Invoking events without "emit" prefix is deprecated.
+    OwnershipTransferred(owner, newOwner);
+    ^-----------------------------------^
+0x2ecb13a8c458c379c4d9a7259e202de03c8f3d19_tmp.sol:278:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Mint(_to, _amount);
+    ^----------------^
+0x2ecb13a8c458c379c4d9a7259e202de03c8f3d19_tmp.sol:279:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(address(0), _to, _amount);
+    ^--------------------------------^
+0x2ecb13a8c458c379c4d9a7259e202de03c8f3d19_tmp.sol:289:5: Warning: Invoking events without "emit" prefix is deprecated.
+    MintFinished();
+    ^------------^
+0x2ecb13a8c458c379c4d9a7259e202de03c8f3d19_tmp.sol:378:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Freezed(_to, _until, _amount);
+        ^---------------------------^
+0x2ecb13a8c458c379c4d9a7259e202de03c8f3d19_tmp.sol:407:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Released(msg.sender, amount);
+        ^--------------------------^
+0x2ecb13a8c458c379c4d9a7259e202de03c8f3d19_tmp.sol:437:16: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        return keccak256(_addr);
+               ^--------------^
+0x2ecb13a8c458c379c4d9a7259e202de03c8f3d19_tmp.sol:437:16: Warning: The provided argument of type address is not implicitly convertible to expected type bytes memory.
+        return keccak256(_addr);
+               ^--------------^
+0x2ecb13a8c458c379c4d9a7259e202de03c8f3d19_tmp.sol:501:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Invoked(_from, _value, _data);
+        ^---------------------------^
+0x2ecb13a8c458c379c4d9a7259e202de03c8f3d19_tmp.sol:535:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Burn(burner, _value);
+        ^------------------^
+0x2ecb13a8c458c379c4d9a7259e202de03c8f3d19_tmp.sol:573:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Pause();
+    ^-----^
+0x2ecb13a8c458c379c4d9a7259e202de03c8f3d19_tmp.sol:581:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Unpause();
+    ^-------^
+0x2ecb13a8c458c379c4d9a7259e202de03c8f3d19_tmp.sol:606:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Mint(_to, _amount);
+        ^----------------^
+0x2ecb13a8c458c379c4d9a7259e202de03c8f3d19_tmp.sol:607:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Freezed(_to, _until, _amount);
+        ^---------------------------^
+0x2ecb13a8c458c379c4d9a7259e202de03c8f3d19_tmp.sol:661:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(msg.sender, _to, _value, _data);
+        ^--------------------------------------^
+0x2ecb13a8c458c379c4d9a7259e202de03c8f3d19_tmp.sol:703:32: Warning: This looks like an address but has an invalid checksum. If this is not used as an address, please prepend '00'. Correct checksummed address: '0x93aBEe979B9094f16082f71C01F60f51E52C78e3'. For more information please see https://solidity.readthedocs.io/en/develop/types.html#address-literals
+        addresses[0] = address(0x93abee979b9094f16082f71c01f60f51e52c78e3);
+                               ^----------------------------------------^
+0x2ecb13a8c458c379c4d9a7259e202de03c8f3d19_tmp.sol:704:32: Warning: This looks like an address but has an invalid checksum. If this is not used as an address, please prepend '00'. Correct checksummed address: '0x9DAF89767751c56fcCaA711cEA1bD7d6589CeC08'. For more information please see https://solidity.readthedocs.io/en/develop/types.html#address-literals
+        addresses[1] = address(0x9daf89767751c56fccaa711cea1bd7d6589cec08);
+                               ^----------------------------------------^
+0x2ecb13a8c458c379c4d9a7259e202de03c8f3d19_tmp.sol:705:32: Warning: This looks like an address but has an invalid checksum. If this is not used as an address, please prepend '00'. Correct checksummed address: '0xca9d01465bE0FA4b7f5540556283244F49532F8d'. For more information please see https://solidity.readthedocs.io/en/develop/types.html#address-literals
+        addresses[2] = address(0xca9d01465be0fa4b7f5540556283244f49532f8d);
+                               ^----------------------------------------^
+0x2ecb13a8c458c379c4d9a7259e202de03c8f3d19_tmp.sol:733:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Initialized();
+        ^-----------^
+0x2ecb13a8c458c379c4d9a7259e202de03c8f3d19_tmp.sol:426:35: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function toKey(address _addr, uint _release) internal pure returns (bytes32 result) {
+                                  ^-----------^
+0x2ecb13a8c458c379c4d9a7259e202de03c8f3d19_tmp.sol:440:21: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function freeze(address _to, uint64 _until) internal {
+                    ^---------^
+0x2ecb13a8c458c379c4d9a7259e202de03c8f3d19_tmp.sol:440:5: Warning: Function state mutability can be restricted to view
+    function freeze(address _to, uint64 _until) internal {
+    ^ (Relevant source part starts here and spans across multiple lines).
+- all funcs : 208
+- reachable : 28
+* Generating Paths ... took 0.000724s
+- paths : 90
+
+Iter : 10 To explore : 610 Explored : 1658 Total elapsed : 1.162967
+Iter : 20 To explore : 1422 Explored : 3155 Total elapsed : 10.57454
+Iter : 30 To explore : 2477 Explored : 4220 Total elapsed : 12.611919
+Iter : 40 To explore : 2819 Explored : 5316 Total elapsed : 14.771911
+Iter : 50 To explore : 3177 Explored : 5684 Total elapsed : 29.645897
+Iter : 60 To explore : 3452 Explored : 5969 Total elapsed : 31.757982
+Iter : 70 To explore : 3625 Explored : 6152 Total elapsed : 33.790734
+Iter : 80 To explore : 3705 Explored : 6242 Total elapsed : 35.798423
+Iter : 90 To explore : 4250 Explored : 6797 Total elapsed : 47.515544
+Iter : 100 To explore : 5435 Explored : 7992 Total elapsed : 49.501292
+Iter : 110 To explore : 6575 Explored : 9142 Total elapsed : 51.498483
+Iter : 120 To explore : 7823 Explored : 10400 Total elapsed : 53.496089
+Iter : 130 To explore : 9019 Explored : 11606 Total elapsed : 55.491025
+Iter : 140 To explore : 10042 Explored : 12639 Total elapsed : 57.48255
+Iter : 150 To explore : 11005 Explored : 13612 Total elapsed : 59.446548
+Iter : 160 To explore : 11961 Explored : 14578 Total elapsed : 61.432138
+Iter : 170 To explore : 13004 Explored : 15631 Total elapsed : 86.338897
+Iter : 180 To explore : 14209 Explored : 16846 Total elapsed : 88.709576
+Iter : 190 To explore : 15413 Explored : 18060 Total elapsed : 90.739445
+Iter : 200 To explore : 16559 Explored : 19216 Total elapsed : 92.759291
+Iter : 210 To explore : 17633 Explored : 20300 Total elapsed : 109.959166
+Iter : 220 To explore : 18828 Explored : 21505 Total elapsed : 164.564193
+Iter : 230 To explore : 19858 Explored : 22545 Total elapsed : 214.50838
+Iter : 240 To explore : 20893 Explored : 23590 Total elapsed : 234.193176
+Iter : 250 To explore : 22002 Explored : 24709 Total elapsed : 240.908644
+Iter : 260 To explore : 23097 Explored : 25814 Total elapsed : 242.914192
+Iter : 270 To explore : 24090 Explored : 26817 Total elapsed : 244.956442
+Iter : 280 To explore : 25016 Explored : 27753 Total elapsed : 246.986882
+Iter : 290 To explore : 25811 Explored : 28558 Total elapsed : 248.986802
+Iter : 300 To explore : 26706 Explored : 29463 Total elapsed : 250.998496
+Iter : 310 To explore : 27676 Explored : 30443 Total elapsed : 253.028563
+Iter : 320 To explore : 28851 Explored : 31628 Total elapsed : 255.014075
+Iter : 330 To explore : 29966 Explored : 32753 Total elapsed : 256.99384
+Iter : 340 To explore : 30951 Explored : 33748 Total elapsed : 259.014823
+Iter : 350 To explore : 32020 Explored : 34827 Total elapsed : 261.032258
+Iter : 360 To explore : 33181 Explored : 35998 Total elapsed : 263.037501
+Iter : 370 To explore : 34185 Explored : 37012 Total elapsed : 265.06122
+Iter : 380 To explore : 35129 Explored : 37966 Total elapsed : 267.101449
+Iter : 390 To explore : 35976 Explored : 38823 Total elapsed : 269.139455
+Iter : 400 To explore : 36889 Explored : 39746 Total elapsed : 271.126724
+Iter : 410 To explore : 37803 Explored : 40670 Total elapsed : 273.112163
+Iter : 420 To explore : 38620 Explored : 41497 Total elapsed : 275.150023
+Iter : 430 To explore : 39699 Explored : 42586 Total elapsed : 277.183805
+Iter : 440 To explore : 40745 Explored : 43642 Total elapsed : 279.196079
+Iter : 450 To explore : 41719 Explored : 44626 Total elapsed : 281.245673
+Iter : 460 To explore : 42847 Explored : 45764 Total elapsed : 283.26661
+Iter : 470 To explore : 43963 Explored : 46890 Total elapsed : 285.293946
+Iter : 480 To explore : 44794 Explored : 47731 Total elapsed : 287.301434
+Iter : 490 To explore : 45712 Explored : 48659 Total elapsed : 289.354584
+Iter : 500 To explore : 46843 Explored : 49800 Total elapsed : 291.355755
+Iter : 510 To explore : 47837 Explored : 50804 Total elapsed : 293.45023
+Iter : 520 To explore : 48771 Explored : 51748 Total elapsed : 295.466069
+Iter : 530 To explore : 49606 Explored : 52593 Total elapsed : 297.503418
+Iter : 540 To explore : 50580 Explored : 53577 Total elapsed : 299.536602
+Iter : 550 To explore : 51594 Explored : 54601 Total elapsed : 301.582127
+Iter : 560 To explore : 52567 Explored : 55584 Total elapsed : 303.581598
+Iter : 570 To explore : 53568 Explored : 56595 Total elapsed : 305.605058
+Iter : 580 To explore : 54692 Explored : 57729 Total elapsed : 307.609298
+Iter : 590 To explore : 55719 Explored : 58766 Total elapsed : 309.660398
+Iter : 600 To explore : 56572 Explored : 59629 Total elapsed : 311.669761
+Iter : 610 To explore : 57389 Explored : 60456 Total elapsed : 313.67812
+Iter : 620 To explore : 58138 Explored : 61215 Total elapsed : 315.677409
+Iter : 630 To explore : 58876 Explored : 61963 Total elapsed : 317.716267
+Iter : 640 To explore : 60038 Explored : 63135 Total elapsed : 319.738558
+Iter : 650 To explore : 61043 Explored : 64150 Total elapsed : 321.748627
+Iter : 660 To explore : 61987 Explored : 65104 Total elapsed : 323.78055
+Iter : 670 To explore : 62834 Explored : 65961 Total elapsed : 325.795092
+Iter : 680 To explore : 63876 Explored : 67013 Total elapsed : 327.83497
+Iter : 690 To explore : 64907 Explored : 68054 Total elapsed : 329.860705
+Iter : 700 To explore : 65881 Explored : 69038 Total elapsed : 331.915754
+Iter : 710 To explore : 66762 Explored : 69929 Total elapsed : 333.967554
+Iter : 720 To explore : 67598 Explored : 70775 Total elapsed : 335.944357
+Iter : 730 To explore : 68320 Explored : 71507 Total elapsed : 337.942049
+Iter : 740 To explore : 69049 Explored : 72246 Total elapsed : 339.964874
+Iter : 750 To explore : 69779 Explored : 72986 Total elapsed : 342.13641
+Iter : 760 To explore : 70778 Explored : 73995 Total elapsed : 354.088311
+Iter : 770 To explore : 71538 Explored : 74765 Total elapsed : 409.789588
+Iter : 780 To explore : 72460 Explored : 75697 Total elapsed : 432.182722
+Iter : 790 To explore : 73446 Explored : 76693 Total elapsed : 434.158051
+Iter : 800 To explore : 74343 Explored : 77600 Total elapsed : 436.167524
+Iter : 810 To explore : 75197 Explored : 78464 Total elapsed : 438.133505
+Iter : 820 To explore : 75897 Explored : 79174 Total elapsed : 440.163469
+Iter : 830 To explore : 76785 Explored : 80072 Total elapsed : 442.194076
+Iter : 840 To explore : 77650 Explored : 80947 Total elapsed : 444.212947
+Iter : 850 To explore : 78368 Explored : 81675 Total elapsed : 446.219055
+Iter : 860 To explore : 79286 Explored : 82603 Total elapsed : 448.583198
+Iter : 870 To explore : 80082 Explored : 83409 Total elapsed : 451.048123
+Iter : 880 To explore : 80819 Explored : 84156 Total elapsed : 453.443623
+Iter : 890 To explore : 80285 Explored : 163084 Total elapsed : 482.511391
+Iter : 900 To explore : 80275 Explored : 163084 Total elapsed : 484.293979
+Iter : 910 To explore : 80265 Explored : 163084 Total elapsed : 486.140639
+Iter : 920 To explore : 80255 Explored : 163084 Total elapsed : 497.723745
+Iter : 930 To explore : 80254 Explored : 163093 Total elapsed : 512.7427
+Iter : 940 To explore : 80244 Explored : 163093 Total elapsed : 514.781746
+Iter : 950 To explore : 80240 Explored : 163099 Total elapsed : 516.926929
+Iter : 960 To explore : 80233 Explored : 163102 Total elapsed : 519.012802
+Iter : 970 To explore : 80223 Explored : 163102 Total elapsed : 521.018794
+Iter : 980 To explore : 80213 Explored : 163102 Total elapsed : 523.069589
+Iter : 990 To explore : 80203 Explored : 163102 Total elapsed : 525.126667
+Iter : 1000 To explore : 80193 Explored : 163102 Total elapsed : 527.173535
+Iter : 1010 To explore : 80183 Explored : 163102 Total elapsed : 529.203931
+=== Report ===
+[1] [IO] line 91, (balances[msg.sender] - _value) : proven
+[2] [IO] line 92, (balances[_to] + _value) : unproven
+[3] [IO] line 146, (balances[_from] - _value) : proven
+[4] [IO] line 147, (balances[_to] + _value) : unproven
+[5] [IO] line 148, (allowed[_from][msg.sender] - _value) : proven
+[6] [IO] line 186, (allowed[msg.sender][_spender] + _addedValue) : unproven
+[7] [IO] line 196, (oldValue - _subtractedValue) : proven
+[8] [IO] line 276, (totalSupply + _amount) : unproven
+[9] [IO] line 277, (balances[_to] + _amount) : unproven
+[10] [IO] line 314, (balances[_owner] + freezingBalance[_owner]) : unproven
+[11] [IO] line 337, (count + 1) : proven
+[12] [IO] line 348, (_index + 1) : unproven
+[13] [IO] line 348, (i + 1) : proven
+[14] [IO] line 370, (balances[msg.sender] - _amount) : proven
+[15] [IO] line 374, (freezings[i] + _amount) : unproven
+[16] [IO] line 375, (freezingBalance[_to] + _amount) : unproven
+[17] [IO] line 397, (balances[msg.sender] + amount) : unproven
+[18] [IO] line 398, (freezingBalance[msg.sender] - amount) : unproven
+[19] [IO] line 419, (tokens + balance) : unproven
+[20] [IO] line 533, (balances[burner] - _value) : proven
+[21] [IO] line 534, (totalSupply - _value) : unproven
+[22] [IO] line 598, (totalSupply + _amount) : unproven
+[23] [IO] line 602, (freezings[i] + _amount) : unproven
+[24] [IO] line 603, (freezingBalance[_to] + _amount) : unproven
+[25] [IO] line 615, (10 ** 18) : proven
+
+=== Result Summary ===
+# Queries                : 25
+- integer over/underflow : 25
+- division-by-zero       : 0
+- assertion              : 0
+
+# Alarms                 : 16
+- integer over/underflow : 16
+- division-by-zero       : 0
+- assertion              : 0
+
+# Proven                 : 9
+- integer over/underflow : 9
+- division-by-zero       : 0
+- assertion              : 0
+
+Time Elapsed : 530.211179

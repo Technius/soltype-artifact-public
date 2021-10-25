@@ -1,0 +1,170 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+2018-14001_tmp.sol:59:34: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if(!managers[msg.sender])throw;
+                                 ^---^
+2018-14001_tmp.sol:81:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function Shark()
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-14001_tmp.sol:97:34: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if(msg.sender!=tx.origin)throw;
+                                 ^---^
+2018-14001_tmp.sol:103:30: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if(msg.sender!=owner)throw;
+                             ^---^
+2018-14001_tmp.sol:120:36: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if(msg.value<price*1 ether)throw;
+                                   ^---^
+2018-14001_tmp.sol:128:36: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if(this.balance<_qty*price)throw;
+                                   ^---^
+2018-14001_tmp.sol:1:1: Warning: Source file does not specify required compiler version!Consider adding "pragma solidity ^0.4.26;"
+contract StandardToken
+^ (Relevant source part starts here and spans across multiple lines).
+2018-14001_tmp.sol:17:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(msg.sender, _to, _value);
+        ^-------------------------------^
+2018-14001_tmp.sol:26:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(_from, _to, _value);
+        ^--------------------------^
+2018-14001_tmp.sol:32:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Approval(msg.sender, _spender, _value);
+        ^------------------------------------^
+2018-14001_tmp.sol:47:13: Warning: Invoking events without "emit" prefix is deprecated.
+            Transfer(msg.sender, _receivers[i], _value);
+            ^-----------------------------------------^
+2018-14001_tmp.sol:73:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(_seller,_buyer,_qty);
+        ^---------------------------^
+2018-14001_tmp.sol:74:9: Warning: Invoking events without "emit" prefix is deprecated.
+        deal(_seller,_buyer,_qty,_price,_data);
+        ^------------------------------------^
+2018-14001_tmp.sol:128:12: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+        if(this.balance<_qty*price)throw;
+           ^----------^
+2018-14001_tmp.sol:65:5: Warning: No visibility specified. Defaulting to "public". 
+    function Trade(uint256 _qty, uint256 _price, bytes32 _data, address _seller, address _buyer) payable onlyManager
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-14001_tmp.sol:81:5: Warning: No visibility specified. Defaulting to "public". 
+    function Shark()
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-14001_tmp.sol:107:5: Warning: No visibility specified. Defaulting to "public". 
+    function changePrice(uint256 _newPrice)
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-14001_tmp.sol:116:5: Warning: No visibility specified. Defaulting to "public". 
+    function Buy()
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-14001_tmp.sol:124:5: Warning: No visibility specified. Defaulting to "public". 
+    function Sell(uint256 _qty) 
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-14001_tmp.sol:143:5: Warning: No visibility specified. Defaulting to "public". 
+    function cashOut(uint256 _am)
+    ^ (Relevant source part starts here and spans across multiple lines).
+- all funcs : 51
+- reachable : 20
+* Generating Paths ... took 6.4e-05s
+- paths : 45
+
+Iter : 10 To explore : 1115 Explored : 1124 Total elapsed : 0.138543
+Iter : 20 To explore : 2144 Explored : 2163 Total elapsed : 24.807034
+Iter : 30 To explore : 2906 Explored : 2935 Total elapsed : 49.215197
+Iter : 40 To explore : 3603 Explored : 3642 Total elapsed : 71.764829
+Iter : 50 To explore : 4300 Explored : 4349 Total elapsed : 78.575809
+Iter : 60 To explore : 4745 Explored : 9186 Total elapsed : 92.137704
+Iter : 70 To explore : 5140 Explored : 9591 Total elapsed : 100.18848
+Iter : 80 To explore : 5416 Explored : 9877 Total elapsed : 120.601336
+Iter : 90 To explore : 5590 Explored : 10061 Total elapsed : 122.227048
+Iter : 100 To explore : 5671 Explored : 10152 Total elapsed : 123.876902
+Iter : 110 To explore : 5777 Explored : 10268 Total elapsed : 125.181894
+Iter : 120 To explore : 6251 Explored : 10752 Total elapsed : 125.658334
+Iter : 130 To explore : 6711 Explored : 11222 Total elapsed : 141.118025
+Iter : 140 To explore : 7141 Explored : 11662 Total elapsed : 149.979735
+Iter : 150 To explore : 7466 Explored : 11997 Total elapsed : 159.261675
+Iter : 160 To explore : 7696 Explored : 12237 Total elapsed : 179.834923
+Iter : 170 To explore : 8065 Explored : 12616 Total elapsed : 185.450247
+Iter : 180 To explore : 8686 Explored : 13247 Total elapsed : 193.87822
+Iter : 190 To explore : 9396 Explored : 13967 Total elapsed : 195.240067
+Iter : 200 To explore : 10183 Explored : 14764 Total elapsed : 206.911805
+Iter : 210 To explore : 10724 Explored : 15315 Total elapsed : 223.976
+Iter : 220 To explore : 11526 Explored : 16127 Total elapsed : 239.181117
+Iter : 230 To explore : 11894 Explored : 26037 Total elapsed : 242.537118
+Iter : 240 To explore : 11935 Explored : 26088 Total elapsed : 244.022355
+Iter : 250 To explore : 11925 Explored : 26088 Total elapsed : 245.743635
+Iter : 260 To explore : 11915 Explored : 26088 Total elapsed : 247.348365
+Iter : 270 To explore : 11905 Explored : 26088 Total elapsed : 274.213501
+Iter : 280 To explore : 11895 Explored : 26088 Total elapsed : 275.885253
+Iter : 290 To explore : 12297 Explored : 26500 Total elapsed : 277.799454
+Iter : 300 To explore : 12763 Explored : 26976 Total elapsed : 286.424782
+Iter : 310 To explore : 13157 Explored : 27380 Total elapsed : 305.355398
+Iter : 320 To explore : 13423 Explored : 27656 Total elapsed : 307.175949
+Iter : 330 To explore : 13729 Explored : 27972 Total elapsed : 308.953323
+Iter : 340 To explore : 14076 Explored : 28329 Total elapsed : 310.806458
+Iter : 350 To explore : 14423 Explored : 28686 Total elapsed : 312.653075
+Iter : 360 To explore : 14706 Explored : 28979 Total elapsed : 322.228092
+Iter : 370 To explore : 15116 Explored : 29399 Total elapsed : 343.031618
+Iter : 380 To explore : 15437 Explored : 29730 Total elapsed : 345.143099
+Iter : 390 To explore : 15765 Explored : 30068 Total elapsed : 354.267792
+Iter : 400 To explore : 16135 Explored : 30448 Total elapsed : 356.147164
+Iter : 410 To explore : 16513 Explored : 30836 Total elapsed : 358.088495
+Iter : 420 To explore : 16891 Explored : 31224 Total elapsed : 392.45144
+Iter : 430 To explore : 17268 Explored : 31611 Total elapsed : 394.487075
+Iter : 440 To explore : 17540 Explored : 31893 Total elapsed : 399.121578
+Iter : 450 To explore : 17825 Explored : 32188 Total elapsed : 401.013659
+Iter : 460 To explore : 18077 Explored : 32450 Total elapsed : 402.833395
+Iter : 470 To explore : 18260 Explored : 32643 Total elapsed : 429.893737
+Iter : 480 To explore : 18379 Explored : 32772 Total elapsed : 431.767018
+Iter : 490 To explore : 18481 Explored : 32884 Total elapsed : 440.092338
+Iter : 500 To explore : 18552 Explored : 32965 Total elapsed : 442.117963
+Iter : 510 To explore : 18791 Explored : 33214 Total elapsed : 467.522724
+Iter : 520 To explore : 19058 Explored : 33491 Total elapsed : 469.326337
+Iter : 530 To explore : 19224 Explored : 33667 Total elapsed : 471.116954
+Iter : 540 To explore : 19310 Explored : 33763 Total elapsed : 479.310036
+Iter : 550 To explore : 19410 Explored : 33873 Total elapsed : 482.962726
+Iter : 560 To explore : 19649 Explored : 34122 Total elapsed : 487.436786
+Iter : 570 To explore : 19808 Explored : 34291 Total elapsed : 489.38376
+Iter : 580 To explore : 19905 Explored : 34398 Total elapsed : 497.272031
+Iter : 590 To explore : 20024 Explored : 34527 Total elapsed : 499.236236
+Iter : 600 To explore : 20187 Explored : 34700 Total elapsed : 505.950865
+Iter : 610 To explore : 20205 Explored : 34728 Total elapsed : 507.838145
+Iter : 620 To explore : 20358 Explored : 34891 Total elapsed : 512.311139
+Iter : 630 To explore : 20553 Explored : 35096 Total elapsed : 514.292043
+Iter : 640 To explore : 20662 Explored : 35215 Total elapsed : 522.362388
+=== Report ===
+[1] [IO] line 14, (balanceOf[_to] + _value) : unproven
+[2] [IO] line 15, (balanceOf[msg.sender] - _value) : proven
+[3] [IO] line 16, (balanceOf[_to] + _value) : proven
+[4] [IO] line 22, (balanceOf[_to] + _value) : unproven
+[5] [IO] line 23, (balanceOf[_from] - _value) : proven
+[6] [IO] line 24, (balanceOf[_to] + _value) : proven
+[7] [IO] line 25, (allowance[_from][msg.sender] - _value) : proven
+[8] [IO] line 41, (cnt * _value) : unproven
+[9] [IO] line 44, (balanceOf[msg.sender] - amount) : proven
+[10] [IO] line 45, (i + 1) : proven
+[11] [IO] line 46, (balanceOf[_receivers[i]] + _value) : unproven
+[12] [IO] line 68, (balanceOf[_buyer] + _qty) : unproven
+[13] [IO] line 69, (_qty * _price) : unproven
+[14] [IO] line 71, (balanceOf[_seller] - _qty) : proven
+[15] [IO] line 72, (balanceOf[_buyer] + _qty) : proven
+[16] [IO] line 120, (price * 1000000000000000000) : unproven
+[17] [IO] line 128, (_qty * price) : unproven
+[18] [IO] line 136, (_adr.length * _val) : unproven
+[19] [DZ] line 121, (msg.value / price) : unproven
+
+=== Result Summary ===
+# Queries                : 19
+- integer over/underflow : 18
+- division-by-zero       : 1
+- assertion              : 0
+
+# Alarms                 : 10
+- integer over/underflow : 9
+- division-by-zero       : 1
+- assertion              : 0
+
+# Proven                 : 9
+- integer over/underflow : 9
+- division-by-zero       : 0
+- assertion              : 0
+
+Time Elapsed : 535.202888

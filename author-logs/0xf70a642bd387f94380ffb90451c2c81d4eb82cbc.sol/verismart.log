@@ -1,0 +1,208 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+0xf70a642bd387f94380ffb90451c2c81d4eb82cbc_tmp.sol:280:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function StarbaseToken(
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xf70a642bd387f94380ffb90451c2c81d4eb82cbc_tmp.sol:66:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(msg.sender, _to, _value);
+    ^-------------------------------^
+0xf70a642bd387f94380ffb90451c2c81d4eb82cbc_tmp.sol:121:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(_from, _to, _value);
+    ^--------------------------^
+0xf70a642bd387f94380ffb90451c2c81d4eb82cbc_tmp.sol:137:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Approval(msg.sender, _spender, _value);
+    ^------------------------------------^
+0xf70a642bd387f94380ffb90451c2c81d4eb82cbc_tmp.sol:160:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Approval(msg.sender, _spender, allowed[msg.sender][_spender]);
+    ^-----------------------------------------------------------^
+0xf70a642bd387f94380ffb90451c2c81d4eb82cbc_tmp.sol:172:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Approval(msg.sender, _spender, allowed[msg.sender][_spender]);
+    ^-----------------------------------------------------------^
+0xf70a642bd387f94380ffb90451c2c81d4eb82cbc_tmp.sol:296:9: Warning: Invoking events without "emit" prefix is deprecated.
+        LogNewFundraiser(msg.sender, true);
+        ^--------------------------------^
+0xf70a642bd387f94380ffb90451c2c81d4eb82cbc_tmp.sol:300:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(0, address(starbaseCrowdsale), initialBalanceForCrowdsale);
+        ^-----------------------------------------------------------------^
+0xf70a642bd387f94380ffb90451c2c81d4eb82cbc_tmp.sol:304:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(0, address(starbaseMarketingCampaign), initialBalanceForMarketingCampaign);
+        ^---------------------------------------------------------------------------------^
+0xf70a642bd387f94380ffb90451c2c81d4eb82cbc_tmp.sol:311:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(0, starbaseCompanyAddr, initialCompanysTokenAllocation);
+        ^--------------------------------------------------------------^
+0xf70a642bd387f94380ffb90451c2c81d4eb82cbc_tmp.sol:389:9: Warning: Invoking events without "emit" prefix is deprecated.
+        PublicOfferingPlanDeclared(tokenCount, unlockCompanysTokensAt);
+        ^------------------------------------------------------------^
+0xf70a642bd387f94380ffb90451c2c81d4eb82cbc_tmp.sol:457:9: Warning: Invoking events without "emit" prefix is deprecated.
+        MvpLaunched(launchedAt);
+        ^---------------------^
+0xf70a642bd387f94380ffb90451c2c81d4eb82cbc_tmp.sol:510:9: Warning: Invoking events without "emit" prefix is deprecated.
+        LogNewFundraiser(fundraiserAddress, true);
+        ^---------------------------------------^
+0xf70a642bd387f94380ffb90451c2c81d4eb82cbc_tmp.sol:526:9: Warning: Invoking events without "emit" prefix is deprecated.
+        LogUpdateFundraiser(fundraiserAddress, isBonaFide);
+        ^------------------------------------------------^
+0xf70a642bd387f94380ffb90451c2c81d4eb82cbc_tmp.sol:668:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(from, to, value);
+        ^-----------------------^
+0xf70a642bd387f94380ffb90451c2c81d4eb82cbc_tmp.sol:157:3: Warning: No visibility specified. Defaulting to "public". 
+  function increaseApproval (address _spender, uint _addedValue)
+  ^ (Relevant source part starts here and spans across multiple lines).
+0xf70a642bd387f94380ffb90451c2c81d4eb82cbc_tmp.sol:164:3: Warning: No visibility specified. Defaulting to "public". 
+  function decreaseApproval (address _spender, uint _subtractedValue)
+  ^ (Relevant source part starts here and spans across multiple lines).
+0xf70a642bd387f94380ffb90451c2c81d4eb82cbc_tmp.sol:179:5: Warning: No visibility specified. Defaulting to "public". 
+    function startDate() constant returns (uint256) {}
+    ^------------------------------------------------^
+0xf70a642bd387f94380ffb90451c2c81d4eb82cbc_tmp.sol:180:5: Warning: No visibility specified. Defaulting to "public". 
+    function endedAt() constant returns (uint256) {}
+    ^----------------------------------------------^
+0xf70a642bd387f94380ffb90451c2c81d4eb82cbc_tmp.sol:181:5: Warning: No visibility specified. Defaulting to "public". 
+    function isEnded() constant returns (bool);
+    ^-----------------------------------------^
+0xf70a642bd387f94380ffb90451c2c81d4eb82cbc_tmp.sol:182:5: Warning: No visibility specified. Defaulting to "public". 
+    function totalRaisedAmountInCny() constant returns (uint256);
+    ^-----------------------------------------------------------^
+0xf70a642bd387f94380ffb90451c2c81d4eb82cbc_tmp.sol:183:5: Warning: No visibility specified. Defaulting to "public". 
+    function numOfPurchasedTokensOnCsBy(address purchaser) constant returns (uint256);
+    ^--------------------------------------------------------------------------------^
+0xf70a642bd387f94380ffb90451c2c81d4eb82cbc_tmp.sol:184:5: Warning: No visibility specified. Defaulting to "public". 
+    function numOfPurchasedTokensOnEpBy(address purchaser) constant returns (uint256);
+    ^--------------------------------------------------------------------------------^
+0xf70a642bd387f94380ffb90451c2c81d4eb82cbc_tmp.sol:280:5: Warning: No visibility specified. Defaulting to "public". 
+    function StarbaseToken(
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xf70a642bd387f94380ffb90451c2c81d4eb82cbc_tmp.sol:8:3: Warning: Function state mutability can be restricted to pure
+  function mul(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+0xf70a642bd387f94380ffb90451c2c81d4eb82cbc_tmp.sol:14:3: Warning: Function state mutability can be restricted to pure
+  function div(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+0xf70a642bd387f94380ffb90451c2c81d4eb82cbc_tmp.sol:21:3: Warning: Function state mutability can be restricted to pure
+  function sub(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+0xf70a642bd387f94380ffb90451c2c81d4eb82cbc_tmp.sol:26:3: Warning: Function state mutability can be restricted to pure
+  function add(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+0xf70a642bd387f94380ffb90451c2c81d4eb82cbc_tmp.sol:179:5: Warning: Function state mutability can be restricted to pure
+    function startDate() constant returns (uint256) {}
+    ^------------------------------------------------^
+0xf70a642bd387f94380ffb90451c2c81d4eb82cbc_tmp.sol:180:5: Warning: Function state mutability can be restricted to pure
+    function endedAt() constant returns (uint256) {}
+    ^----------------------------------------------^
+- all funcs : 87
+- reachable : 36
+* Generating Paths ... took 0.00104s
+- paths : 201
+
+Iter : 10 To explore : 2970 Explored : 2979 Total elapsed : 63.819079
+Iter : 20 To explore : 5985 Explored : 15871 Total elapsed : 198.558496
+Iter : 30 To explore : 8172 Explored : 18068 Total elapsed : 199.22909
+Iter : 40 To explore : 10604 Explored : 20510 Total elapsed : 199.966111
+Iter : 50 To explore : 12661 Explored : 22577 Total elapsed : 200.586916
+Iter : 60 To explore : 14985 Explored : 24911 Total elapsed : 201.231364
+Iter : 70 To explore : 17687 Explored : 27623 Total elapsed : 201.892953
+Iter : 80 To explore : 22426 Explored : 32372 Total elapsed : 202.598726
+Iter : 90 To explore : 27829 Explored : 37785 Total elapsed : 203.544058
+Iter : 100 To explore : 32879 Explored : 42845 Total elapsed : 204.288266
+Iter : 110 To explore : 32944 Explored : 75795 Total elapsed : 239.423234
+Iter : 120 To explore : 32934 Explored : 75795 Total elapsed : 240.237859
+Iter : 130 To explore : 32924 Explored : 75795 Total elapsed : 240.932939
+Iter : 140 To explore : 32915 Explored : 75796 Total elapsed : 241.676169
+Iter : 150 To explore : 32905 Explored : 75796 Total elapsed : 242.408698
+Iter : 160 To explore : 32896 Explored : 75797 Total elapsed : 243.412581
+Iter : 170 To explore : 32886 Explored : 75797 Total elapsed : 244.311747
+Iter : 180 To explore : 26555 Explored : 135282 Total elapsed : 313.033385
+Iter : 190 To explore : 26545 Explored : 135282 Total elapsed : 346.628759
+Iter : 200 To explore : 26535 Explored : 135282 Total elapsed : 347.281065
+Iter : 210 To explore : 26525 Explored : 135282 Total elapsed : 347.901585
+Iter : 220 To explore : 26516 Explored : 135283 Total elapsed : 348.509475
+Iter : 230 To explore : 26506 Explored : 135283 Total elapsed : 349.099106
+Iter : 240 To explore : 26496 Explored : 135283 Total elapsed : 349.746682
+Iter : 250 To explore : 26487 Explored : 135284 Total elapsed : 350.570817
+Iter : 260 To explore : 26909 Explored : 135716 Total elapsed : 354.120205
+Iter : 270 To explore : 29059 Explored : 137876 Total elapsed : 368.327825
+Iter : 280 To explore : 31209 Explored : 140036 Total elapsed : 383.254023
+Iter : 290 To explore : 33323 Explored : 142160 Total elapsed : 398.322245
+Iter : 300 To explore : 35338 Explored : 144185 Total elapsed : 412.915729
+Iter : 310 To explore : 37359 Explored : 146216 Total elapsed : 427.305528
+Iter : 320 To explore : 39487 Explored : 148354 Total elapsed : 453.279274
+Iter : 330 To explore : 42472 Explored : 151349 Total elapsed : 468.405385
+Iter : 340 To explore : 45357 Explored : 154244 Total elapsed : 484.234433
+Iter : 350 To explore : 47452 Explored : 156349 Total elapsed : 499.537395
+Iter : 360 To explore : 49627 Explored : 158534 Total elapsed : 529.720729
+=== Report ===
+[1] [IO] line 64, (balances[msg.sender] - _value) : unproven
+[2] [IO] line 65, (balances[_to] + _value) : unproven
+[3] [IO] line 118, (balances[_from] - _value) : unproven
+[4] [IO] line 119, (balances[_to] + _value) : unproven
+[5] [IO] line 120, (_allowance - _value) : unproven
+[6] [IO] line 159, (allowed[msg.sender][_spender] + _addedValue) : unproven
+[7] [IO] line 170, (oldValue - _subtractedValue) : proven
+[8] [IO] line 265, (size + 4) : proven
+[9] [IO] line 370, (now - starbaseCrowdsale.endedAt()) : unproven
+[10] [IO] line 371, (unlockCompanysTokensAt - now) : unproven
+[11] [IO] line 376, (publicOfferingPlans.length - 1) : proven
+[12] [IO] line 377, (now - lastDeclaredAt) : unproven
+[13] [IO] line 381, (i + 1) : unproven
+[14] [IO] line 382, (totalDeclaredTokenCount + publicOfferingPlans[i].tokenCount) : unproven
+[15] [IO] line 418, (initialEcTokenAllocation[to] + value) : unproven
+[16] [IO] line 437, (totalSupply + value) : unproven
+[17] [IO] line 438, (balances[_for] + value) : unproven
+[18] [IO] line 485, (2 * 32) : proven
+[19] [IO] line 496, (3 * 32) : proven
+[20] [IO] line 563, (untransferableTokenCount + numOfUntransferableEcTokens(from)) : proven
+[21] [IO] line 569, (now - starbaseCrowdsale.endedAt()) : unproven
+[22] [IO] line 572, (untransferableTokenCount + starbaseCrowdsale.numOfPurchasedTokensOnCsBy(from)) : proven
+[23] [IO] line 576, (untransferableTokenCount + starbaseCrowdsale.numOfPurchasedTokensOnEpBy(from)) : proven
+[24] [IO] line 581, (balances[from] - untransferableTokenCount) : unproven
+[25] [IO] line 595, (i + 1) : unproven
+[26] [IO] line 598, (unlockedTokens + plan.tokenCount) : unproven
+[27] [IO] line 601, (balances[company] - (initialCompanysTokenAllocation - unlockedTokens)) : unproven
+[28] [IO] line 601, (initialCompanysTokenAllocation - unlockedTokens) : unproven
+[29] [IO] line 614, (now - mvpLaunchedAt) : unproven
+[30] [IO] line 621, ((initialCount / 52) * (passedWeeks - 52)) : unproven
+[31] [IO] line 621, (passedWeeks - 52) : unproven
+[32] [IO] line 625, (initialCount - transferableTokenCount) : unproven
+[33] [IO] line 637, (now - _endedAt) : unproven
+[34] [IO] line 638, (passedDays * 100) : proven
+[35] [IO] line 640, (i + 1) : proven
+[36] [IO] line 641, (inflatedSupply * 25) : proven
+[37] [IO] line 641, (inflatedSupply + ((inflatedSupply * 25) / 1000)) : proven
+[38] [IO] line 644, (passedDays * 100) : proven
+[39] [IO] line 647, (inflatedSupply * 25) : proven
+[40] [IO] line 648, (inflatableTokensOfNextYear * (remainderedDays * 100)) : proven
+[41] [IO] line 648, (inflatedSupply + ((inflatableTokensOfNextYear * (remainderedDays * 100)) / 36525)) : proven
+[42] [IO] line 648, (remainderedDays * 100) : proven
+[43] [IO] line 651, (inflatedSupply - totalSupply) : proven
+[44] [IO] line 666, (balances[from] - value) : proven
+[45] [IO] line 667, (balances[to] + value) : unproven
+[46] [DZ] line 569, ((now - starbaseCrowdsale.endedAt()) / 86400) : proven
+[47] [DZ] line 614, ((now - mvpLaunchedAt) / 604800) : proven
+[48] [DZ] line 621, (initialCount / 52) : proven
+[49] [DZ] line 637, ((now - _endedAt) / 86400) : proven
+[50] [DZ] line 638, ((passedDays * 100) / 36525) : proven
+[51] [DZ] line 641, ((inflatedSupply * 25) / 1000) : proven
+[52] [DZ] line 644, (((passedDays * 100) % 36525) / 100) : proven
+[53] [DZ] line 644, ((passedDays * 100) % 36525) : proven
+[54] [DZ] line 647, ((inflatedSupply * 25) / 1000) : proven
+[55] [DZ] line 648, ((inflatableTokensOfNextYear * (remainderedDays * 100)) / 36525) : proven
+
+=== Result Summary ===
+# Queries                : 55
+- integer over/underflow : 45
+- division-by-zero       : 10
+- assertion              : 0
+
+# Alarms                 : 26
+- integer over/underflow : 26
+- division-by-zero       : 0
+- assertion              : 0
+
+# Proven                 : 29
+- integer over/underflow : 19
+- division-by-zero       : 10
+- assertion              : 0
+
+Time Elapsed : 531.278835

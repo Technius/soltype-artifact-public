@@ -1,0 +1,92 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+2018-13783_tmp.sol:6:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function owned() public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13783_tmp.sol:51:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function TokenERC20(
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13783_tmp.sol:199:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function JiucaiToken (
+    ^ (Relevant source part starts here and spans across multiple lines).
+- all funcs : 46
+- reachable : 22
+* Generating Paths ... took 8.4e-05s
+- paths : 56
+
+Iter : 10 To explore : 861 Explored : 870 Total elapsed : 12.6513
+Iter : 20 To explore : 946 Explored : 1817 Total elapsed : 24.381318
+Iter : 30 To explore : 1640 Explored : 4165 Total elapsed : 33.001103
+Iter : 40 To explore : 2339 Explored : 4874 Total elapsed : 43.34909
+Iter : 50 To explore : 2416 Explored : 4961 Total elapsed : 63.882081
+Iter : 60 To explore : 2651 Explored : 5206 Total elapsed : 70.703282
+Iter : 70 To explore : 3346 Explored : 5911 Total elapsed : 91.490893
+Iter : 80 To explore : 3985 Explored : 6560 Total elapsed : 146.565577
+Iter : 90 To explore : 4469 Explored : 7054 Total elapsed : 206.531687
+Iter : 100 To explore : 4859 Explored : 7454 Total elapsed : 232.907807
+Iter : 110 To explore : 5306 Explored : 7911 Total elapsed : 239.146113
+Iter : 120 To explore : 5581 Explored : 13913 Total elapsed : 258.723784
+Iter : 130 To explore : 5957 Explored : 14299 Total elapsed : 266.332945
+Iter : 140 To explore : 6369 Explored : 14721 Total elapsed : 280.155902
+Iter : 150 To explore : 6767 Explored : 15129 Total elapsed : 287.330201
+Iter : 160 To explore : 7097 Explored : 15469 Total elapsed : 288.651838
+Iter : 170 To explore : 7452 Explored : 15834 Total elapsed : 299.862352
+Iter : 180 To explore : 7727 Explored : 16119 Total elapsed : 322.79587
+Iter : 190 To explore : 8081 Explored : 16483 Total elapsed : 336.470225
+Iter : 200 To explore : 8363 Explored : 16775 Total elapsed : 344.604585
+Iter : 210 To explore : 8631 Explored : 17053 Total elapsed : 352.547906
+Iter : 220 To explore : 8860 Explored : 17292 Total elapsed : 357.445255
+Iter : 230 To explore : 9111 Explored : 17553 Total elapsed : 389.751154
+Iter : 240 To explore : 9323 Explored : 17775 Total elapsed : 419.293701
+Iter : 250 To explore : 9497 Explored : 17959 Total elapsed : 462.554961
+Iter : 260 To explore : 9726 Explored : 18198 Total elapsed : 463.815065
+Iter : 270 To explore : 9881 Explored : 18363 Total elapsed : 466.553175
+Iter : 280 To explore : 9994 Explored : 18486 Total elapsed : 468.772291
+Iter : 290 To explore : 10161 Explored : 18663 Total elapsed : 472.387874
+Iter : 300 To explore : 10736 Explored : 19248 Total elapsed : 474.170039
+Iter : 310 To explore : 11176 Explored : 19698 Total elapsed : 477.306534
+Iter : 320 To explore : 11593 Explored : 20125 Total elapsed : 478.528108
+Iter : 330 To explore : 11919 Explored : 20461 Total elapsed : 479.764751
+Iter : 340 To explore : 12158 Explored : 20710 Total elapsed : 481.017345
+Iter : 350 To explore : 12348 Explored : 20910 Total elapsed : 482.266275
+Iter : 360 To explore : 12640 Explored : 21212 Total elapsed : 483.66079
+Iter : 370 To explore : 13063 Explored : 21645 Total elapsed : 512.161783
+=== Report ===
+[1] [IO] line 58, (10 ** uint256(decimals)) : unproven
+[2] [IO] line 58, (initialSupply * (10 ** uint256(decimals))) : unproven
+[3] [IO] line 108, (allowance[_from][msg.sender] - _value) : proven
+[4] [IO] line 158, (balanceOf[msg.sender] - _value) : proven
+[5] [IO] line 159, (totalSupply - _value) : unproven
+[6] [IO] line 175, (balanceOf[_from] - _value) : proven
+[7] [IO] line 176, (allowance[_from][msg.sender] - _value) : proven
+[8] [IO] line 177, (totalSupply - _value) : unproven
+[9] [IO] line 215, (balanceOf[_to] + _value) : unproven
+[10] [IO] line 218, (balanceOf[_from] - _value) : proven
+[11] [IO] line 219, (balanceOf[_to] + _value) : proven
+[12] [IO] line 227, (balanceOf[target] + mintedAmount) : unproven
+[13] [IO] line 228, (totalSupply + mintedAmount) : unproven
+[14] [IO] line 258, (price + priceInc) : unproven
+[15] [IO] line 265, (amount * price) : proven
+[16] [IO] line 267, ((amount * price) - transferFees) : unproven
+[17] [IO] line 267, (amount * price) : proven
+[18] [IO] line 269, (price - priceInc) : unproven
+[19] [DZ] line 255, (msg.value / price) : unproven
+
+=== Result Summary ===
+# Queries                : 19
+- integer over/underflow : 18
+- division-by-zero       : 1
+- assertion              : 0
+
+# Alarms                 : 11
+- integer over/underflow : 10
+- division-by-zero       : 1
+- assertion              : 0
+
+# Proven                 : 8
+- integer over/underflow : 8
+- division-by-zero       : 0
+- assertion              : 0
+
+Time Elapsed : 532.766378

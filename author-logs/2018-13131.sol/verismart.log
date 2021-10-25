@@ -1,0 +1,76 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+2018-13131_tmp.sol:198:3: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+  function DSPXToken(address _preSale, address _team) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13131_tmp.sol:268:3: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+  function SpadePreSale(address _team, address _icoAgent) public {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13131_tmp.sol:71:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(msg.sender, _to, _value);
+    ^-------------------------------^
+2018-13131_tmp.sol:129:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(_from, _to, _value);
+    ^--------------------------^
+2018-13131_tmp.sol:145:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Approval(msg.sender, _spender, _value);
+    ^------------------------------------^
+2018-13131_tmp.sol:167:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Approval(msg.sender, _spender, allowed[msg.sender][_spender]);
+    ^-----------------------------------------------------------^
+2018-13131_tmp.sol:178:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Approval(msg.sender, _spender, allowed[msg.sender][_spender]);
+    ^-----------------------------------------------------------^
+2018-13131_tmp.sol:213:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(0x0, holder, value);
+    ^--------------------------^
+2018-13131_tmp.sol:279:5: Warning: Invoking events without "emit" prefix is deprecated.
+    PreSaleStarted();
+    ^--------------^
+2018-13131_tmp.sol:286:5: Warning: Invoking events without "emit" prefix is deprecated.
+    PreSalePaused();
+    ^-------------^
+2018-13131_tmp.sol:293:5: Warning: Invoking events without "emit" prefix is deprecated.
+    PreSaleResumed();
+    ^--------------^
+2018-13131_tmp.sol:299:5: Warning: Invoking events without "emit" prefix is deprecated.
+    PreSaleFinished();
+    ^---------------^
+2018-13131_tmp.sol:310:5: Warning: Invoking events without "emit" prefix is deprecated.
+    TokenBuy(buyer, tokens, factor, txHash);
+    ^-------------------------------------^
+2018-13131_tmp.sol:198:3: Warning: No visibility specified. Defaulting to "public". 
+  function DSPXToken(address _preSale, address _team) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13131_tmp.sol:206:3: Warning: No visibility specified. Defaulting to "public". 
+  function mint(address holder, uint value) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+- all funcs : 67
+- reachable : 11
+* Generating Paths ... took 5e-05s
+- paths : 33
+
+=== Report ===
+[1] [IO] line 195, (888888888 * 1000000000000000000) : proven
+[2] [IO] line 209, (totalSupply + value) : unproven
+[3] [IO] line 211, (balances[holder] + value) : unproven
+[4] [IO] line 212, (totalSupply + value) : unproven
+
+=== Result Summary ===
+# Queries                : 4
+- integer over/underflow : 4
+- division-by-zero       : 0
+- assertion              : 0
+
+# Alarms                 : 3
+- integer over/underflow : 3
+- division-by-zero       : 0
+- assertion              : 0
+
+# Proven                 : 1
+- integer over/underflow : 1
+- division-by-zero       : 0
+- assertion              : 0
+
+Time Elapsed : 0.097342

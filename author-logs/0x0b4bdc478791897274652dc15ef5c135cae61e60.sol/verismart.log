@@ -1,0 +1,40 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+0x0b4bdc478791897274652dc15ef5c135cae61e60_tmp.sol:84:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function DAEXToken(address _target) public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x0b4bdc478791897274652dc15ef5c135cae61e60_tmp.sol:37:6: Warning: Invoking events without "emit" prefix is deprecated.
+    	Transfer(msg.sender, _to, _value);
+    	^-------------------------------^
+0x0b4bdc478791897274652dc15ef5c135cae61e60_tmp.sol:58:6: Warning: Invoking events without "emit" prefix is deprecated.
+    	Approval(msg.sender, _spender, _value);
+    	^------------------------------------^
+- all funcs : 26
+- reachable : 8
+* Generating Paths ... took 2.2e-05s
+- paths : 12
+
+=== Report ===
+[1] [IO] line 35, (balances[msg.sender] - _value) : proven
+[2] [IO] line 36, (balances[_to] + _value) : proven
+[3] [IO] line 86, (10 ** 27) : proven
+[4] [IO] line 86, (2 * (10 ** 27)) : proven
+
+=== Result Summary ===
+# Queries                : 4
+- integer over/underflow : 4
+- division-by-zero       : 0
+- assertion              : 0
+
+# Alarms                 : 0
+- integer over/underflow : 0
+- division-by-zero       : 0
+- assertion              : 0
+
+# Proven                 : 4
+- integer over/underflow : 4
+- division-by-zero       : 0
+- assertion              : 0
+
+Time Elapsed : 0.077809

@@ -1,0 +1,131 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+2018-13493_tmp.sol:39:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function owned() public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13493_tmp.sol:83:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function TokenERC20(
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13493_tmp.sol:237:8: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+       function DaddyToken(
+       ^ (Relevant source part starts here and spans across multiple lines).
+2018-13493_tmp.sol:53:28: Warning: Functions in interfaces should be declared external.
+interface tokenRecipient { function receiveApproval(address _from, uint256 _value, address _token, bytes _extraData) public; }
+                           ^-----------------------------------------------------------------------------------------------^
+2018-13493_tmp.sol:112:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(_from, _to, _value);
+        ^--------------------------^
+2018-13493_tmp.sol:192:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Burn(msg.sender, _value);
+        ^----------------------^
+2018-13493_tmp.sol:211:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Burn(_from, _value);
+        ^-----------------^
+2018-13493_tmp.sol:251:13: Warning: Invoking events without "emit" prefix is deprecated.
+            Transfer(owner, addresses[i], _value);
+            ^-----------------------------------^
+2018-13493_tmp.sol:272:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(_from, _to, _value);
+        ^--------------------------^
+2018-13493_tmp.sol:282:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(0, this, mintedAmount);
+        ^-----------------------------^
+2018-13493_tmp.sol:283:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(this, target, mintedAmount);
+        ^----------------------------------^
+2018-13493_tmp.sol:292:9: Warning: Invoking events without "emit" prefix is deprecated.
+        FrozenFunds(target, freeze);
+        ^-------------------------^
+2018-13493_tmp.sol:318:33: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+            bytes20 bonusHash = ripemd160(block.coinbase, block.number, block.timestamp);
+                                ^------------------------------------------------------^
+2018-13493_tmp.sol:332:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(address(this), msg.sender, tokensIssued);
+        ^-----------------------------------------------^
+2018-13493_tmp.sol:340:17: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+        require(this.balance >= amount * sellTokenPerEther);      // checks if the contract has enough ether to buy
+                ^----------^
+2018-13493_tmp.sol:9:5: Warning: Function state mutability can be restricted to pure
+    function mul(uint256 a, uint256 b) internal constant returns (uint256) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13493_tmp.sol:15:5: Warning: Function state mutability can be restricted to pure
+    function div(uint256 a, uint256 b) internal constant returns (uint256) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13493_tmp.sol:22:5: Warning: Function state mutability can be restricted to pure
+    function sub(uint256 a, uint256 b) internal constant returns (uint256) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13493_tmp.sol:27:5: Warning: Function state mutability can be restricted to pure
+    function add(uint256 a, uint256 b) internal constant returns (uint256) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+- all funcs : 51
+- reachable : 24
+* Generating Paths ... took 0.010315s
+- paths : 315
+
+Iter : 10 To explore : 1384 Explored : 1393 Total elapsed : 88.489549
+Iter : 20 To explore : 2441 Explored : 2460 Total elapsed : 93.684097
+Iter : 30 To explore : 3469 Explored : 3498 Total elapsed : 100.806774
+Iter : 40 To explore : 5115 Explored : 5154 Total elapsed : 199.221154
+Iter : 50 To explore : 6919 Explored : 6968 Total elapsed : 349.427206
+Iter : 60 To explore : 7818 Explored : 7877 Total elapsed : 366.035838
+Iter : 70 To explore : 9425 Explored : 9494 Total elapsed : 440.782024
+=== Report ===
+[1] [IO] line 89, (10 ** 18) : proven
+[2] [IO] line 89, (initialSupply * (10 ** 18)) : unproven
+[3] [IO] line 140, (allowance[_from][msg.sender] - _value) : proven
+[4] [IO] line 188, (10 ** 18) : proven
+[5] [IO] line 188, (_value * (10 ** 18)) : unproven
+[6] [IO] line 190, (balanceOf[msg.sender] - _value) : proven
+[7] [IO] line 191, (totalSupply - _value) : unproven
+[8] [IO] line 208, (balanceOf[_from] - _value) : proven
+[9] [IO] line 209, (allowance[_from][msg.sender] - _value) : proven
+[10] [IO] line 210, (totalSupply - _value) : unproven
+[11] [IO] line 246, (10 ** 18) : proven
+[12] [IO] line 246, (_value * (10 ** 18)) : unproven
+[13] [IO] line 247, (i + 1) : proven
+[14] [IO] line 249, (balanceOf[owner] - _value) : unproven
+[15] [IO] line 250, (balanceOf[addresses[i]] + _value) : unproven
+[16] [IO] line 267, (balanceOf[_to] + _value) : unproven
+[17] [IO] line 270, (balanceOf[_from] - _value) : proven
+[18] [IO] line 271, (balanceOf[_to] + _value) : proven
+[19] [IO] line 279, (10 ** 18) : proven
+[20] [IO] line 279, (mintedAmount * (10 ** 18)) : unproven
+[21] [IO] line 280, (balanceOf[target] + mintedAmount) : unproven
+[22] [IO] line 281, (totalSupply + mintedAmount) : unproven
+[23] [IO] line 311, (totalContribution + msg.value) : unproven
+[24] [IO] line 313, (msg.value * buyTokenPerEther) : unproven
+[25] [IO] line 316, (tokensIssued + totalContribution) : unproven
+[26] [IO] line 320, ((((((((((bonusHash[1] & 1) != 0) ? 1 : 0) + (((bonusHash[1] & 2) != 0) ? 1 : 0)) + (((bonusHash[1] & 4) != 0) ? 1 : 0)) + (((bonusHash[1] & 8) != 0) ? 1 : 0)) + (((bonusHash[1] & 16) != 0) ? 1 : 0)) + (((bonusHash[1] & 32) != 0) ? 1 : 0)) + (((bonusHash[1] & 64) != 0) ? 1 : 0)) + (((bonusHash[1] & 128) != 0) ? 1 : 0)) : proven
+[27] [IO] line 320, (((((((((bonusHash[1] & 1) != 0) ? 1 : 0) + (((bonusHash[1] & 2) != 0) ? 1 : 0)) + (((bonusHash[1] & 4) != 0) ? 1 : 0)) + (((bonusHash[1] & 8) != 0) ? 1 : 0)) + (((bonusHash[1] & 16) != 0) ? 1 : 0)) + (((bonusHash[1] & 32) != 0) ? 1 : 0)) + (((bonusHash[1] & 64) != 0) ? 1 : 0)) : proven
+[28] [IO] line 320, ((((((((bonusHash[1] & 1) != 0) ? 1 : 0) + (((bonusHash[1] & 2) != 0) ? 1 : 0)) + (((bonusHash[1] & 4) != 0) ? 1 : 0)) + (((bonusHash[1] & 8) != 0) ? 1 : 0)) + (((bonusHash[1] & 16) != 0) ? 1 : 0)) + (((bonusHash[1] & 32) != 0) ? 1 : 0)) : proven
+[29] [IO] line 320, (((((((bonusHash[1] & 1) != 0) ? 1 : 0) + (((bonusHash[1] & 2) != 0) ? 1 : 0)) + (((bonusHash[1] & 4) != 0) ? 1 : 0)) + (((bonusHash[1] & 8) != 0) ? 1 : 0)) + (((bonusHash[1] & 16) != 0) ? 1 : 0)) : proven
+[30] [IO] line 320, ((((((bonusHash[1] & 1) != 0) ? 1 : 0) + (((bonusHash[1] & 2) != 0) ? 1 : 0)) + (((bonusHash[1] & 4) != 0) ? 1 : 0)) + (((bonusHash[1] & 8) != 0) ? 1 : 0)) : proven
+[31] [IO] line 320, (((((bonusHash[1] & 1) != 0) ? 1 : 0) + (((bonusHash[1] & 2) != 0) ? 1 : 0)) + (((bonusHash[1] & 4) != 0) ? 1 : 0)) : proven
+[32] [IO] line 320, ((((bonusHash[1] & 1) != 0) ? 1 : 0) + (((bonusHash[1] & 2) != 0) ? 1 : 0)) : proven
+[33] [IO] line 322, ((msg.value * 100) * bonusMultiplier) : unproven
+[34] [IO] line 322, (msg.value * 100) : unproven
+[35] [IO] line 323, (tokensIssued + bonusTokensIssued) : unproven
+[36] [IO] line 325, (totalBonusTokensIssued + bonusTokensIssued) : unproven
+[37] [IO] line 329, (totalSupply + tokensIssued) : unproven
+[38] [IO] line 330, (balanceOf[msg.sender] + tokensIssued) : unproven
+[39] [IO] line 340, (amount * sellTokenPerEther) : unproven
+[40] [IO] line 342, (amount * sellTokenPerEther) : unproven
+
+=== Result Summary ===
+# Queries                : 40
+- integer over/underflow : 40
+- division-by-zero       : 0
+- assertion              : 0
+
+# Alarms                 : 22
+- integer over/underflow : 22
+- division-by-zero       : 0
+- assertion              : 0
+
+# Proven                 : 18
+- integer over/underflow : 18
+- division-by-zero       : 0
+- assertion              : 0
+
+Time Elapsed : 540.2997

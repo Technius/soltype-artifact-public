@@ -1,0 +1,167 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+2018-12070_tmp.sol:6:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function owned() public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-12070_tmp.sol:45:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function TokenERC20(
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-12070_tmp.sol:187:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function SEC/*Token*/(
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-12070_tmp.sol:20:28: Warning: Functions in interfaces should be declared external.
+interface tokenRecipient { function receiveApproval(address _from, uint256 _value, address _token, bytes _extraData) public; }
+                           ^-----------------------------------------------------------------------------------------------^
+2018-12070_tmp.sol:72:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(_from, _to, _value);
+        ^--------------------------^
+2018-12070_tmp.sol:149:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Burn(msg.sender, _value);
+        ^----------------------^
+2018-12070_tmp.sol:167:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Burn(_from, _value);
+        ^-----------------^
+2018-12070_tmp.sol:226:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(_from, _to, _value);
+        ^--------------------------^
+2018-12070_tmp.sol:235:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(0, this, mintedAmount);
+        ^-----------------------------^
+2018-12070_tmp.sol:236:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(this, target, mintedAmount);
+        ^----------------------------------^
+2018-12070_tmp.sol:244:9: Warning: Invoking events without "emit" prefix is deprecated.
+        FrozenFunds(target, freeze);
+        ^-------------------------^
+2018-12070_tmp.sol:264:17: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+        require(this.balance >= amount * sellPrice);      // checks if the contract has enough ether to buy
+                ^----------^
+2018-12070_tmp.sol:188:9: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+        uint256 initialSupply,
+        ^-------------------^
+2018-12070_tmp.sol:189:9: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+        string tokenName,
+        ^--------------^
+2018-12070_tmp.sol:190:9: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+        string tokenSymbol
+        ^----------------^
+- all funcs : 41
+- reachable : 20
+* Generating Paths ... took 9.2e-05s
+- paths : 42
+
+Iter : 10 To explore : 487 Explored : 496 Total elapsed : 19.3268
+Iter : 20 To explore : 875 Explored : 894 Total elapsed : 20.416211
+Iter : 30 To explore : 1103 Explored : 2218 Total elapsed : 29.536435
+Iter : 40 To explore : 1077 Explored : 3203 Total elapsed : 55.20726
+Iter : 50 To explore : 1224 Explored : 3360 Total elapsed : 56.797088
+Iter : 60 To explore : 1360 Explored : 3506 Total elapsed : 70.738135
+Iter : 70 To explore : 1379 Explored : 3535 Total elapsed : 72.337704
+Iter : 80 To explore : 1421 Explored : 3587 Total elapsed : 86.537319
+Iter : 90 To explore : 1725 Explored : 3901 Total elapsed : 88.689676
+Iter : 100 To explore : 2197 Explored : 4383 Total elapsed : 99.3291
+Iter : 110 To explore : 2656 Explored : 4852 Total elapsed : 100.727911
+Iter : 120 To explore : 3028 Explored : 5234 Total elapsed : 102.023455
+Iter : 130 To explore : 3394 Explored : 5610 Total elapsed : 103.527819
+Iter : 140 To explore : 3702 Explored : 5928 Total elapsed : 106.232512
+Iter : 150 To explore : 4076 Explored : 6312 Total elapsed : 108.186556
+Iter : 160 To explore : 4414 Explored : 6660 Total elapsed : 109.727013
+Iter : 170 To explore : 4753 Explored : 7009 Total elapsed : 111.180372
+Iter : 180 To explore : 5037 Explored : 7303 Total elapsed : 113.341551
+Iter : 190 To explore : 5292 Explored : 7568 Total elapsed : 115.379719
+Iter : 200 To explore : 5537 Explored : 7823 Total elapsed : 117.163829
+Iter : 210 To explore : 5820 Explored : 8116 Total elapsed : 118.633063
+Iter : 220 To explore : 6071 Explored : 8377 Total elapsed : 128.727818
+Iter : 230 To explore : 6425 Explored : 8741 Total elapsed : 155.326078
+Iter : 240 To explore : 6705 Explored : 9031 Total elapsed : 158.193025
+Iter : 250 To explore : 7005 Explored : 9341 Total elapsed : 159.656243
+Iter : 260 To explore : 7305 Explored : 9651 Total elapsed : 181.833275
+Iter : 270 To explore : 7533 Explored : 9889 Total elapsed : 199.528073
+Iter : 280 To explore : 7732 Explored : 10098 Total elapsed : 200.770896
+Iter : 290 To explore : 8019 Explored : 10395 Total elapsed : 202.072414
+Iter : 300 To explore : 8119 Explored : 10505 Total elapsed : 204.016069
+Iter : 310 To explore : 8267 Explored : 10663 Total elapsed : 232.030252
+Iter : 320 To explore : 8439 Explored : 10845 Total elapsed : 255.676478
+Iter : 330 To explore : 8625 Explored : 11041 Total elapsed : 257.803413
+Iter : 340 To explore : 8779 Explored : 11205 Total elapsed : 280.015679
+Iter : 350 To explore : 8859 Explored : 11295 Total elapsed : 281.601122
+Iter : 360 To explore : 8998 Explored : 11444 Total elapsed : 283.07523
+Iter : 370 To explore : 9151 Explored : 11607 Total elapsed : 285.03699
+Iter : 380 To explore : 9240 Explored : 11706 Total elapsed : 292.411084
+Iter : 390 To explore : 9317 Explored : 11793 Total elapsed : 335.816167
+Iter : 400 To explore : 9483 Explored : 11969 Total elapsed : 346.117685
+Iter : 410 To explore : 9575 Explored : 12071 Total elapsed : 348.498992
+Iter : 420 To explore : 9624 Explored : 12130 Total elapsed : 349.869403
+Iter : 430 To explore : 9648 Explored : 12164 Total elapsed : 351.267576
+Iter : 440 To explore : 9790 Explored : 12316 Total elapsed : 352.908593
+Iter : 450 To explore : 9944 Explored : 12480 Total elapsed : 354.476433
+Iter : 460 To explore : 9990 Explored : 12536 Total elapsed : 365.906703
+Iter : 470 To explore : 10012 Explored : 12568 Total elapsed : 387.494203
+Iter : 480 To explore : 10018 Explored : 12584 Total elapsed : 396.91802
+Iter : 490 To explore : 10407 Explored : 12983 Total elapsed : 398.843886
+Iter : 500 To explore : 10699 Explored : 13285 Total elapsed : 425.901504
+Iter : 510 To explore : 10893 Explored : 13489 Total elapsed : 427.409604
+Iter : 520 To explore : 11159 Explored : 13765 Total elapsed : 467.432168
+Iter : 530 To explore : 11411 Explored : 14027 Total elapsed : 470.499612
+Iter : 540 To explore : 11595 Explored : 14221 Total elapsed : 484.317027
+Iter : 550 To explore : 11918 Explored : 14554 Total elapsed : 531.579703
+=== Report ===
+[1] [IO] line 50, (10 ** uint256(18)) : proven
+[2] [IO] line 50, (initialSupply * (10 ** uint256(18))) : proven
+[3] [IO] line 100, (allowance[_from][msg.sender] - _value) : proven
+[4] [IO] line 147, (balanceOf[msg.sender] - _value) : proven
+[5] [IO] line 148, (totalSupply - _value) : unproven
+[6] [IO] line 164, (balanceOf[_from] - _value) : proven
+[7] [IO] line 165, (allowance[_from][msg.sender] - _value) : proven
+[8] [IO] line 166, (totalSupply - _value) : unproven
+[9] [IO] line 197, (balanceOf[_to] + _value) : unproven
+[10] [IO] line 203, (10 ** 18) : proven
+[11] [IO] line 203, (1500000000 * (10 ** 18)) : proven
+[12] [IO] line 212, (365 * 86400) : proven
+[13] [IO] line 212, (start + (365 * 86400)) : proven
+[14] [IO] line 213, ((SECtotalAmount / 10) * 3) : proven
+[15] [IO] line 213, (balance - amount) : proven
+[16] [IO] line 215, (((2 * 365) + 1) * 86400) : proven
+[17] [IO] line 215, ((2 * 365) + 1) : proven
+[18] [IO] line 215, (2 * 365) : proven
+[19] [IO] line 215, (start + (((2 * 365) + 1) * 86400)) : proven
+[20] [IO] line 216, ((SECtotalAmount / 10) * 2) : proven
+[21] [IO] line 216, (balance - amount) : proven
+[22] [IO] line 218, (((3 * 365) + 1) * 86400) : proven
+[23] [IO] line 218, ((3 * 365) + 1) : proven
+[24] [IO] line 218, (3 * 365) : proven
+[25] [IO] line 218, (start + (((3 * 365) + 1) * 86400)) : proven
+[26] [IO] line 219, ((SECtotalAmount / 10) * 1) : proven
+[27] [IO] line 219, (balance - amount) : proven
+[28] [IO] line 224, (balanceOf[_from] - _value) : proven
+[29] [IO] line 225, (balanceOf[_to] + _value) : proven
+[30] [IO] line 233, (balanceOf[target] + mintedAmount) : unproven
+[31] [IO] line 234, (totalSupply + mintedAmount) : unproven
+[32] [IO] line 264, (amount * sellPrice) : unproven
+[33] [IO] line 266, (amount * sellPrice) : unproven
+[34] [DZ] line 213, (((SECtotalAmount / 10) * 3) / 4) : proven
+[35] [DZ] line 213, (SECtotalAmount / 10) : proven
+[36] [DZ] line 216, (((SECtotalAmount / 10) * 2) / 4) : proven
+[37] [DZ] line 216, (SECtotalAmount / 10) : proven
+[38] [DZ] line 219, (((SECtotalAmount / 10) * 1) / 4) : proven
+[39] [DZ] line 219, (SECtotalAmount / 10) : proven
+[40] [DZ] line 257, (msg.value / buyPrice) : unproven
+
+=== Result Summary ===
+# Queries                : 40
+- integer over/underflow : 33
+- division-by-zero       : 7
+- assertion              : 0
+
+# Alarms                 : 8
+- integer over/underflow : 7
+- division-by-zero       : 1
+- assertion              : 0
+
+# Proven                 : 32
+- integer over/underflow : 26
+- division-by-zero       : 6
+- assertion              : 0
+
+Time Elapsed : 531.580177

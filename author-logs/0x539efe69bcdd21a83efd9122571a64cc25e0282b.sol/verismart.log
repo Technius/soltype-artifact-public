@@ -1,0 +1,118 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+0x539efe69bcdd21a83efd9122571a64cc25e0282b_tmp.sol:26:3: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+  function Ownable() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+0x539efe69bcdd21a83efd9122571a64cc25e0282b_tmp.sol:232:3: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+  function BLUECoin() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+0x539efe69bcdd21a83efd9122571a64cc25e0282b_tmp.sol:44:5: Warning: Invoking events without "emit" prefix is deprecated.
+    OwnershipTransferred(owner, newOwner);
+    ^-----------------------------------^
+0x539efe69bcdd21a83efd9122571a64cc25e0282b_tmp.sol:89:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(msg.sender, _to, _value);
+    ^-------------------------------^
+0x539efe69bcdd21a83efd9122571a64cc25e0282b_tmp.sol:126:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(_from, _to, _value);
+    ^--------------------------^
+0x539efe69bcdd21a83efd9122571a64cc25e0282b_tmp.sol:142:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Approval(msg.sender, _spender, _value);
+    ^------------------------------------^
+0x539efe69bcdd21a83efd9122571a64cc25e0282b_tmp.sol:164:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Approval(msg.sender, _spender, allowed[msg.sender][_spender]);
+    ^-----------------------------------------------------------^
+0x539efe69bcdd21a83efd9122571a64cc25e0282b_tmp.sol:175:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Approval(msg.sender, _spender, allowed[msg.sender][_spender]);
+    ^-----------------------------------------------------------^
+0x539efe69bcdd21a83efd9122571a64cc25e0282b_tmp.sol:198:5: Warning: Invoking events without "emit" prefix is deprecated.
+    NonceTick(nonce);
+    ^--------------^
+0x539efe69bcdd21a83efd9122571a64cc25e0282b_tmp.sol:206:7: Warning: Invoking events without "emit" prefix is deprecated.
+      NoteChanged(note);
+      ^---------------^
+0x539efe69bcdd21a83efd9122571a64cc25e0282b_tmp.sol:214:5: Warning: Invoking events without "emit" prefix is deprecated.
+    PerformingDrop(addresses.length);
+    ^------------------------------^
+0x539efe69bcdd21a83efd9122571a64cc25e0282b_tmp.sol:224:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(owner, recipient, amt);
+        ^-----------------------------^
+0x539efe69bcdd21a83efd9122571a64cc25e0282b_tmp.sol:26:3: Warning: No visibility specified. Defaulting to "public". 
+  function Ownable() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+0x539efe69bcdd21a83efd9122571a64cc25e0282b_tmp.sol:162:3: Warning: No visibility specified. Defaulting to "public". 
+  function increaseApproval (address _spender, uint _addedValue) returns (bool success) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+0x539efe69bcdd21a83efd9122571a64cc25e0282b_tmp.sol:168:3: Warning: No visibility specified. Defaulting to "public". 
+  function decreaseApproval (address _spender, uint _subtractedValue) returns (bool success) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+0x539efe69bcdd21a83efd9122571a64cc25e0282b_tmp.sol:193:3: Warning: No visibility specified. Defaulting to "public". 
+  function incNonce() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+0x539efe69bcdd21a83efd9122571a64cc25e0282b_tmp.sol:232:3: Warning: No visibility specified. Defaulting to "public". 
+  function BLUECoin() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+0x539efe69bcdd21a83efd9122571a64cc25e0282b_tmp.sol:50:3: Warning: Function state mutability can be restricted to pure
+  function mulX(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+0x539efe69bcdd21a83efd9122571a64cc25e0282b_tmp.sol:56:3: Warning: Function state mutability can be restricted to pure
+  function divX(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+0x539efe69bcdd21a83efd9122571a64cc25e0282b_tmp.sol:63:3: Warning: Function state mutability can be restricted to pure
+  function sub(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+0x539efe69bcdd21a83efd9122571a64cc25e0282b_tmp.sol:68:3: Warning: Function state mutability can be restricted to pure
+  function add(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+- all funcs : 64
+- reachable : 17
+* Generating Paths ... took 5.3e-05s
+- paths : 32
+
+Iter : 10 To explore : 1705 Explored : 1714 Total elapsed : 12.628843
+Iter : 20 To explore : 3657 Explored : 3676 Total elapsed : 17.44935
+Iter : 30 To explore : 5660 Explored : 5689 Total elapsed : 28.655041
+Iter : 40 To explore : 6799 Explored : 6838 Total elapsed : 45.807175
+Iter : 50 To explore : 7907 Explored : 7956 Total elapsed : 64.916134
+Iter : 60 To explore : 8602 Explored : 16851 Total elapsed : 158.85151
+Iter : 70 To explore : 9174 Explored : 17433 Total elapsed : 230.7084
+Iter : 80 To explore : 9759 Explored : 18028 Total elapsed : 306.749176
+Iter : 90 To explore : 10190 Explored : 18469 Total elapsed : 360.727654
+Iter : 100 To explore : 10492 Explored : 18781 Total elapsed : 399.524784
+Iter : 110 To explore : 10769 Explored : 19068 Total elapsed : 463.539034
+Iter : 120 To explore : 10986 Explored : 19295 Total elapsed : 525.765816
+=== Report ===
+[1] [IO] line 87, (balances[msg.sender] - _value) : unproven
+[2] [IO] line 88, (balances[_to] + _value) : unproven
+[3] [IO] line 123, (balances[_from] - _value) : unproven
+[4] [IO] line 124, (balances[_to] - _value) : unproven
+[5] [IO] line 125, (_allowance - _value) : unproven
+[6] [IO] line 163, (allowed[msg.sender][_spender] + _addedValue) : unproven
+[7] [IO] line 173, (oldValue - _subtractedValue) : proven
+[8] [IO] line 186, (10 ** uint256(8)) : proven
+[9] [IO] line 186, (42000000 * (10 ** uint256(8))) : proven
+[10] [IO] line 194, (nonce + 1) : unproven
+[11] [IO] line 211, (10 ** 8) : proven
+[12] [IO] line 211, (amount * (10 ** 8)) : unproven
+[13] [IO] line 218, (amt * addresses.length) : unproven
+[14] [IO] line 219, (i + 1) : proven
+[15] [IO] line 222, (balances[owner] - amt) : unproven
+[16] [IO] line 223, (balances[recipient] + amt) : unproven
+
+=== Result Summary ===
+# Queries                : 16
+- integer over/underflow : 16
+- division-by-zero       : 0
+- assertion              : 0
+
+# Alarms                 : 11
+- integer over/underflow : 11
+- division-by-zero       : 0
+- assertion              : 0
+
+# Proven                 : 5
+- integer over/underflow : 5
+- division-by-zero       : 0
+- assertion              : 0
+
+Time Elapsed : 535.913655

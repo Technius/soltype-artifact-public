@@ -1,0 +1,142 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+2018-14063_tmp.sol:58:7: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+      function Tracto() {
+      ^ (Relevant source part starts here and spans across multiple lines).
+2018-14063_tmp.sol:64:14: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+          if(this.balance > 1000000000000000000){
+             ^----------^
+2018-14063_tmp.sol:65:28: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+            owner.transfer(this.balance);
+                           ^----------^
+2018-14063_tmp.sol:87:5: Warning: Invoking events without "emit" prefix is deprecated.
+		  Transfer(msg.sender, _to, _amount);
+		  ^--------------------------------^
+2018-14063_tmp.sol:112:12: Warning: Invoking events without "emit" prefix is deprecated.
+           Transfer(_from, _to, _amount);
+           ^---------------------------^
+2018-14063_tmp.sol:135:3: Warning: Invoking events without "emit" prefix is deprecated.
+		Approval(msg.sender, _spender, _amount);
+		^-------------------------------------^
+2018-14063_tmp.sol:149:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Approval(msg.sender, _spender, allowed[msg.sender][_spender]);
+        ^-----------------------------------------------------------^
+2018-14063_tmp.sol:162:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Approval(msg.sender, _spender, allowed[msg.sender][_spender]);
+        ^-----------------------------------------------------------^
+2018-14063_tmp.sol:12:7: Warning: No visibility specified. Defaulting to "public". 
+      function totalSupply() constant returns (uint256 totSupply);   
+      ^----------------------------------------------------------^
+2018-14063_tmp.sol:13:7: Warning: No visibility specified. Defaulting to "public". 
+      function balanceOf(address _owner) constant returns (uint256 balance);   
+      ^--------------------------------------------------------------------^
+2018-14063_tmp.sol:14:7: Warning: No visibility specified. Defaulting to "public". 
+      function transfer(address _to, uint256 _value) returns (bool success);	  
+      ^--------------------------------------------------------------------^
+2018-14063_tmp.sol:15:7: Warning: No visibility specified. Defaulting to "public". 
+      function transferFrom(address _from, address _to, uint256 _value) returns (bool success);   
+      ^---------------------------------------------------------------------------------------^
+2018-14063_tmp.sol:16:7: Warning: No visibility specified. Defaulting to "public". 
+      function approve(address _spender, uint256 _value) returns (bool success);   
+      ^------------------------------------------------------------------------^
+2018-14063_tmp.sol:17:7: Warning: No visibility specified. Defaulting to "public". 
+      function allowance(address _owner, address _spender) constant returns (uint256 remaining);             
+      ^----------------------------------------------------------------------------------------^
+2018-14063_tmp.sol:24:4: Warning: No visibility specified. Defaulting to "public". 
+	  function increaseApproval (address _spender, uint _addedValue) returns (bool success);
+	  ^------------------------------------------------------------------------------------^
+2018-14063_tmp.sol:25:4: Warning: No visibility specified. Defaulting to "public". 
+	  function decreaseApproval (address _spender, uint _subtractedValue) returns (bool success);
+	  ^-----------------------------------------------------------------------------------------^
+2018-14063_tmp.sol:26:7: Warning: No visibility specified. Defaulting to "public". 
+      function transferOwnership (address newOwner);
+      ^--------------------------------------------^
+2018-14063_tmp.sol:58:7: Warning: No visibility specified. Defaulting to "public". 
+      function Tracto() {
+      ^ (Relevant source part starts here and spans across multiple lines).
+2018-14063_tmp.sol:63:7: Warning: No visibility specified. Defaulting to "public". 
+      function () payable {
+      ^ (Relevant source part starts here and spans across multiple lines).
+2018-14063_tmp.sol:70:7: Warning: No visibility specified. Defaulting to "public". 
+      function balanceOf(address _owner) constant returns (uint256 balance) {
+      ^ (Relevant source part starts here and spans across multiple lines).
+2018-14063_tmp.sol:74:4: Warning: No visibility specified. Defaulting to "public". 
+	  function totalSupply() constant returns (uint256 totSupply) {
+   ^ (Relevant source part starts here and spans across multiple lines).
+2018-14063_tmp.sol:80:7: Warning: No visibility specified. Defaulting to "public". 
+      function transfer(address _to, uint256 _amount) notThisContract(_to) returns (bool success) {
+      ^ (Relevant source part starts here and spans across multiple lines).
+2018-14063_tmp.sol:98:7: Warning: No visibility specified. Defaulting to "public". 
+      function transferFrom(
+      ^ (Relevant source part starts here and spans across multiple lines).
+2018-14063_tmp.sol:126:5: Warning: No visibility specified. Defaulting to "public". 
+    function approve(address _spender, uint256 _amount) returns (bool) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-14063_tmp.sol:145:7: Warning: No visibility specified. Defaulting to "public". 
+      function increaseApproval (address _spender, uint _addedValue) 
+      ^ (Relevant source part starts here and spans across multiple lines).
+2018-14063_tmp.sol:153:7: Warning: No visibility specified. Defaulting to "public". 
+      function decreaseApproval (address _spender, uint _subtractedValue) 
+      ^ (Relevant source part starts here and spans across multiple lines).
+2018-14063_tmp.sol:166:6: Warning: No visibility specified. Defaulting to "public". 
+     function allowance(address _owner, address _spender) constant returns (uint256 remaining) {
+     ^ (Relevant source part starts here and spans across multiple lines).
+2018-14063_tmp.sol:170:5: Warning: No visibility specified. Defaulting to "public". 
+    function changeNameSymbol(string _name, string _symbol) onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-14063_tmp.sol:175:2: Warning: No visibility specified. Defaulting to "public". 
+	function transferOwnership(address newOwner) onlyOwner {
+ ^ (Relevant source part starts here and spans across multiple lines).
+- all funcs : 31
+- reachable : 14
+* Generating Paths ... took 4.6e-05s
+- paths : 30
+
+Iter : 10 To explore : 49 Explored : 131 Total elapsed : 1.053707
+Iter : 20 To explore : 11 Explored : 167 Total elapsed : 1.72647
+Iter : 30 To explore : 30 Explored : 196 Total elapsed : 2.678156
+Iter : 40 To explore : 34 Explored : 210 Total elapsed : 3.625191
+Iter : 50 To explore : 50 Explored : 236 Total elapsed : 4.586648
+Iter : 60 To explore : 51 Explored : 247 Total elapsed : 5.547386
+Iter : 70 To explore : 50 Explored : 256 Total elapsed : 6.502483
+Iter : 80 To explore : 52 Explored : 268 Total elapsed : 7.470531
+Iter : 90 To explore : 56 Explored : 282 Total elapsed : 8.445063
+Iter : 100 To explore : 51 Explored : 287 Total elapsed : 9.415901
+Iter : 110 To explore : 47 Explored : 293 Total elapsed : 10.394069
+Iter : 120 To explore : 41 Explored : 297 Total elapsed : 11.359948
+Iter : 130 To explore : 39 Explored : 305 Total elapsed : 12.354388
+Iter : 140 To explore : 38 Explored : 314 Total elapsed : 13.352505
+Iter : 150 To explore : 31 Explored : 317 Total elapsed : 14.33296
+Iter : 160 To explore : 24 Explored : 320 Total elapsed : 15.321614
+Iter : 170 To explore : 19 Explored : 325 Total elapsed : 16.319881
+Iter : 180 To explore : 12 Explored : 328 Total elapsed : 17.326741
+Iter : 190 To explore : 3 Explored : 329 Total elapsed : 18.352003
+=== Report ===
+[1] [IO] line 84, (balances[_to] + _amount) : proven
+[2] [IO] line 85, (balances[msg.sender] - _amount) : proven
+[3] [IO] line 86, (balances[_to] + _amount) : proven
+[4] [IO] line 107, (balances[_to] + _amount) : proven
+[5] [IO] line 109, (balances[_from] - _amount) : proven
+[6] [IO] line 110, (allowed[_from][msg.sender] - _amount) : proven
+[7] [IO] line 111, (balances[_to] + _amount) : proven
+[8] [IO] line 148, (allowed[msg.sender][_spender] + _addedValue) : unproven
+[9] [IO] line 160, (allowed[msg.sender][_spender] - _subtractedValue) : proven
+
+=== Result Summary ===
+# Queries                : 9
+- integer over/underflow : 9
+- division-by-zero       : 0
+- assertion              : 0
+
+# Alarms                 : 1
+- integer over/underflow : 1
+- division-by-zero       : 0
+- assertion              : 0
+
+# Proven                 : 8
+- integer over/underflow : 8
+- division-by-zero       : 0
+- assertion              : 0
+
+Time Elapsed : 18.657535

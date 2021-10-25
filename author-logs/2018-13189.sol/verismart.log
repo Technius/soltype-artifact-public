@@ -1,0 +1,157 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+2018-13189_tmp.sol:110:5: Warning: Use of the "var" keyword is deprecated.
+    var _allowance = allowed[_from][msg.sender];
+    ^------------^
+2018-13189_tmp.sol:165:3: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+  function Ownable() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13189_tmp.sol:264:3: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+  function UNLB() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13189_tmp.sol:290:3: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+  function ICO() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13189_tmp.sol:76:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(msg.sender, _to, _value);
+    ^-------------------------------^
+2018-13189_tmp.sol:118:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(_from, _to, _value);
+    ^--------------------------^
+2018-13189_tmp.sol:136:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Approval(msg.sender, _spender, _value);
+    ^------------------------------------^
+2018-13189_tmp.sol:224:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Pause();
+    ^-----^
+2018-13189_tmp.sol:233:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Unpause();
+    ^-------^
+2018-13189_tmp.sol:271:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(0x0, _x, _v);
+    ^-------------------^
+2018-13189_tmp.sol:316:5: Warning: Invoking events without "emit" prefix is deprecated.
+    ForeignBuy(_investor, _unlbValue, _txHash);
+    ^----------------------------------------^
+2018-13189_tmp.sol:333:25: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+    teamWallet.transfer(this.balance);
+                        ^----------^
+2018-13189_tmp.sol:41:3: Warning: No visibility specified. Defaulting to "public". 
+  function balanceOf(address who) constant returns (uint256);
+  ^---------------------------------------------------------^
+2018-13189_tmp.sol:42:3: Warning: No visibility specified. Defaulting to "public". 
+  function transfer(address to, uint256 value) returns (bool);
+  ^----------------------------------------------------------^
+2018-13189_tmp.sol:52:3: Warning: No visibility specified. Defaulting to "public". 
+  function allowance(address owner, address spender) constant returns (uint256);
+  ^----------------------------------------------------------------------------^
+2018-13189_tmp.sol:53:3: Warning: No visibility specified. Defaulting to "public". 
+  function transferFrom(address from, address to, uint256 value) returns (bool);
+  ^----------------------------------------------------------------------------^
+2018-13189_tmp.sol:54:3: Warning: No visibility specified. Defaulting to "public". 
+  function approve(address spender, uint256 value) returns (bool);
+  ^--------------------------------------------------------------^
+2018-13189_tmp.sol:73:3: Warning: No visibility specified. Defaulting to "public". 
+  function transfer(address _to, uint256 _value) returns (bool) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13189_tmp.sol:85:3: Warning: No visibility specified. Defaulting to "public". 
+  function balanceOf(address _owner) constant returns (uint256 balance) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13189_tmp.sol:109:3: Warning: No visibility specified. Defaulting to "public". 
+  function transferFrom(address _from, address _to, uint256 _value) returns (bool) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13189_tmp.sol:127:3: Warning: No visibility specified. Defaulting to "public". 
+  function approve(address _spender, uint256 _value) returns (bool) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13189_tmp.sol:146:3: Warning: No visibility specified. Defaulting to "public". 
+  function allowance(address _owner, address _spender) constant returns (uint256 remaining) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13189_tmp.sol:165:3: Warning: No visibility specified. Defaulting to "public". 
+  function Ownable() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13189_tmp.sol:183:3: Warning: No visibility specified. Defaulting to "public". 
+  function transferOwnership(address newOwner) onlyOwner {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13189_tmp.sol:222:3: Warning: No visibility specified. Defaulting to "public". 
+  function pause() onlyOwner whenNotPaused returns (bool) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13189_tmp.sol:231:3: Warning: No visibility specified. Defaulting to "public". 
+  function unpause() onlyOwner whenPaused returns (bool) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13189_tmp.sol:247:3: Warning: No visibility specified. Defaulting to "public". 
+  function transfer(address _to, uint _value) whenNotPaused returns (bool) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13189_tmp.sol:251:3: Warning: No visibility specified. Defaulting to "public". 
+  function transferFrom(address _from, address _to, uint _value) whenNotPaused returns (bool) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13189_tmp.sol:264:3: Warning: No visibility specified. Defaulting to "public". 
+  function UNLB() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13189_tmp.sol:290:3: Warning: No visibility specified. Defaulting to "public". 
+  function ICO() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13189_tmp.sol:8:3: Warning: Function state mutability can be restricted to pure
+  function mul(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13189_tmp.sol:14:3: Warning: Function state mutability can be restricted to pure
+  function div(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13189_tmp.sol:21:3: Warning: Function state mutability can be restricted to pure
+  function sub(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13189_tmp.sol:26:3: Warning: Function state mutability can be restricted to pure
+  function add(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+- all funcs : 105
+- reachable : 44
+* Generating Paths ... took 0.000102s
+- paths : 81
+
+Iter : 10 To explore : 66 Explored : 294 Total elapsed : 121.892434
+Iter : 20 To explore : 23 Explored : 395 Total elapsed : 204.520507
+Iter : 30 To explore : 11 Explored : 522 Total elapsed : 368.755446
+Iter : 40 To explore : 12 Explored : 658 Total elapsed : 533.625597
+=== Report ===
+[1] [IO] line 269, (balances[_x] + _v) : unproven
+[2] [IO] line 270, (totalSupply + _v) : unproven
+[3] [IO] line 297, (800 * 1000000000000000000) : proven
+[4] [IO] line 298, (750 * 1000000000000000000) : proven
+[5] [IO] line 299, (675 * 1000000000000000000) : proven
+[6] [IO] line 300, (575 * 1000000000000000000) : proven
+[7] [IO] line 301, (537 * 1000000000000000000) : proven
+[8] [IO] line 302, (500 * 1000000000000000000) : proven
+[9] [IO] line 308, (msg.value * pricePerWei()) : unproven
+[10] [IO] line 324, ((((100 - 12) - 15) - 5) - 3) : proven
+[11] [IO] line 324, (((100 - 12) - 15) - 5) : proven
+[12] [IO] line 324, ((100 - 12) - 15) : proven
+[13] [IO] line 324, (100 - 12) : proven
+[14] [IO] line 324, (unlb.totalSupply() * 100) : unproven
+[15] [IO] line 325, (_total * 12) : unproven
+[16] [IO] line 326, (_total * 15) : unproven
+[17] [IO] line 327, (_total * 5) : unproven
+[18] [IO] line 328, (_total * 3) : unproven
+[19] [DZ] line 308, ((msg.value * pricePerWei()) / 1000000000000000000) : proven
+[20] [DZ] line 324, ((unlb.totalSupply() * 100) / ((((100 - 12) - 15) - 5) - 3)) : proven
+[21] [DZ] line 325, ((_total * 12) / 100) : proven
+[22] [DZ] line 326, ((_total * 15) / 100) : proven
+[23] [DZ] line 327, ((_total * 5) / 100) : proven
+[24] [DZ] line 328, ((_total * 3) / 100) : proven
+
+=== Result Summary ===
+# Queries                : 24
+- integer over/underflow : 18
+- division-by-zero       : 6
+- assertion              : 0
+
+# Alarms                 : 8
+- integer over/underflow : 8
+- division-by-zero       : 0
+- assertion              : 0
+
+# Proven                 : 16
+- integer over/underflow : 10
+- division-by-zero       : 6
+- assertion              : 0
+
+Time Elapsed : 533.625681

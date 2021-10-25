@@ -1,0 +1,93 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+0xfAE4Ee59CDd86e3Be9e8b90b53AA866327D7c090_tmp.sol:29:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function TokenERC20(
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xfAE4Ee59CDd86e3Be9e8b90b53AA866327D7c090_tmp.sol:3:28: Warning: Functions in interfaces should be declared external.
+interface tokenRecipient { function receiveApproval(address _from, uint256 _value, address _token, bytes _extraData) public; }
+                           ^-----------------------------------------------------------------------------------------------^
+0xfAE4Ee59CDd86e3Be9e8b90b53AA866327D7c090_tmp.sol:58:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(_from, _to, _value);
+        ^--------------------------^
+0xfAE4Ee59CDd86e3Be9e8b90b53AA866327D7c090_tmp.sol:135:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Burn(msg.sender, _value);
+        ^----------------------^
+0xfAE4Ee59CDd86e3Be9e8b90b53AA866327D7c090_tmp.sol:153:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Burn(_from, _value);
+        ^-----------------^
+- all funcs : 14
+- reachable : 10
+* Generating Paths ... took 4.7e-05s
+- paths : 23
+
+Iter : 10 To explore : 76 Explored : 120 Total elapsed : 20.071934
+Iter : 20 To explore : 83 Explored : 264 Total elapsed : 75.390128
+Iter : 30 To explore : 126 Explored : 317 Total elapsed : 101.868362
+Iter : 40 To explore : 160 Explored : 361 Total elapsed : 176.743456
+Iter : 50 To explore : 184 Explored : 395 Total elapsed : 204.026741
+Iter : 60 To explore : 196 Explored : 417 Total elapsed : 228.683134
+Iter : 70 To explore : 229 Explored : 460 Total elapsed : 229.261773
+Iter : 80 To explore : 247 Explored : 488 Total elapsed : 243.095456
+Iter : 90 To explore : 257 Explored : 508 Total elapsed : 266.81992
+Iter : 100 To explore : 297 Explored : 558 Total elapsed : 267.721051
+Iter : 110 To explore : 318 Explored : 589 Total elapsed : 294.828338
+Iter : 120 To explore : 339 Explored : 620 Total elapsed : 372.205846
+Iter : 130 To explore : 371 Explored : 662 Total elapsed : 386.690212
+Iter : 140 To explore : 411 Explored : 712 Total elapsed : 387.298915
+Iter : 150 To explore : 438 Explored : 749 Total elapsed : 387.920239
+Iter : 160 To explore : 473 Explored : 794 Total elapsed : 388.557209
+Iter : 170 To explore : 488 Explored : 819 Total elapsed : 402.012154
+Iter : 180 To explore : 519 Explored : 860 Total elapsed : 403.058824
+Iter : 190 To explore : 536 Explored : 887 Total elapsed : 403.665346
+Iter : 200 To explore : 572 Explored : 933 Total elapsed : 404.274511
+Iter : 210 To explore : 591 Explored : 962 Total elapsed : 405.283662
+Iter : 220 To explore : 585 Explored : 966 Total elapsed : 429.125618
+Iter : 230 To explore : 577 Explored : 968 Total elapsed : 465.616619
+Iter : 240 To explore : 576 Explored : 977 Total elapsed : 490.256107
+Iter : 250 To explore : 606 Explored : 1017 Total elapsed : 490.867237
+Iter : 260 To explore : 625 Explored : 1046 Total elapsed : 491.472003
+Iter : 270 To explore : 646 Explored : 1077 Total elapsed : 492.079732
+Iter : 280 To explore : 660 Explored : 1101 Total elapsed : 492.693163
+Iter : 290 To explore : 659 Explored : 1110 Total elapsed : 493.302616
+Iter : 300 To explore : 656 Explored : 1117 Total elapsed : 493.912039
+Iter : 310 To explore : 658 Explored : 1129 Total elapsed : 494.519334
+Iter : 320 To explore : 658 Explored : 1139 Total elapsed : 495.124336
+Iter : 330 To explore : 663 Explored : 1154 Total elapsed : 495.737048
+Iter : 340 To explore : 659 Explored : 1160 Total elapsed : 496.350755
+Iter : 350 To explore : 650 Explored : 1161 Total elapsed : 496.952524
+Iter : 360 To explore : 678 Explored : 1199 Total elapsed : 522.54358
+Iter : 370 To explore : 715 Explored : 1246 Total elapsed : 523.163398
+Iter : 380 To explore : 753 Explored : 1294 Total elapsed : 523.786657
+=== Report ===
+[1] [IO] line 35, (10 ** uint256(decimals)) : proven
+[2] [IO] line 35, (initialSupply * (10 ** uint256(decimals))) : unproven
+[3] [IO] line 51, (balanceOf[_to] + _value) : unproven
+[4] [IO] line 53, (balanceOf[_from] + balanceOf[_to]) : unproven
+[5] [IO] line 55, (balanceOf[_from] - _value) : proven
+[6] [IO] line 57, (balanceOf[_to] + _value) : proven
+[7] [IO] line 60, (balanceOf[_from] + balanceOf[_to]) : unproven
+[8] [IO] line 86, (allowance[_from][msg.sender] - _value) : proven
+[9] [IO] line 133, (balanceOf[msg.sender] - _value) : proven
+[10] [IO] line 134, (totalSupply - _value) : proven
+[11] [IO] line 150, (balanceOf[_from] - _value) : proven
+[12] [IO] line 151, (allowance[_from][msg.sender] - _value) : proven
+[13] [IO] line 152, (totalSupply - _value) : proven
+
+=== Result Summary ===
+# Queries                : 13
+- integer over/underflow : 13
+- division-by-zero       : 0
+- assertion              : 0
+
+# Alarms                 : 4
+- integer over/underflow : 4
+- division-by-zero       : 0
+- assertion              : 0
+
+# Proven                 : 9
+- integer over/underflow : 9
+- division-by-zero       : 0
+- assertion              : 0
+
+Time Elapsed : 537.075747

@@ -1,0 +1,86 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+2018-13703_tmp.sol:33:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function CERB_Coin() public
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13703_tmp.sol:138:17: Warning: Use of the "var" keyword is deprecated.
+                var amountWith = this.balance - 10000000000000000;
+                ^------------^
+2018-13703_tmp.sol:151:17: Warning: Use of the "var" keyword is deprecated.
+                var totalTokenToMint = tokensToMint * (10 ** 18);
+                ^------------------^
+2018-13703_tmp.sol:70:21: Warning: Invoking events without "emit" prefix is deprecated.
+                    TransferSell(owner, rec_address, finalTokens,'Offline');
+                    ^-----------------------------------------------------^
+2018-13703_tmp.sol:91:16: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+        return this.balance;
+               ^----------^
+2018-13703_tmp.sol:138:34: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+                var amountWith = this.balance - 10000000000000000;
+                                 ^----------^
+2018-13703_tmp.sol:154:17: Warning: Invoking events without "emit" prefix is deprecated.
+                Transfer(0, owner, totalTokenToMint);
+                ^----------------------------------^
+2018-13703_tmp.sol:169:13: Warning: Invoking events without "emit" prefix is deprecated.
+            FrozenFunds(target, freeze);
+            ^-------------------------^
+2018-13703_tmp.sol:207:15: Warning: Invoking events without "emit" prefix is deprecated.
+              Transfer(_from, _to, _value);                                     // raise event
+              ^--------------------------^
+2018-13703_tmp.sol:248:11: Warning: Invoking events without "emit" prefix is deprecated.
+          Burn(msg.sender, _value);
+          ^----------------------^
+2018-13703_tmp.sol:259:11: Warning: Invoking events without "emit" prefix is deprecated.
+          Burn(_from, _value);
+          ^-----------------^
+- all funcs : 43
+- reachable : 35
+* Generating Paths ... took 0.000411s
+- paths : 144
+
+Iter : 10 To explore : 2688 Explored : 2697 Total elapsed : 156.078453
+Iter : 20 To explore : 5529 Explored : 5548 Total elapsed : 209.112551
+Iter : 30 To explore : 6478 Explored : 13368 Total elapsed : 260.049698
+Iter : 40 To explore : 6468 Explored : 13368 Total elapsed : 277.687815
+Iter : 50 To explore : 6465 Explored : 13375 Total elapsed : 418.644633
+Iter : 60 To explore : 8839 Explored : 15759 Total elapsed : 441.525655
+Iter : 70 To explore : 11137 Explored : 18067 Total elapsed : 477.340484
+Iter : 80 To explore : 12447 Explored : 32050 Total elapsed : 495.31064
+Iter : 90 To explore : 14028 Explored : 33641 Total elapsed : 512.748197
+=== Report ===
+[1] [IO] line 65, (10 ** 18) : proven
+[2] [IO] line 65, (token_amount * (10 ** 18)) : unproven
+[3] [IO] line 68, (remaining - finalTokens) : proven
+[4] [IO] line 138, (this.balance - 10000000000000000) : unproven
+[5] [IO] line 151, (10 ** 18) : proven
+[6] [IO] line 151, (tokensToMint * (10 ** 18)) : unproven
+[7] [IO] line 152, (balanceOf[owner] + totalTokenToMint) : unproven
+[8] [IO] line 153, (totalSupply + totalTokenToMint) : unproven
+[9] [IO] line 204, (balanceOf[_to] + _value) : unproven
+[10] [IO] line 205, (balanceOf[_from] - _value) : proven
+[11] [IO] line 206, (balanceOf[_to] + _value) : proven
+[12] [IO] line 223, (allowance[_from][msg.sender] - _value) : proven
+[13] [IO] line 246, (balanceOf[msg.sender] - _value) : proven
+[14] [IO] line 247, (totalSupply - _value) : unproven
+[15] [IO] line 256, (balanceOf[_from] - _value) : proven
+[16] [IO] line 257, (allowance[_from][msg.sender] - _value) : proven
+[17] [IO] line 258, (totalSupply - _value) : unproven
+
+=== Result Summary ===
+# Queries                : 17
+- integer over/underflow : 17
+- division-by-zero       : 0
+- assertion              : 0
+
+# Alarms                 : 8
+- integer over/underflow : 8
+- division-by-zero       : 0
+- assertion              : 0
+
+# Proven                 : 9
+- integer over/underflow : 9
+- division-by-zero       : 0
+- assertion              : 0
+
+Time Elapsed : 558.843618

@@ -1,0 +1,57 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+- all funcs : 58
+- reachable : 31
+* Generating Paths ... took 0.000263s
+- paths : 83
+
+=== Report ===
+[1] [IO] line 168, (10 ** uint256(decimals)) : proven
+[2] [IO] line 168, (40000 * (10 ** uint256(decimals))) : proven
+[3] [IO] line 178, (_totalSupply - balances[address(0)]) : unproven
+[4] [IO] line 191, (balances[msg.sender] - tokens) : unproven
+[5] [IO] line 192, (balances[to] + tokens) : unproven
+[6] [IO] line 204, (balances[from] - tokens) : unproven
+[7] [IO] line 205, (allowed[from][msg.sender] - tokens) : unproven
+[8] [IO] line 206, (balances[to] + tokens) : unproven
+[9] [IO] line 230, (_totalSupply - value) : proven
+[10] [IO] line 231, (balances[owner] - value) : proven
+[11] [IO] line 278, (stakeNum - 1) : proven
+[12] [IO] line 282, (holder.layerLocked + payment) : unproven
+[13] [IO] line 284, (stake.layerLockedTotal + payment) : unproven
+[14] [IO] line 300, (stakeNum - 1) : proven
+[15] [IO] line 305, (stake.layerLockedTotal - holder.layerLocked) : unproven
+[16] [IO] line 322, (stake.start + stakePeriod) : unproven
+[17] [IO] line 325, (stake.ethReward + totalEthRewards) : unproven
+[18] [IO] line 327, ((stake.end - stake.start) * amtByDay) : unproven
+[19] [IO] line 327, (stake.end - stake.start) : unproven
+[20] [IO] line 336, (stakeNum + 1) : unproven
+[21] [IO] line 350, (holder.time + stakePeriod) : unproven
+[22] [IO] line 360, (index - 1) : proven
+[23] [IO] line 367, (rwds.layerLocked * stake.layerxReward) : unproven
+[24] [IO] line 368, (rwds.layerLocked * stake.ethReward) : unproven
+[25] [IO] line 374, (balances[owner] - rwds.layersx) : unproven
+[26] [IO] line 375, (balances[msg.sender] + rwds.layersx) : unproven
+[27] [IO] line 399, (totalEthRewards + msg.value) : unproven
+[28] [DZ] line 327, (((stake.end - stake.start) * amtByDay) / 86400) : proven
+[29] [DZ] line 367, ((rwds.layerLocked * stake.layerxReward) / stake.layerLockedTotal) : unproven
+[30] [DZ] line 368, ((rwds.layerLocked * stake.ethReward) / stake.layerLockedTotal) : unproven
+
+=== Result Summary ===
+# Queries                : 30
+- integer over/underflow : 27
+- division-by-zero       : 3
+- assertion              : 0
+
+# Alarms                 : 22
+- integer over/underflow : 20
+- division-by-zero       : 2
+- assertion              : 0
+
+# Proven                 : 8
+- integer over/underflow : 7
+- division-by-zero       : 1
+- assertion              : 0
+
+Time Elapsed : 531.619406

@@ -1,0 +1,207 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:20:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function blockcdn(
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:52:27: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+		if(msg.sender == owner) throw;
+		                        ^---^
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:53:29: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if(now > closeTime) throw; 
+                            ^---^
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:54:29: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if(now < startTime) throw;
+                            ^---^
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:55:25: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if(isFundedMax) throw;
+                        ^---^
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:100:30: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if(now <= closeTime) throw;     
+                             ^---^
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:101:20: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+		if(isFundedMini) throw;             
+		                 ^---^
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:104:18: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+		if(value <= 0) throw;
+		               ^---^
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:106:13: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+            throw;
+            ^---^
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:117:27: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+	    if(now <= closeTime) throw;    
+	                         ^---^
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:118:20: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+		if(isFundedMini) throw;           
+		                 ^---^
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:121:18: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+		if(value <= 0) throw;
+		               ^---^
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:122:36: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if(!_fundaddr.send(value)) throw;
+                                   ^---^
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:132:26: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if(_value <= 0 ) throw;                                      // Check send token value > 0;
+                         ^---^
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:133:38: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+		if (balances[msg.sender] < _value) throw;                    // Check if the sender has enough
+		                                   ^---^
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:134:53: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if (balances[_to] + _value < balances[_to]) throw;           // Check for overflows
+                                                    ^---^
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:155:33: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if(msg.sender != owner) throw;
+                                ^---^
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:156:24: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+		if(now <= closeTime) throw;        
+		                     ^---^
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:157:21: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+		if(!isFundedMini) throw;               
+		                  ^---^
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:158:38: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if( balances[owner] < value) throw;
+                                     ^---^
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:169:27: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+		if(msg.sender != owner) throw;
+		                        ^---^
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:174:27: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+		if(msg.sender != owner) throw;
+		                        ^---^
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:180:31: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if(now <= closeTime ) throw;
+                              ^---^
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:181:27: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if(!isFundedMini) throw;
+                          ^---^
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:182:34: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if(this.balance < value) throw;
+                                 ^---^
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:183:33: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if(msg.sender != owner) throw;
+                                ^---^
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:73:16: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+            if(this.balance >= minFundedValue) {
+               ^----------^
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:76:16: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+            if(this.balance >= maxFundedValue) {
+               ^----------^
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:80:13: Warning: Invoking events without "emit" prefix is deprecated.
+            Transfer(owner, msg.sender, token);    
+            ^--------------------------------^
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:109:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(msg.sender, this, balances[msg.sender]); 
+        ^----------------------------------------------^
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:125:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(msg.sender, this, balances[_fundaddr]); 
+        ^---------------------------------------------^
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:163:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(owner, rewarder, value);    
+        ^------------------------------^
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:182:12: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+        if(this.balance < value) throw;
+           ^----------^
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:20:5: Warning: No visibility specified. Defaulting to "public". 
+    function blockcdn(
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:46:2: Warning: No visibility specified. Defaulting to "public". 
+	function () payable {
+ ^ (Relevant source part starts here and spans across multiple lines).
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:51:5: Warning: No visibility specified. Defaulting to "public". 
+    function buyBlockCDN() payable returns (bool success){
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:86:5: Warning: No visibility specified. Defaulting to "public". 
+    function balanceOf( address _owner) constant returns (uint256 value)
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:92:2: Warning: No visibility specified. Defaulting to "public". 
+	function balanceOfFund(address _owner) constant returns (uint256 value)
+ ^ (Relevant source part starts here and spans across multiple lines).
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:99:5: Warning: No visibility specified. Defaulting to "public". 
+    function reFund() payable returns (bool success) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:116:2: Warning: No visibility specified. Defaulting to "public". 
+	function reFundByOther(address _fundaddr) payable returns (bool success) {
+ ^ (Relevant source part starts here and spans across multiple lines).
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:131:5: Warning: No visibility specified. Defaulting to "public". 
+    function transfer(address _to, uint256 _value) payable returns (bool success) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:154:5: Warning: No visibility specified. Defaulting to "public". 
+    function sendRewardBlockCDN(address rewarder, uint256 value) payable returns (bool success) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:168:5: Warning: No visibility specified. Defaulting to "public". 
+    function modifyStartTime(uint256 _startTime) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:173:5: Warning: No visibility specified. Defaulting to "public". 
+    function modifyCloseTime(uint256 _closeTime) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x1e797Ce986C3CFF4472F7D38d5C4aba55DfEFE40_tmp.sol:179:5: Warning: No visibility specified. Defaulting to "public". 
+    function withDrawEth(uint256 value) payable returns (bool success) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+- all funcs : 20
+- reachable : 19
+* Generating Paths ... took 0.000203s
+- paths : 58
+
+Iter : 10 To explore : 1758 Explored : 1767 Total elapsed : 10.319215
+Iter : 20 To explore : 3588 Explored : 3607 Total elapsed : 30.812866
+Iter : 30 To explore : 5480 Explored : 5509 Total elapsed : 91.435021
+Iter : 40 To explore : 6739 Explored : 13210 Total elapsed : 112.410075
+Iter : 50 To explore : 7954 Explored : 14435 Total elapsed : 133.488345
+Iter : 60 To explore : 9089 Explored : 15580 Total elapsed : 138.462377
+Iter : 70 To explore : 9954 Explored : 16455 Total elapsed : 145.370247
+Iter : 80 To explore : 10858 Explored : 17369 Total elapsed : 147.576717
+Iter : 90 To explore : 11663 Explored : 18184 Total elapsed : 149.590214
+Iter : 100 To explore : 12385 Explored : 18916 Total elapsed : 151.658706
+Iter : 110 To explore : 12913 Explored : 19454 Total elapsed : 153.727309
+Iter : 120 To explore : 13368 Explored : 19919 Total elapsed : 160.755224
+Iter : 130 To explore : 13672 Explored : 20233 Total elapsed : 162.672062
+Iter : 140 To explore : 14005 Explored : 20576 Total elapsed : 171.809122
+Iter : 150 To explore : 14227 Explored : 20808 Total elapsed : 184.647505
+Iter : 160 To explore : 14347 Explored : 20938 Total elapsed : 192.927403
+Iter : 170 To explore : 15087 Explored : 21688 Total elapsed : 193.732445
+Iter : 180 To explore : 15912 Explored : 22523 Total elapsed : 193.83574
+Iter : 190 To explore : 16749 Explored : 23370 Total elapsed : 234.746518
+Iter : 200 To explore : 17423 Explored : 24054 Total elapsed : 234.850101
+Iter : 210 To explore : 18506 Explored : 25147 Total elapsed : 460.304699
+Iter : 220 To explore : 19731 Explored : 26382 Total elapsed : 491.159542
+=== Report ===
+[1] [IO] line 57, (closeTime - 1209600) : unproven
+[2] [IO] line 60, (((now - (closeTime - 1209600)) / 172800) + 1) : unproven
+[3] [IO] line 60, (closeTime - 1209600) : proven
+[4] [IO] line 60, (now - (closeTime - 1209600)) : proven
+[5] [IO] line 63, (token * 95) : unproven
+[6] [IO] line 64, (day - 1) : proven
+[7] [IO] line 68, (balances[msg.sender] + token) : unproven
+[8] [IO] line 72, (balances[owner] - token) : proven
+[9] [IO] line 79, (fundValue[msg.sender] + msg.value) : unproven
+[10] [IO] line 107, (balances[owner] + balances[msg.sender]) : unproven
+[11] [IO] line 123, (balances[owner] + balances[_fundaddr]) : unproven
+[12] [IO] line 134, (balances[_to] + _value) : unproven
+[13] [IO] line 137, (fundValue[msg.sender] - _value) : unproven
+[14] [IO] line 138, (balances[msg.sender] - _value) : proven
+[15] [IO] line 139, (balances[owner] + _value) : unproven
+[16] [IO] line 145, (balances[msg.sender] - _value) : proven
+[17] [IO] line 146, (balances[_to] + _value) : proven
+[18] [IO] line 159, (balances[rewarder] + value) : unproven
+[19] [IO] line 161, (balances[owner] - halfValue) : unproven
+[20] [IO] line 162, (totalSupply + halfValue) : unproven
+[21] [DZ] line 60, ((now - (closeTime - 1209600)) / 172800) : proven
+[22] [DZ] line 63, ((token * 95) / 100) : proven
+[23] [DZ] line 160, (value / 2) : proven
+
+=== Result Summary ===
+# Queries                : 23
+- integer over/underflow : 20
+- division-by-zero       : 3
+- assertion              : 0
+
+# Alarms                 : 13
+- integer over/underflow : 13
+- division-by-zero       : 0
+- assertion              : 0
+
+# Proven                 : 10
+- integer over/underflow : 7
+- division-by-zero       : 3
+- assertion              : 0
+
+Time Elapsed : 531.948457

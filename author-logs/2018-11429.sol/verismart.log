@@ -1,0 +1,169 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+2018-11429_tmp.sol:46:7: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+      throw;
+      ^---^
+2018-11429_tmp.sol:75:8: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+       throw;
+       ^---^
+2018-11429_tmp.sol:97:5: Warning: Use of the "var" keyword is deprecated.
+    var _allowance = allowed[_from][msg.sender];
+    ^------------^
+2018-11429_tmp.sol:130:3: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+  function ATL(address _ico) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-11429_tmp.sol:44:3: Warning: This declaration shadows a builtin symbol.
+  function assert(bool assertion) internal {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-11429_tmp.sol:83:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(msg.sender, _to, _value);
+    ^-------------------------------^
+2018-11429_tmp.sol:105:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(_from, _to, _value);
+    ^--------------------------^
+2018-11429_tmp.sol:110:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Approval(msg.sender, _spender, _value);
+    ^------------------------------------^
+2018-11429_tmp.sol:141:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(0x0, _holder, _value);
+    ^----------------------------^
+2018-11429_tmp.sol:53:3: Warning: No visibility specified. Defaulting to "public". 
+  function balanceOf(address who) constant returns (uint);
+  ^------------------------------------------------------^
+2018-11429_tmp.sol:54:3: Warning: No visibility specified. Defaulting to "public". 
+  function transfer(address to, uint value);
+  ^----------------------------------------^
+2018-11429_tmp.sol:59:3: Warning: No visibility specified. Defaulting to "public". 
+  function allowance(address owner, address spender) constant returns (uint);
+  ^-------------------------------------------------------------------------^
+2018-11429_tmp.sol:60:3: Warning: No visibility specified. Defaulting to "public". 
+  function transferFrom(address from, address to, uint value);
+  ^----------------------------------------------------------^
+2018-11429_tmp.sol:61:3: Warning: No visibility specified. Defaulting to "public". 
+  function approve(address spender, uint value);
+  ^--------------------------------------------^
+2018-11429_tmp.sol:80:3: Warning: No visibility specified. Defaulting to "public". 
+  function transfer(address _to, uint _value) onlyPayloadSize(2 * 32) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-11429_tmp.sol:86:3: Warning: No visibility specified. Defaulting to "public". 
+  function balanceOf(address _owner) constant returns (uint balance) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-11429_tmp.sol:96:3: Warning: No visibility specified. Defaulting to "public". 
+  function transferFrom(address _from, address _to, uint _value) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-11429_tmp.sol:108:3: Warning: No visibility specified. Defaulting to "public". 
+  function approve(address _spender, uint _value) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-11429_tmp.sol:113:3: Warning: No visibility specified. Defaulting to "public". 
+  function allowance(address _owner, address _spender) constant returns (uint remaining) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-11429_tmp.sol:130:3: Warning: No visibility specified. Defaulting to "public". 
+  function ATL(address _ico) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-11429_tmp.sol:28:3: Warning: Function state mutability can be restricted to pure
+  function max64(uint64 a, uint64 b) internal constant returns (uint64) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-11429_tmp.sol:32:3: Warning: Function state mutability can be restricted to pure
+  function min64(uint64 a, uint64 b) internal constant returns (uint64) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-11429_tmp.sol:36:3: Warning: Function state mutability can be restricted to pure
+  function max256(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-11429_tmp.sol:40:3: Warning: Function state mutability can be restricted to pure
+  function min256(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-11429_tmp.sol:44:3: Warning: Function state mutability can be restricted to pure
+  function assert(bool assertion) internal {
+  ^ (Relevant source part starts here and spans across multiple lines).
+- all funcs : 54
+- reachable : 11
+* Generating Paths ... took 4.4e-05s
+- paths : 19
+
+Iter : 10 To explore : 556 Explored : 565 Total elapsed : 3.385849
+Iter : 20 To explore : 604 Explored : 1170 Total elapsed : 7.404857
+Iter : 30 To explore : 658 Explored : 2682 Total elapsed : 8.984873
+Iter : 40 To explore : 648 Explored : 2682 Total elapsed : 13.678078
+Iter : 50 To explore : 691 Explored : 3576 Total elapsed : 24.734279
+Iter : 60 To explore : 922 Explored : 3817 Total elapsed : 25.560233
+Iter : 70 To explore : 967 Explored : 3872 Total elapsed : 28.928964
+Iter : 80 To explore : 492 Explored : 4366 Total elapsed : 40.066087
+Iter : 90 To explore : 510 Explored : 4394 Total elapsed : 41.41677
+Iter : 100 To explore : 533 Explored : 4427 Total elapsed : 45.066467
+Iter : 110 To explore : 561 Explored : 4465 Total elapsed : 45.732211
+Iter : 120 To explore : 493 Explored : 4956 Total elapsed : 47.067963
+Iter : 130 To explore : 508 Explored : 4981 Total elapsed : 48.253973
+Iter : 140 To explore : 533 Explored : 5016 Total elapsed : 51.431187
+Iter : 150 To explore : 476 Explored : 5493 Total elapsed : 63.60715
+Iter : 160 To explore : 478 Explored : 5505 Total elapsed : 64.647414
+Iter : 170 To explore : 483 Explored : 5520 Total elapsed : 65.812759
+Iter : 180 To explore : 556 Explored : 5603 Total elapsed : 71.276684
+Iter : 190 To explore : 512 Explored : 6141 Total elapsed : 82.699598
+Iter : 200 To explore : 525 Explored : 6164 Total elapsed : 85.78925
+Iter : 210 To explore : 480 Explored : 6642 Total elapsed : 96.761789
+Iter : 220 To explore : 490 Explored : 6662 Total elapsed : 97.781729
+Iter : 230 To explore : 503 Explored : 6685 Total elapsed : 100.061597
+Iter : 240 To explore : 530 Explored : 6722 Total elapsed : 110.446631
+Iter : 250 To explore : 567 Explored : 6769 Total elapsed : 121.139519
+Iter : 260 To explore : 620 Explored : 6832 Total elapsed : 131.834616
+Iter : 270 To explore : 522 Explored : 7360 Total elapsed : 137.648942
+Iter : 280 To explore : 535 Explored : 7383 Total elapsed : 140.35591
+Iter : 290 To explore : 545 Explored : 7403 Total elapsed : 141.561809
+Iter : 300 To explore : 563 Explored : 7431 Total elapsed : 142.442435
+Iter : 310 To explore : 579 Explored : 7457 Total elapsed : 157.972188
+Iter : 320 To explore : 598 Explored : 7486 Total elapsed : 178.485792
+Iter : 330 To explore : 627 Explored : 7525 Total elapsed : 199.19096
+Iter : 340 To explore : 502 Explored : 8018 Total elapsed : 234.133507
+Iter : 350 To explore : 515 Explored : 8041 Total elapsed : 251.715338
+Iter : 360 To explore : 525 Explored : 8061 Total elapsed : 259.286604
+Iter : 370 To explore : 545 Explored : 8091 Total elapsed : 271.011503
+Iter : 380 To explore : 568 Explored : 8124 Total elapsed : 291.713497
+Iter : 390 To explore : 583 Explored : 8149 Total elapsed : 302.415014
+Iter : 400 To explore : 595 Explored : 8171 Total elapsed : 323.251111
+Iter : 410 To explore : 626 Explored : 8212 Total elapsed : 344.171581
+Iter : 420 To explore : 520 Explored : 8751 Total elapsed : 367.344682
+Iter : 430 To explore : 533 Explored : 8774 Total elapsed : 384.936263
+Iter : 440 To explore : 543 Explored : 8794 Total elapsed : 392.291547
+Iter : 450 To explore : 556 Explored : 8817 Total elapsed : 413.118828
+Iter : 460 To explore : 572 Explored : 8843 Total elapsed : 443.974143
+Iter : 470 To explore : 591 Explored : 8872 Total elapsed : 444.815882
+Iter : 480 To explore : 613 Explored : 8904 Total elapsed : 445.55533
+Iter : 490 To explore : 626 Explored : 8927 Total elapsed : 466.292971
+Iter : 500 To explore : 663 Explored : 8974 Total elapsed : 487.097191
+Iter : 510 To explore : 811 Explored : 9132 Total elapsed : 495.964921
+Iter : 520 To explore : 946 Explored : 9277 Total elapsed : 496.800759
+Iter : 530 To explore : 1082 Explored : 9423 Total elapsed : 497.621051
+Iter : 540 To explore : 1213 Explored : 9564 Total elapsed : 500.630485
+Iter : 550 To explore : 1342 Explored : 9703 Total elapsed : 512.665155
+=== Report ===
+[1] [IO] line 74, (size + 4) : proven
+[2] [IO] line 80, (2 * 32) : proven
+[3] [IO] line 81, (balances[msg.sender] - _value) : unproven
+[4] [IO] line 82, (balances[_to] + _value) : unproven
+[5] [IO] line 102, (balances[_to] + _value) : unproven
+[6] [IO] line 103, (balances[_from] - _value) : unproven
+[7] [IO] line 104, (_allowance - _value) : unproven
+[8] [IO] line 124, ((150 * 1000000) * 1000000000000000000) : proven
+[9] [IO] line 124, (150 * 1000000) : proven
+[10] [IO] line 137, (totalSupply + _value) : unproven
+[11] [IO] line 139, (balances[_holder] + _value) : unproven
+[12] [IO] line 140, (totalSupply + _value) : unproven
+
+=== Result Summary ===
+# Queries                : 12
+- integer over/underflow : 12
+- division-by-zero       : 0
+- assertion              : 0
+
+# Alarms                 : 8
+- integer over/underflow : 8
+- division-by-zero       : 0
+- assertion              : 0
+
+# Proven                 : 4
+- integer over/underflow : 4
+- division-by-zero       : 0
+- assertion              : 0
+
+Time Elapsed : 533.990923

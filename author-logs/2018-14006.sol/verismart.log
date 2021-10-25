@@ -1,0 +1,185 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+2018-14006_tmp.sol:46:2: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+	function NGToken() public {
+ ^ (Relevant source part starts here and spans across multiple lines).
+2018-14006_tmp.sol:6:2: Warning: Functions in interfaces should be declared external.
+	function name() public view returns (string);
+	^-------------------------------------------^
+2018-14006_tmp.sol:7:2: Warning: Functions in interfaces should be declared external.
+	function symbol() public view returns (string);
+	^---------------------------------------------^
+2018-14006_tmp.sol:8:2: Warning: Functions in interfaces should be declared external.
+	function decimals() public view returns (uint8);
+	^----------------------------------------------^
+2018-14006_tmp.sol:9:2: Warning: Functions in interfaces should be declared external.
+	function totalSupply() public view returns (uint256);
+	^---------------------------------------------------^
+2018-14006_tmp.sol:10:2: Warning: Functions in interfaces should be declared external.
+	function balanceOf(address _owner) public view returns (uint256);
+	^---------------------------------------------------------------^
+2018-14006_tmp.sol:11:2: Warning: Functions in interfaces should be declared external.
+	function transfer2(address _to, uint256 _value) public returns (bool success);
+	^----------------------------------------------------------------------------^
+2018-14006_tmp.sol:12:2: Warning: Functions in interfaces should be declared external.
+	function transferFrom(address _from, address _to, uint256 _value) public returns (bool success);
+	^----------------------------------------------------------------------------------------------^
+2018-14006_tmp.sol:13:2: Warning: Functions in interfaces should be declared external.
+	function approve(address _spender, uint256 _value) public returns (bool success);
+	^-------------------------------------------------------------------------------^
+2018-14006_tmp.sol:14:2: Warning: Functions in interfaces should be declared external.
+	function allowance(address _owner, address _spender) public view returns (uint256);
+	^---------------------------------------------------------------------------------^
+2018-14006_tmp.sol:21:2: Warning: Functions in interfaces should be declared external.
+	function receiveApproval(address _from, uint256 _value, address _token, bytes _extraData) public; 
+	^-----------------------------------------------------------------------------------------------^
+2018-14006_tmp.sol:25:5: Warning: Functions in interfaces should be declared external.
+    function tokenFallback(address _from, uint256 _value, bytes _data) public;
+    ^------------------------------------------------------------------------^
+2018-14006_tmp.sol:80:4: Warning: Invoking events without "emit" prefix is deprecated.
+			Transfer(msg.sender, _to, _value);
+			^-------------------------------^
+2018-14006_tmp.sol:92:5: Warning: Invoking events without "emit" prefix is deprecated.
+		 	Transfer(msg.sender, _to[i], _value);
+		 	^----------------------------------^
+2018-14006_tmp.sol:107:5: Warning: Invoking events without "emit" prefix is deprecated.
+		 	Transfer(msg.sender, to, value);
+		 	^-----------------------------^
+2018-14006_tmp.sol:118:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(_from, _to, _value);
+        ^--------------------------^
+2018-14006_tmp.sol:120:3: Warning: Invoking events without "emit" prefix is deprecated.
+		Transfer(_from, _to, _value, empty);
+		^---------------------------------^
+2018-14006_tmp.sol:130:3: Warning: Invoking events without "emit" prefix is deprecated.
+		Approval(msg.sender, _spender, _value);
+		^------------------------------------^
+2018-14006_tmp.sol:145:3: Warning: Invoking events without "emit" prefix is deprecated.
+		Approval(msg.sender, _spender, allowed[msg.sender][_spender]);
+		^-----------------------------------------------------------^
+2018-14006_tmp.sol:155:3: Warning: Invoking events without "emit" prefix is deprecated.
+		Approval(msg.sender, _spender, allowed[msg.sender][_spender]);
+		^-----------------------------------------------------------^
+2018-14006_tmp.sol:178:36: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+			assert(_to.call.value(0)(bytes4(keccak256(_customFallback)), msg.sender, _value, _data));
+			                                ^------------------------^
+2018-14006_tmp.sol:178:36: Warning: The provided argument of type string memory is not implicitly convertible to expected type bytes memory.
+			assert(_to.call.value(0)(bytes4(keccak256(_customFallback)), msg.sender, _value, _data));
+			                                ^------------------------^
+2018-14006_tmp.sol:179:4: Warning: Invoking events without "emit" prefix is deprecated.
+			Transfer(msg.sender, _to, _value);
+			^-------------------------------^
+2018-14006_tmp.sol:180:4: Warning: Invoking events without "emit" prefix is deprecated.
+			Transfer(msg.sender, _to, _value, _data);
+			^--------------------------------------^
+2018-14006_tmp.sol:192:3: Warning: Invoking events without "emit" prefix is deprecated.
+		Transfer(msg.sender, _to, _value);
+		^-------------------------------^
+2018-14006_tmp.sol:193:3: Warning: Invoking events without "emit" prefix is deprecated.
+		Transfer(msg.sender, _to, _value, _data);
+		^--------------------------------------^
+2018-14006_tmp.sol:204:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(msg.sender, _to, _value);
+        ^-------------------------------^
+2018-14006_tmp.sol:205:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(msg.sender, _to, _value, _data);
+        ^--------------------------------------^
+2018-14006_tmp.sol:226:3: Warning: Invoking events without "emit" prefix is deprecated.
+		Burn(msg.sender, _value, totalSupply(), _data);
+		^--------------------------------------------^
+- all funcs : 60
+- reachable : 24
+* Generating Paths ... took 0.000148s
+- paths : 67
+
+Iter : 10 To explore : 741 Explored : 750 Total elapsed : 21.48373
+Iter : 20 To explore : 1427 Explored : 1446 Total elapsed : 22.030838
+Iter : 30 To explore : 2092 Explored : 2121 Total elapsed : 34.342416
+Iter : 40 To explore : 2733 Explored : 2772 Total elapsed : 34.498396
+Iter : 50 To explore : 3340 Explored : 3389 Total elapsed : 44.699972
+Iter : 60 To explore : 3893 Explored : 3952 Total elapsed : 45.142629
+Iter : 70 To explore : 4402 Explored : 4471 Total elapsed : 50.218397
+Iter : 80 To explore : 4517 Explored : 9047 Total elapsed : 76.228008
+Iter : 90 To explore : 4726 Explored : 9266 Total elapsed : 82.809809
+Iter : 100 To explore : 4716 Explored : 9266 Total elapsed : 99.663566
+Iter : 110 To explore : 4783 Explored : 9343 Total elapsed : 105.437441
+Iter : 120 To explore : 4948 Explored : 9518 Total elapsed : 123.526468
+Iter : 130 To explore : 5019 Explored : 9599 Total elapsed : 129.489194
+Iter : 140 To explore : 5377 Explored : 9967 Total elapsed : 135.989742
+Iter : 150 To explore : 5727 Explored : 10327 Total elapsed : 148.542995
+Iter : 160 To explore : 5861 Explored : 10471 Total elapsed : 151.260682
+Iter : 170 To explore : 6207 Explored : 10827 Total elapsed : 172.288047
+Iter : 180 To explore : 6358 Explored : 10988 Total elapsed : 175.17864
+Iter : 190 To explore : 6559 Explored : 11199 Total elapsed : 176.934543
+Iter : 200 To explore : 6871 Explored : 11521 Total elapsed : 179.273593
+Iter : 210 To explore : 6937 Explored : 11597 Total elapsed : 197.567075
+Iter : 220 To explore : 7361 Explored : 12031 Total elapsed : 205.955505
+Iter : 230 To explore : 7885 Explored : 12565 Total elapsed : 218.810334
+Iter : 240 To explore : 8354 Explored : 13044 Total elapsed : 239.653616
+Iter : 250 To explore : 9058 Explored : 13758 Total elapsed : 249.26544
+Iter : 260 To explore : 9657 Explored : 14367 Total elapsed : 288.092107
+Iter : 270 To explore : 10437 Explored : 15157 Total elapsed : 299.176378
+Iter : 280 To explore : 11113 Explored : 15843 Total elapsed : 319.537482
+Iter : 290 To explore : 11646 Explored : 16386 Total elapsed : 377.756945
+Iter : 300 To explore : 12385 Explored : 17135 Total elapsed : 389.769333
+Iter : 310 To explore : 13099 Explored : 17859 Total elapsed : 401.222683
+Iter : 320 To explore : 13780 Explored : 18550 Total elapsed : 411.89182
+Iter : 330 To explore : 14420 Explored : 19200 Total elapsed : 423.529532
+Iter : 340 To explore : 15161 Explored : 19951 Total elapsed : 432.633805
+Iter : 350 To explore : 15893 Explored : 20693 Total elapsed : 441.842582
+Iter : 360 To explore : 16569 Explored : 21379 Total elapsed : 450.385249
+Iter : 370 To explore : 17189 Explored : 22009 Total elapsed : 461.322542
+Iter : 380 To explore : 17810 Explored : 22640 Total elapsed : 469.820388
+Iter : 390 To explore : 18339 Explored : 23179 Total elapsed : 479.289943
+Iter : 400 To explore : 18870 Explored : 23720 Total elapsed : 487.779283
+Iter : 410 To explore : 19426 Explored : 24286 Total elapsed : 501.523976
+Iter : 420 To explore : 20011 Explored : 24881 Total elapsed : 510.937716
+Iter : 430 To explore : 20550 Explored : 25430 Total elapsed : 520.295561
+Iter : 440 To explore : 21121 Explored : 26011 Total elapsed : 529.966055
+=== Report ===
+[1] [IO] line 41, (10 ** 18) : proven
+[2] [IO] line 41, (20000000000 * (10 ** 18)) : proven
+[3] [IO] line 64, (INITIAL_SUPPLY - totalBurned) : unproven
+[4] [IO] line 78, (balances[msg.sender] - _value) : proven
+[5] [IO] line 79, (balances[_to] + _value) : unproven
+[6] [IO] line 87, (_value * _to.length) : unproven
+[7] [IO] line 88, (_value * _to.length) : unproven
+[8] [IO] line 89, (_value * _to.length) : unproven
+[9] [IO] line 89, (balances[msg.sender] - (_value * _to.length)) : proven
+[10] [IO] line 90, (i + 1) : proven
+[11] [IO] line 91, (balances[_to[i]] + _value) : unproven
+[12] [IO] line 101, (i + 1) : proven
+[13] [IO] line 105, (balances[msg.sender] - value) : proven
+[14] [IO] line 106, (balances[to] + value) : unproven
+[15] [IO] line 115, (balances[_from] - _value) : proven
+[16] [IO] line 116, (balances[_to] + _value) : unproven
+[17] [IO] line 117, (allowed[_from][msg.sender] - _value) : proven
+[18] [IO] line 144, (allowed[msg.sender][_spender] + _addValue) : unproven
+[19] [IO] line 153, (allowed[msg.sender][_spender] - _subValue) : proven
+[20] [IO] line 176, (balances[msg.sender] - _value) : proven
+[21] [IO] line 177, (balances[_to] + _value) : unproven
+[22] [IO] line 190, (balances[msg.sender] - _value) : proven
+[23] [IO] line 191, (balances[_to] + _value) : unproven
+[24] [IO] line 200, (balances[msg.sender] - _value) : proven
+[25] [IO] line 201, (balances[_to] + _value) : unproven
+[26] [IO] line 224, (balances[msg.sender] - _value) : proven
+[27] [IO] line 225, (totalBurned + _value) : unproven
+
+=== Result Summary ===
+# Queries                : 27
+- integer over/underflow : 27
+- division-by-zero       : 0
+- assertion              : 0
+
+# Alarms                 : 13
+- integer over/underflow : 13
+- division-by-zero       : 0
+- assertion              : 0
+
+# Proven                 : 14
+- integer over/underflow : 14
+- division-by-zero       : 0
+- assertion              : 0
+
+Time Elapsed : 530.853466

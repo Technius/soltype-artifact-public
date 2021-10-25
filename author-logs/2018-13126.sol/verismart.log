@@ -1,0 +1,63 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+2018-13126_tmp.sol:173:3: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+  function SpendToken(address _presale, address _team) public {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13126_tmp.sol:230:3: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+  function MoxyOnePresale() public {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13126_tmp.sol:71:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(msg.sender, _to, _value);
+    ^-------------------------------^
+2018-13126_tmp.sol:123:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(_from, _to, _value);
+    ^--------------------------^
+2018-13126_tmp.sol:141:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Approval(msg.sender, _spender, _value);
+    ^------------------------------------^
+2018-13126_tmp.sol:193:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(0x0, _holder, _value);
+    ^----------------------------^
+2018-13126_tmp.sol:244:5: Warning: Invoking events without "emit" prefix is deprecated.
+    PreSalePaused();
+    ^-------------^
+2018-13126_tmp.sol:256:5: Warning: Invoking events without "emit" prefix is deprecated.
+    PreSaleResumed();
+    ^--------------^
+2018-13126_tmp.sol:267:5: Warning: Invoking events without "emit" prefix is deprecated.
+    PreSaleFinished();
+    ^---------------^
+2018-13126_tmp.sol:292:5: Warning: Invoking events without "emit" prefix is deprecated.
+    TokenBuy(_buyer, boughtTokens);
+    ^----------------------------^
+- all funcs : 62
+- reachable : 11
+* Generating Paths ... took 5.9e-05s
+- paths : 30
+
+Iter : 10 To explore : 1 Explored : 14 Total elapsed : 0.513399
+=== Report ===
+[1] [IO] line 188, (totalSupply + _value) : unproven
+[2] [IO] line 190, (balances[_holder] + _value) : unproven
+[3] [IO] line 191, (totalSupply + _value) : unproven
+[4] [DZ] line 210, (1000000000000000000 / 1000) : proven
+[5] [DZ] line 286, (_value / pricePerToken) : proven
+
+=== Result Summary ===
+# Queries                : 5
+- integer over/underflow : 3
+- division-by-zero       : 2
+- assertion              : 0
+
+# Alarms                 : 3
+- integer over/underflow : 3
+- division-by-zero       : 0
+- assertion              : 0
+
+# Proven                 : 2
+- integer over/underflow : 0
+- division-by-zero       : 2
+- assertion              : 0
+
+Time Elapsed : 0.554603

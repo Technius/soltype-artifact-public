@@ -1,0 +1,121 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+0x888666CA69E0f178DED6D75b5726Cee99A87D698_tmp.sol:38:3: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+  function IconomiToken(
+  ^ (Relevant source part starts here and spans across multiple lines).
+0x888666CA69E0f178DED6D75b5726Cee99A87D698_tmp.sol:67:7: Warning: Invoking events without "emit" prefix is deprecated.
+      Transfer(msg.sender, _to, _value);
+      ^-------------------------------^
+0x888666CA69E0f178DED6D75b5726Cee99A87D698_tmp.sol:79:7: Warning: Invoking events without "emit" prefix is deprecated.
+      Transfer(_from, _to, _value);
+      ^--------------------------^
+0x888666CA69E0f178DED6D75b5726Cee99A87D698_tmp.sol:92:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Approval(msg.sender, _spender, _value);
+    ^------------------------------------^
+0x888666CA69E0f178DED6D75b5726Cee99A87D698_tmp.sol:102:5: Warning: Invoking events without "emit" prefix is deprecated.
+    BlockLockSet(_lockedUntilBlock);
+    ^-----------------------------^
+0x888666CA69E0f178DED6D75b5726Cee99A87D698_tmp.sol:112:5: Warning: Invoking events without "emit" prefix is deprecated.
+    NewOwner(_newOwner);
+    ^-----------------^
+0x888666CA69E0f178DED6D75b5726Cee99A87D698_tmp.sol:3:27: Warning: No visibility specified. Defaulting to "public". 
+contract tokenRecipient { function receiveApproval(address _from, uint256 _value, address _token, bytes _extraData); }
+                          ^----------------------------------------------------------------------------------------^
+0x888666CA69E0f178DED6D75b5726Cee99A87D698_tmp.sol:38:3: Warning: No visibility specified. Defaulting to "public". 
+  function IconomiToken(
+  ^ (Relevant source part starts here and spans across multiple lines).
+0x888666CA69E0f178DED6D75b5726Cee99A87D698_tmp.sol:55:3: Warning: No visibility specified. Defaulting to "public". 
+  function approveAndCall(address _spender, uint256 _value, bytes _extraData) returns (bool success) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+0x888666CA69E0f178DED6D75b5726Cee99A87D698_tmp.sol:63:3: Warning: No visibility specified. Defaulting to "public". 
+  function transfer(address _to, uint256 _value) blockLock(msg.sender) checkIfToContract(_to) returns (bool success) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+0x888666CA69E0f178DED6D75b5726Cee99A87D698_tmp.sol:74:3: Warning: No visibility specified. Defaulting to "public". 
+  function transferFrom(address _from, address _to, uint256 _value) blockLock(_from) checkIfToContract(_to) returns (bool success) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+0x888666CA69E0f178DED6D75b5726Cee99A87D698_tmp.sol:86:3: Warning: No visibility specified. Defaulting to "public". 
+  function balanceOf(address _owner) constant returns (uint256 balance) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+0x888666CA69E0f178DED6D75b5726Cee99A87D698_tmp.sol:90:3: Warning: No visibility specified. Defaulting to "public". 
+  function approve(address _spender, uint256 _value) returns (bool success) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+0x888666CA69E0f178DED6D75b5726Cee99A87D698_tmp.sol:96:3: Warning: No visibility specified. Defaulting to "public". 
+  function allowance(address _owner, address _spender) constant returns (uint256 remaining) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+0x888666CA69E0f178DED6D75b5726Cee99A87D698_tmp.sol:100:3: Warning: No visibility specified. Defaulting to "public". 
+  function setBlockLock(uint256 _lockedUntilBlock) onlyOwner returns (bool success) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+0x888666CA69E0f178DED6D75b5726Cee99A87D698_tmp.sol:106:3: Warning: No visibility specified. Defaulting to "public". 
+  function isLocked() constant returns (bool success) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+0x888666CA69E0f178DED6D75b5726Cee99A87D698_tmp.sol:110:3: Warning: No visibility specified. Defaulting to "public". 
+  function replaceOwner(address _newOwner) onlyOwner returns (bool success) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+- all funcs : 23
+- reachable : 15
+* Generating Paths ... took 0.000336s
+- paths : 58
+
+Iter : 10 To explore : 36 Explored : 64 Total elapsed : 3.855172
+Iter : 20 To explore : 55 Explored : 93 Total elapsed : 7.179534
+Iter : 30 To explore : 73 Explored : 121 Total elapsed : 10.526096
+Iter : 40 To explore : 83 Explored : 141 Total elapsed : 13.858349
+Iter : 50 To explore : 86 Explored : 154 Total elapsed : 17.28223
+Iter : 60 To explore : 103 Explored : 181 Total elapsed : 20.728215
+Iter : 70 To explore : 118 Explored : 206 Total elapsed : 24.169526
+Iter : 80 To explore : 121 Explored : 219 Total elapsed : 27.617991
+Iter : 90 To explore : 113 Explored : 221 Total elapsed : 31.027523
+Iter : 100 To explore : 118 Explored : 236 Total elapsed : 34.455741
+Iter : 110 To explore : 113 Explored : 241 Total elapsed : 37.863974
+Iter : 120 To explore : 110 Explored : 248 Total elapsed : 41.270691
+Iter : 130 To explore : 114 Explored : 262 Total elapsed : 44.710149
+Iter : 140 To explore : 119 Explored : 277 Total elapsed : 48.252131
+Iter : 150 To explore : 118 Explored : 286 Total elapsed : 51.722457
+Iter : 160 To explore : 127 Explored : 305 Total elapsed : 55.230268
+Iter : 170 To explore : 128 Explored : 316 Total elapsed : 58.7324
+Iter : 180 To explore : 128 Explored : 326 Total elapsed : 62.23071
+Iter : 190 To explore : 119 Explored : 327 Total elapsed : 65.780983
+Iter : 200 To explore : 109 Explored : 327 Total elapsed : 69.25743
+Iter : 210 To explore : 107 Explored : 335 Total elapsed : 72.724406
+Iter : 220 To explore : 101 Explored : 339 Total elapsed : 76.187877
+Iter : 230 To explore : 91 Explored : 339 Total elapsed : 79.655335
+Iter : 240 To explore : 101 Explored : 359 Total elapsed : 83.24632
+Iter : 250 To explore : 96 Explored : 364 Total elapsed : 86.826069
+Iter : 260 To explore : 86 Explored : 364 Total elapsed : 90.384981
+Iter : 270 To explore : 85 Explored : 373 Total elapsed : 93.920848
+Iter : 280 To explore : 80 Explored : 378 Total elapsed : 97.469047
+Iter : 290 To explore : 74 Explored : 382 Total elapsed : 101.028882
+Iter : 300 To explore : 68 Explored : 386 Total elapsed : 104.600118
+Iter : 310 To explore : 58 Explored : 386 Total elapsed : 108.161048
+Iter : 320 To explore : 50 Explored : 388 Total elapsed : 111.649611
+Iter : 330 To explore : 49 Explored : 397 Total elapsed : 115.30283
+Iter : 340 To explore : 41 Explored : 399 Total elapsed : 118.991772
+Iter : 350 To explore : 33 Explored : 401 Total elapsed : 122.608517
+Iter : 360 To explore : 25 Explored : 403 Total elapsed : 126.219207
+Iter : 370 To explore : 15 Explored : 403 Total elapsed : 129.80954
+Iter : 380 To explore : 7 Explored : 405 Total elapsed : 133.56914
+=== Report ===
+[1] [IO] line 65, (balances[msg.sender] - _value) : proven
+[2] [IO] line 66, (balances[_to] + _value) : proven
+[3] [IO] line 76, (balances[_to] + _value) : unproven
+[4] [IO] line 77, (balances[_from] - _value) : unproven
+[5] [IO] line 78, (allowed[_from][msg.sender] - _value) : proven
+
+=== Result Summary ===
+# Queries                : 5
+- integer over/underflow : 5
+- division-by-zero       : 0
+- assertion              : 0
+
+# Alarms                 : 2
+- integer over/underflow : 2
+- division-by-zero       : 0
+- assertion              : 0
+
+# Proven                 : 3
+- integer over/underflow : 3
+- division-by-zero       : 0
+- assertion              : 0
+
+Time Elapsed : 136.193914

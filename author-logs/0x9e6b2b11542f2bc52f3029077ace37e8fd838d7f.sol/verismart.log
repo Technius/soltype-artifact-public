@@ -1,0 +1,257 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:35:9: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        throw;
+        ^---^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:384:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(_from, _to, _value);
+        ^--------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:393:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Approval(_from, _spender, _value);
+        ^-------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:503:9: Warning: Invoking events without "emit" prefix is deprecated.
+        UpgradeProposal(_newVersion);
+        ^--------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:4:5: Warning: No visibility specified. Defaulting to "public". 
+    function parse(bytes32 _icap) constant returns(address, bytes32, bool);
+    ^---------------------------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:5:5: Warning: No visibility specified. Defaulting to "public". 
+    function institutions(bytes32 _institution) constant returns(address);
+    ^--------------------------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:9:5: Warning: No visibility specified. Defaulting to "public". 
+    function registryICAP() constant returns(RegistryICAPInterface);
+    ^--------------------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:10:5: Warning: No visibility specified. Defaulting to "public". 
+    function baseUnit(bytes32 _symbol) constant returns(uint8);
+    ^---------------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:11:5: Warning: No visibility specified. Defaulting to "public". 
+    function description(bytes32 _symbol) constant returns(string);
+    ^-------------------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:12:5: Warning: No visibility specified. Defaulting to "public". 
+    function owner(bytes32 _symbol) constant returns(address);
+    ^--------------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:13:5: Warning: No visibility specified. Defaulting to "public". 
+    function isOwner(address _owner, bytes32 _symbol) constant returns(bool);
+    ^-----------------------------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:14:5: Warning: No visibility specified. Defaulting to "public". 
+    function totalSupply(bytes32 _symbol) constant returns(uint);
+    ^-----------------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:15:5: Warning: No visibility specified. Defaulting to "public". 
+    function balanceOf(address _holder, bytes32 _symbol) constant returns(uint);
+    ^--------------------------------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:16:5: Warning: No visibility specified. Defaulting to "public". 
+    function isLocked(bytes32 _symbol) constant returns(bool);
+    ^--------------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:17:5: Warning: No visibility specified. Defaulting to "public". 
+    function issueAsset(bytes32 _symbol, uint _value, string _name, string _description, uint8 _baseUnit, bool _isReissuable) returns(bool);
+    ^--------------------------------------------------------------------------------------------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:18:5: Warning: No visibility specified. Defaulting to "public". 
+    function reissueAsset(bytes32 _symbol, uint _value) returns(bool);
+    ^----------------------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:19:5: Warning: No visibility specified. Defaulting to "public". 
+    function revokeAsset(bytes32 _symbol, uint _value) returns(bool);
+    ^---------------------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:20:5: Warning: No visibility specified. Defaulting to "public". 
+    function setProxy(address _address, bytes32 _symbol) returns(bool);
+    ^-----------------------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:21:5: Warning: No visibility specified. Defaulting to "public". 
+    function lockAsset(bytes32 _symbol) returns(bool);
+    ^------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:22:5: Warning: No visibility specified. Defaulting to "public". 
+    function proxyTransferFromToICAPWithReference(address _from, bytes32 _icap, uint _value, string _reference, address _sender) returns(bool);
+    ^-----------------------------------------------------------------------------------------------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:23:5: Warning: No visibility specified. Defaulting to "public". 
+    function proxyApprove(address _spender, uint _value, bytes32 _symbol, address _sender) returns(bool);
+    ^---------------------------------------------------------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:24:5: Warning: No visibility specified. Defaulting to "public". 
+    function allowance(address _from, address _spender, bytes32 _symbol) constant returns(uint);
+    ^------------------------------------------------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:25:5: Warning: No visibility specified. Defaulting to "public". 
+ ... function proxyTransferFromWithReference(address _from, address _to, uint _value, bytes32 _symbol, string _reference, address _sender) returns(bool); ... 
+     ^--------------------------------------------------------------------------------------------------------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:29:5: Warning: No visibility specified. Defaulting to "public". 
+    function _performTransferWithReference(address _to, uint _value, string _reference, address _sender) returns(bool);
+    ^-----------------------------------------------------------------------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:30:5: Warning: No visibility specified. Defaulting to "public". 
+    function _performTransferToICAPWithReference(bytes32 _icap, uint _value, string _reference, address _sender) returns(bool);
+    ^-------------------------------------------------------------------------------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:31:5: Warning: No visibility specified. Defaulting to "public". 
+    function _performApprove(address _spender, uint _value, address _sender) returns(bool);
+    ^-------------------------------------------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:32:5: Warning: No visibility specified. Defaulting to "public". 
+    function _performTransferFromWithReference(address _from, address _to, uint _value, string _reference, address _sender) returns(bool);
+    ^------------------------------------------------------------------------------------------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:33:5: Warning: No visibility specified. Defaulting to "public". 
+    function _performTransferFromToICAPWithReference(address _from, bytes32 _icap, uint _value, string _reference, address _sender) returns(bool);
+    ^--------------------------------------------------------------------------------------------------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:34:5: Warning: No visibility specified. Defaulting to "public". 
+    function _performGeneric(bytes _data, address _sender) payable returns(bytes32) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:34:30: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function _performGeneric(bytes _data, address _sender) payable returns(bytes32) {
+                             ^---------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:34:43: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function _performGeneric(bytes _data, address _sender) payable returns(bytes32) {
+                                          ^-------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:43:5: Warning: No visibility specified. Defaulting to "public". 
+    function totalSupply() constant returns(uint256 supply);
+    ^------------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:44:5: Warning: No visibility specified. Defaulting to "public". 
+    function balanceOf(address _owner) constant returns(uint256 balance);
+    ^-------------------------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:45:5: Warning: No visibility specified. Defaulting to "public". 
+    function transfer(address _to, uint256 _value) returns(bool success);
+    ^-------------------------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:46:5: Warning: No visibility specified. Defaulting to "public". 
+    function transferFrom(address _from, address _to, uint256 _value) returns(bool success);
+    ^--------------------------------------------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:47:5: Warning: No visibility specified. Defaulting to "public". 
+    function approve(address _spender, uint256 _value) returns(bool success);
+    ^-----------------------------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:48:5: Warning: No visibility specified. Defaulting to "public". 
+    function allowance(address _owner, address _spender) constant returns(uint256 remaining);
+    ^---------------------------------------------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:51:5: Warning: No visibility specified. Defaulting to "public". 
+    function decimals() constant returns(uint8);
+    ^------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:56:5: Warning: No visibility specified. Defaulting to "public". 
+    function _forwardApprove(address _spender, uint _value, address _sender) returns(bool);
+    ^-------------------------------------------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:57:5: Warning: No visibility specified. Defaulting to "public". 
+    function _forwardTransferFromWithReference(address _from, address _to, uint _value, string _reference, address _sender) returns(bool);
+    ^------------------------------------------------------------------------------------------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:58:5: Warning: No visibility specified. Defaulting to "public". 
+    function _forwardTransferFromToICAPWithReference(address _from, bytes32 _icap, uint _value, string _reference, address _sender) returns(bool);
+    ^--------------------------------------------------------------------------------------------------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:59:5: Warning: No visibility specified. Defaulting to "public". 
+    function balanceOf(address _owner) constant returns(uint);
+    ^--------------------------------------------------------^
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:120:5: Warning: No visibility specified. Defaulting to "public". 
+    function init(EToken2Interface _etoken2, string _symbol, string _name) returns(bool) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:158:5: Warning: No visibility specified. Defaulting to "public". 
+    function recoverTokens(uint _value) onlyAssetOwner() returns(bool) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:167:5: Warning: No visibility specified. Defaulting to "public". 
+    function totalSupply() constant returns(uint) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:178:5: Warning: No visibility specified. Defaulting to "public". 
+    function balanceOf(address _owner) constant returns(uint) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:190:5: Warning: No visibility specified. Defaulting to "public". 
+    function allowance(address _from, address _spender) constant returns(uint) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:199:5: Warning: No visibility specified. Defaulting to "public". 
+    function decimals() constant returns(uint8) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:211:5: Warning: No visibility specified. Defaulting to "public". 
+    function transfer(address _to, uint _value) returns(bool) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:226:5: Warning: No visibility specified. Defaulting to "public". 
+    function transferWithReference(address _to, uint _value, string _reference) returns(bool) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:238:5: Warning: No visibility specified. Defaulting to "public". 
+    function transferToICAP(bytes32 _icap, uint _value) returns(bool) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:253:5: Warning: No visibility specified. Defaulting to "public". 
+    function transferToICAPWithReference(bytes32 _icap, uint _value, string _reference) returns(bool) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:266:5: Warning: No visibility specified. Defaulting to "public". 
+    function transferFrom(address _from, address _to, uint _value) returns(bool) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:282:5: Warning: No visibility specified. Defaulting to "public". 
+    function transferFromWithReference(address _from, address _to, uint _value, string _reference) returns(bool) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:299:5: Warning: No visibility specified. Defaulting to "public". 
+    function _forwardTransferFromWithReference(address _from, address _to, uint _value, string _reference, address _sender) onlyImplementationFor(_sender) returns(bool) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:312:5: Warning: No visibility specified. Defaulting to "public". 
+    function transferFromToICAP(address _from, bytes32 _icap, uint _value) returns(bool) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:328:5: Warning: No visibility specified. Defaulting to "public". 
+    function transferFromToICAPWithReference(address _from, bytes32 _icap, uint _value, string _reference) returns(bool) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:345:5: Warning: No visibility specified. Defaulting to "public". 
+    function _forwardTransferFromToICAPWithReference(address _from, bytes32 _icap, uint _value, string _reference, address _sender) onlyImplementationFor(_sender) returns(bool) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:359:5: Warning: No visibility specified. Defaulting to "public". 
+    function approve(address _spender, uint _value) returns(bool) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:374:5: Warning: No visibility specified. Defaulting to "public". 
+    function _forwardApprove(address _spender, uint _value, address _sender) onlyImplementationFor(_sender) returns(bool) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:383:5: Warning: No visibility specified. Defaulting to "public". 
+    function emitTransfer(address _from, address _to, uint _value) onlyEToken2() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:392:5: Warning: No visibility specified. Defaulting to "public". 
+    function emitApprove(address _from, address _spender, uint _value) onlyEToken2() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:400:5: Warning: No visibility specified. Defaulting to "public". 
+    function () payable {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:445:5: Warning: No visibility specified. Defaulting to "public". 
+    function getVersionFor(address _sender) constant returns(address) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:454:5: Warning: No visibility specified. Defaulting to "public". 
+    function getLatestVersion() constant returns(address) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:463:5: Warning: No visibility specified. Defaulting to "public". 
+    function getPendingVersion() constant returns(address) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:472:5: Warning: No visibility specified. Defaulting to "public". 
+    function getPendingVersionTimestamp() constant returns(uint) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:487:5: Warning: No visibility specified. Defaulting to "public". 
+    function proposeUpgrade(address _newVersion) onlyAssetOwner() returns(bool) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:514:5: Warning: No visibility specified. Defaulting to "public". 
+    function purgeUpgrade() onlyAssetOwner() returns(bool) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:530:5: Warning: No visibility specified. Defaulting to "public". 
+    function commitUpgrade() returns(bool) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:549:5: Warning: No visibility specified. Defaulting to "public". 
+    function optOut() returns(bool) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:563:5: Warning: No visibility specified. Defaulting to "public". 
+    function optIn() returns(bool) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:569:5: Warning: No visibility specified. Defaulting to "public". 
+    function multiAsset() constant returns(EToken2Interface) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:63:5: Warning: Function state mutability can be restricted to pure
+    function _bytes32(string _input) internal constant returns(bytes32 result) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x9e6b2b11542f2bc52f3029077ace37e8fd838d7f_tmp.sol:154:5: Warning: Function state mutability can be restricted to view
+    function _getAsset() internal returns(AssetInterface) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+- all funcs : 85
+- reachable : 46
+* Generating Paths ... took 0.000188s
+- paths : 83
+
+Iter : 10 To explore : 9 Explored : 59 Total elapsed : 2.005094
+Iter : 20 To explore : 19 Explored : 79 Total elapsed : 5.895141
+Iter : 30 To explore : 15 Explored : 85 Total elapsed : 9.876275
+Iter : 40 To explore : 7 Explored : 87 Total elapsed : 13.836468
+=== Report ===
+[1] [IO] line 534, (pendingVersionTimestamp + UPGRADE_FREEZE_TIME) : unproven
+
+=== Result Summary ===
+# Queries                : 1
+- integer over/underflow : 1
+- division-by-zero       : 0
+- assertion              : 0
+
+# Alarms                 : 1
+- integer over/underflow : 1
+- division-by-zero       : 0
+- assertion              : 0
+
+# Proven                 : 0
+- integer over/underflow : 0
+- division-by-zero       : 0
+- assertion              : 0
+
+Time Elapsed : 17.06388

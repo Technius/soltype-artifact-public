@@ -1,0 +1,83 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+0xb7cb1c96db6b22b0d3d9536e0108d062bd488f74_tmp.sol:27:13: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+            throw;
+            ^---^
+0xb7cb1c96db6b22b0d3d9536e0108d062bd488f74_tmp.sol:40:13: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+            throw;
+            ^---^
+0xb7cb1c96db6b22b0d3d9536e0108d062bd488f74_tmp.sol:81:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function WaltonToken()
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xb7cb1c96db6b22b0d3d9536e0108d062bd488f74_tmp.sol:8:46: Warning: This declaration shadows an existing declaration.
+    function totalSupply() constant returns (uint256 totalSupply) {}
+                                             ^-----------------^
+0xb7cb1c96db6b22b0d3d9536e0108d062bd488f74_tmp.sol:8:5: The shadowed declaration is here:
+    function totalSupply() constant returns (uint256 totalSupply) {}
+    ^--------------------------------------------------------------^
+
+0xb7cb1c96db6b22b0d3d9536e0108d062bd488f74_tmp.sol:31:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(msg.sender, _to, _value);
+        ^-------------------------------^
+0xb7cb1c96db6b22b0d3d9536e0108d062bd488f74_tmp.sol:45:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(_from, _to, _value);
+        ^--------------------------^
+0xb7cb1c96db6b22b0d3d9536e0108d062bd488f74_tmp.sol:54:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Approval(msg.sender, _spender, _value);
+        ^------------------------------------^
+0xb7cb1c96db6b22b0d3d9536e0108d062bd488f74_tmp.sol:4:5: Warning: No visibility specified. Defaulting to "public". 
+    function transfer(address to, uint256 value) returns (bool success);
+    ^------------------------------------------------------------------^
+0xb7cb1c96db6b22b0d3d9536e0108d062bd488f74_tmp.sol:5:5: Warning: No visibility specified. Defaulting to "public". 
+    function transferFrom(address from, address to, uint256 value) returns (bool success);
+    ^------------------------------------------------------------------------------------^
+0xb7cb1c96db6b22b0d3d9536e0108d062bd488f74_tmp.sol:6:5: Warning: No visibility specified. Defaulting to "public". 
+    function approve(address spender, uint256 value) returns (bool success);
+    ^----------------------------------------------------------------------^
+0xb7cb1c96db6b22b0d3d9536e0108d062bd488f74_tmp.sol:8:5: Warning: No visibility specified. Defaulting to "public". 
+    function totalSupply() constant returns (uint256 totalSupply) {}
+    ^--------------------------------------------------------------^
+0xb7cb1c96db6b22b0d3d9536e0108d062bd488f74_tmp.sol:8:46: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function totalSupply() constant returns (uint256 totalSupply) {}
+                                             ^-----------------^
+0xb7cb1c96db6b22b0d3d9536e0108d062bd488f74_tmp.sol:9:5: Warning: No visibility specified. Defaulting to "public". 
+    function balanceOf(address owner) constant returns (uint256 balance);
+    ^-------------------------------------------------------------------^
+0xb7cb1c96db6b22b0d3d9536e0108d062bd488f74_tmp.sol:10:5: Warning: No visibility specified. Defaulting to "public". 
+    function allowance(address owner, address spender) constant returns (uint256 remaining);
+    ^--------------------------------------------------------------------------------------^
+0xb7cb1c96db6b22b0d3d9536e0108d062bd488f74_tmp.sol:8:5: Warning: Function state mutability can be restricted to pure
+    function totalSupply() constant returns (uint256 totalSupply) {}
+    ^--------------------------------------------------------------^
+- all funcs : 28
+- reachable : 8
+* Generating Paths ... took 2e-05s
+- paths : 11
+
+=== Report ===
+[1] [IO] line 29, (balances[msg.sender] - _value) : proven
+[2] [IO] line 30, (balances[_to] + _value) : proven
+[3] [IO] line 42, (balances[_to] + _value) : proven
+[4] [IO] line 43, (balances[_from] - _value) : proven
+[5] [IO] line 44, (allowed[_from][msg.sender] - _value) : proven
+[6] [IO] line 84, (10 ** 18) : proven
+[7] [IO] line 84, (70000000 * (10 ** 18)) : proven
+
+=== Result Summary ===
+# Queries                : 7
+- integer over/underflow : 7
+- division-by-zero       : 0
+- assertion              : 0
+
+# Alarms                 : 0
+- integer over/underflow : 0
+- division-by-zero       : 0
+- assertion              : 0
+
+# Proven                 : 7
+- integer over/underflow : 7
+- division-by-zero       : 0
+- assertion              : 0
+
+Time Elapsed : 1.354209

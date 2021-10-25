@@ -1,0 +1,93 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+0xb2135ab9695a7678dd590b1a996cb0f37bcb0718_tmp.sol:50:3: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+  function Ownable() public {
+  ^ (Relevant source part starts here and spans across multiple lines).
+0xb2135ab9695a7678dd590b1a996cb0f37bcb0718_tmp.sol:70:5: Warning: Invoking events without "emit" prefix is deprecated.
+    OwnershipTransferred(owner, newOwner);
+    ^-----------------------------------^
+0xb2135ab9695a7678dd590b1a996cb0f37bcb0718_tmp.sol:109:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Pause();
+    ^-----^
+0xb2135ab9695a7678dd590b1a996cb0f37bcb0718_tmp.sol:117:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Unpause();
+    ^-------^
+0xb2135ab9695a7678dd590b1a996cb0f37bcb0718_tmp.sol:155:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(msg.sender, _to, _value);
+    ^-------------------------------^
+0xb2135ab9695a7678dd590b1a996cb0f37bcb0718_tmp.sol:211:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(_from, _to, _value);
+    ^--------------------------^
+0xb2135ab9695a7678dd590b1a996cb0f37bcb0718_tmp.sol:227:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Approval(msg.sender, _spender, _value);
+    ^------------------------------------^
+0xb2135ab9695a7678dd590b1a996cb0f37bcb0718_tmp.sol:251:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Approval(msg.sender, _spender, allowed[msg.sender][_spender]);
+    ^-----------------------------------------------------------^
+0xb2135ab9695a7678dd590b1a996cb0f37bcb0718_tmp.sol:264:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Approval(msg.sender, _spender, allowed[msg.sender][_spender]);
+    ^-----------------------------------------------------------^
+0xb2135ab9695a7678dd590b1a996cb0f37bcb0718_tmp.sol:329:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Mint(_to, _amount);
+    ^----------------^
+0xb2135ab9695a7678dd590b1a996cb0f37bcb0718_tmp.sol:330:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(0x0, _to, _amount);
+    ^-------------------------^
+0xb2135ab9695a7678dd590b1a996cb0f37bcb0718_tmp.sol:340:5: Warning: Invoking events without "emit" prefix is deprecated.
+    MintFinished();
+    ^------------^
+- all funcs : 119
+- reachable : 16
+* Generating Paths ... took 6.6e-05s
+- paths : 33
+
+Iter : 10 To explore : 39 Explored : 83 Total elapsed : 5.868536
+Iter : 20 To explore : 26 Explored : 131 Total elapsed : 9.96793
+Iter : 30 To explore : 47 Explored : 162 Total elapsed : 48.752324
+Iter : 40 To explore : 47 Explored : 172 Total elapsed : 93.812871
+Iter : 50 To explore : 50 Explored : 185 Total elapsed : 124.801274
+Iter : 60 To explore : 54 Explored : 199 Total elapsed : 193.668981
+Iter : 70 To explore : 64 Explored : 219 Total elapsed : 194.66474
+Iter : 80 To explore : 65 Explored : 230 Total elapsed : 195.64697
+Iter : 90 To explore : 58 Explored : 233 Total elapsed : 196.630107
+Iter : 100 To explore : 62 Explored : 247 Total elapsed : 205.057975
+Iter : 110 To explore : 65 Explored : 260 Total elapsed : 206.070177
+Iter : 120 To explore : 64 Explored : 269 Total elapsed : 207.084036
+Iter : 130 To explore : 58 Explored : 273 Total elapsed : 208.105913
+Iter : 140 To explore : 50 Explored : 275 Total elapsed : 209.126301
+Iter : 150 To explore : 46 Explored : 281 Total elapsed : 210.157044
+Iter : 160 To explore : 43 Explored : 288 Total elapsed : 211.181013
+Iter : 170 To explore : 36 Explored : 291 Total elapsed : 212.225197
+Iter : 180 To explore : 29 Explored : 294 Total elapsed : 213.257663
+Iter : 190 To explore : 19 Explored : 294 Total elapsed : 214.273816
+Iter : 200 To explore : 12 Explored : 297 Total elapsed : 215.325752
+Iter : 210 To explore : 2 Explored : 297 Total elapsed : 216.368821
+=== Report ===
+[1] [IO] line 153, (balances[msg.sender] - _value) : unproven
+[2] [IO] line 154, (balances[_to] + _value) : unproven
+[3] [IO] line 208, (balances[_from] - _value) : unproven
+[4] [IO] line 209, (balances[_to] + _value) : unproven
+[5] [IO] line 210, (_allowance - _value) : unproven
+[6] [IO] line 250, (allowed[msg.sender][_spender] + _addedValue) : unproven
+[7] [IO] line 262, (oldValue - _subtractedValue) : proven
+[8] [IO] line 327, (totalSupply + _amount) : unproven
+[9] [IO] line 328, (balances[_to] + _amount) : unproven
+
+=== Result Summary ===
+# Queries                : 9
+- integer over/underflow : 9
+- division-by-zero       : 0
+- assertion              : 0
+
+# Alarms                 : 8
+- integer over/underflow : 8
+- division-by-zero       : 0
+- assertion              : 0
+
+# Proven                 : 1
+- integer over/underflow : 1
+- division-by-zero       : 0
+- assertion              : 0
+
+Time Elapsed : 216.58351

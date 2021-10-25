@@ -1,0 +1,221 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+2018-13722_tmp.sol:65:7: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+      throw;
+      ^---^
+2018-13722_tmp.sol:97:8: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+       throw;
+       ^---^
+2018-13722_tmp.sol:132:64: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+    if ((_value != 0) && (allowed[msg.sender][_spender] != 0)) throw;
+                                                               ^---^
+2018-13722_tmp.sol:265:3: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+  function UpgradeableToken(address _upgradeMaster) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13722_tmp.sol:277:9: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        throw;
+        ^---^
+2018-13722_tmp.sol:281:23: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+      if (value == 0) throw;
+                      ^---^
+2018-13722_tmp.sol:301:9: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        throw;
+        ^---^
+2018-13722_tmp.sol:304:25: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+      if (agent == 0x0) throw;
+                        ^---^
+2018-13722_tmp.sol:306:40: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+      if (msg.sender != upgradeMaster) throw;
+                                       ^---^
+2018-13722_tmp.sol:308:56: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+      if (getUpgradeState() == UpgradeState.Upgrading) throw;
+                                                       ^---^
+2018-13722_tmp.sol:313:42: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+      if(!upgradeAgent.isUpgradeAgent()) throw;
+                                         ^---^
+2018-13722_tmp.sol:315:57: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+      if (upgradeAgent.originalSupply() != totalSupply) throw;
+                                                        ^---^
+2018-13722_tmp.sol:336:26: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+      if (master == 0x0) throw;
+                         ^---^
+2018-13722_tmp.sol:337:40: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+      if (msg.sender != upgradeMaster) throw;
+                                       ^---^
+2018-13722_tmp.sol:388:9: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        throw;
+        ^---^
+2018-13722_tmp.sol:395:7: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+      throw;
+      ^---^
+2018-13722_tmp.sol:400:3: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+  function HYIPToken(address _owner, string _name, string _symbol, uint _totalSupply, uint _decimals) UpgradeableToken(_owner) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13722_tmp.sol:5:1: Warning: Source file does not specify required compiler version!Consider adding "pragma solidity ^0.4.26;"
+contract ERC20 {
+^ (Relevant source part starts here and spans across multiple lines).
+2018-13722_tmp.sol:63:3: Warning: This declaration shadows a builtin symbol.
+  function assert(bool assertion) internal {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13722_tmp.sol:105:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(msg.sender, _to, _value);
+    ^-------------------------------^
+2018-13722_tmp.sol:118:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(_from, _to, _value);
+    ^--------------------------^
+2018-13722_tmp.sol:135:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Approval(msg.sender, _spender, _value);
+    ^------------------------------------^
+2018-13722_tmp.sol:154:7: Warning: Invoking events without "emit" prefix is deprecated.
+      Approval(msg.sender, _spender, allowed[msg.sender][_spender]);
+      ^-----------------------------------------------------------^
+2018-13722_tmp.sol:174:7: Warning: Invoking events without "emit" prefix is deprecated.
+      Approval(msg.sender, _spender, allowed[msg.sender][_spender]);
+      ^-----------------------------------------------------------^
+2018-13722_tmp.sol:197:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Burned(burner, burnAmount);
+    ^------------------------^
+2018-13722_tmp.sol:291:7: Warning: Invoking events without "emit" prefix is deprecated.
+      Upgrade(msg.sender, upgradeAgent, value);
+      ^--------------------------------------^
+2018-13722_tmp.sol:317:7: Warning: Invoking events without "emit" prefix is deprecated.
+      UpgradeAgentSet(upgradeAgent);
+      ^---------------------------^
+2018-13722_tmp.sol:374:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(0, receiver, amount);
+    ^---------------------------^
+2018-13722_tmp.sol:382:5: Warning: Invoking events without "emit" prefix is deprecated.
+    MintingAgentChanged(addr, state);
+    ^------------------------------^
+2018-13722_tmp.sol:7:3: Warning: No visibility specified. Defaulting to "public". 
+  function balanceOf(address who) constant returns (uint);
+  ^------------------------------------------------------^
+2018-13722_tmp.sol:8:3: Warning: No visibility specified. Defaulting to "public". 
+  function allowance(address owner, address spender) constant returns (uint);
+  ^-------------------------------------------------------------------------^
+2018-13722_tmp.sol:10:3: Warning: No visibility specified. Defaulting to "public". 
+  function transfer(address to, uint value) returns (bool ok);
+  ^----------------------------------------------------------^
+2018-13722_tmp.sol:11:3: Warning: No visibility specified. Defaulting to "public". 
+  function transferFrom(address from, address to, uint value) returns (bool ok);
+  ^----------------------------------------------------------------------------^
+2018-13722_tmp.sol:12:3: Warning: No visibility specified. Defaulting to "public". 
+  function approve(address spender, uint value) returns (bool ok);
+  ^--------------------------------------------------------------^
+2018-13722_tmp.sol:102:3: Warning: No visibility specified. Defaulting to "public". 
+  function transfer(address _to, uint _value) onlyPayloadSize(2 * 32) returns (bool success) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13722_tmp.sol:109:3: Warning: No visibility specified. Defaulting to "public". 
+  function transferFrom(address _from, address _to, uint _value) returns (bool success) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13722_tmp.sol:122:3: Warning: No visibility specified. Defaulting to "public". 
+  function balanceOf(address _owner) constant returns (uint balance) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13722_tmp.sol:126:3: Warning: No visibility specified. Defaulting to "public". 
+  function approve(address _spender, uint _value) returns (bool success) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13722_tmp.sol:139:3: Warning: No visibility specified. Defaulting to "public". 
+  function allowance(address _owner, address _spender) constant returns (uint remaining) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13722_tmp.sol:149:3: Warning: No visibility specified. Defaulting to "public". 
+  function addApproval(address _spender, uint _addedValue)
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13722_tmp.sol:163:3: Warning: No visibility specified. Defaulting to "public". 
+  function subApproval(address _spender, uint _subtractedValue)
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13722_tmp.sol:193:3: Warning: No visibility specified. Defaulting to "public". 
+  function burn(uint burnAmount) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13722_tmp.sol:265:3: Warning: No visibility specified. Defaulting to "public". 
+  function UpgradeableToken(address _upgradeMaster) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13722_tmp.sol:400:3: Warning: No visibility specified. Defaulting to "public". 
+  function HYIPToken(address _owner, string _name, string _symbol, uint _totalSupply, uint _decimals) UpgradeableToken(_owner) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13722_tmp.sol:47:3: Warning: Function state mutability can be restricted to pure
+  function max64(uint64 a, uint64 b) internal constant returns (uint64) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13722_tmp.sol:51:3: Warning: Function state mutability can be restricted to pure
+  function min64(uint64 a, uint64 b) internal constant returns (uint64) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13722_tmp.sol:55:3: Warning: Function state mutability can be restricted to pure
+  function max256(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13722_tmp.sol:59:3: Warning: Function state mutability can be restricted to pure
+  function min256(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13722_tmp.sol:63:3: Warning: Function state mutability can be restricted to pure
+  function assert(bool assertion) internal {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13722_tmp.sol:216:3: Warning: Function state mutability can be restricted to pure
+  function isUpgradeAgent() public constant returns (bool) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13722_tmp.sol:344:3: Warning: Function state mutability can be restricted to pure
+  function canUpgrade() public constant returns(bool) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+- all funcs : 142
+- reachable : 25
+* Generating Paths ... took 0.000243s
+- paths : 75
+
+Iter : 10 To explore : 144 Explored : 280 Total elapsed : 7.098646
+Iter : 20 To explore : 281 Explored : 427 Total elapsed : 15.692903
+Iter : 30 To explore : 424 Explored : 580 Total elapsed : 50.845277
+Iter : 40 To explore : 588 Explored : 754 Total elapsed : 93.18594
+Iter : 50 To explore : 653 Explored : 829 Total elapsed : 95.554545
+Iter : 60 To explore : 898 Explored : 1084 Total elapsed : 132.94045
+Iter : 70 To explore : 1100 Explored : 1296 Total elapsed : 163.231192
+Iter : 80 To explore : 1222 Explored : 1428 Total elapsed : 165.628366
+Iter : 90 To explore : 1259 Explored : 1475 Total elapsed : 169.441628
+Iter : 100 To explore : 1349 Explored : 1575 Total elapsed : 172.382578
+Iter : 110 To explore : 1408 Explored : 1644 Total elapsed : 174.896235
+Iter : 120 To explore : 1450 Explored : 1696 Total elapsed : 178.920745
+Iter : 130 To explore : 1561 Explored : 1817 Total elapsed : 187.924908
+Iter : 140 To explore : 1621 Explored : 1887 Total elapsed : 191.69227
+Iter : 150 To explore : 1775 Explored : 2051 Total elapsed : 212.453359
+Iter : 160 To explore : 1857 Explored : 2143 Total elapsed : 217.934894
+Iter : 170 To explore : 2016 Explored : 2312 Total elapsed : 243.086627
+Iter : 180 To explore : 2140 Explored : 2446 Total elapsed : 249.503155
+Iter : 190 To explore : 2337 Explored : 2653 Total elapsed : 317.351931
+Iter : 200 To explore : 2472 Explored : 2798 Total elapsed : 364.509204
+Iter : 210 To explore : 2570 Explored : 2906 Total elapsed : 379.290551
+Iter : 220 To explore : 2715 Explored : 3061 Total elapsed : 475.340329
+Iter : 230 To explore : 2857 Explored : 3213 Total elapsed : 518.755859
+=== Report ===
+[1] [IO] line 96, (size + 4) : proven
+[2] [IO] line 102, (2 * 32) : proven
+[3] [IO] line 103, (balances[msg.sender] - _value) : unproven
+[4] [IO] line 104, (balances[_to] + _value) : unproven
+[5] [IO] line 115, (balances[_to] + _value) : unproven
+[6] [IO] line 116, (balances[_from] - _value) : unproven
+[7] [IO] line 117, (_allowance - _value) : unproven
+[8] [IO] line 150, (2 * 32) : proven
+[9] [IO] line 153, (oldValue + _addedValue) : unproven
+[10] [IO] line 164, (2 * 32) : proven
+[11] [IO] line 172, (oldVal - _subtractedValue) : proven
+[12] [IO] line 195, (balances[burner] - burnAmount) : unproven
+[13] [IO] line 196, (totalSupply - burnAmount) : unproven
+[14] [IO] line 283, (balances[msg.sender] - value) : unproven
+[15] [IO] line 286, (totalSupply - value) : unproven
+[16] [IO] line 287, (totalUpgraded + value) : unproven
+[17] [IO] line 369, (totalSupply + amount) : unproven
+[18] [IO] line 370, (balances[receiver] + amount) : unproven
+
+=== Result Summary ===
+# Queries                : 18
+- integer over/underflow : 18
+- division-by-zero       : 0
+- assertion              : 0
+
+# Alarms                 : 13
+- integer over/underflow : 13
+- division-by-zero       : 0
+- assertion              : 0
+
+# Proven                 : 5
+- integer over/underflow : 5
+- division-by-zero       : 0
+- assertion              : 0
+
+Time Elapsed : 549.648234

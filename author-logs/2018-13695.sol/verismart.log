@@ -1,0 +1,89 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+2018-13695_tmp.sol:50:7: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+      throw;
+      ^---^
+2018-13695_tmp.sol:118:64: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+    if ((_value != 0) && (allowed[msg.sender][_spender] != 0)) throw;
+                                                               ^---^
+2018-13695_tmp.sol:295:17: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        } else {throw;}
+                ^---^
+2018-13695_tmp.sol:48:3: Warning: This declaration shadows a builtin symbol.
+  function assert(bool assertion) internal {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13695_tmp.sol:93:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(msg.sender, _to, _value);
+    ^-------------------------------^
+2018-13695_tmp.sol:104:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(_from, _to, _value);
+    ^--------------------------^
+2018-13695_tmp.sol:121:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Approval(msg.sender, _spender, _value);
+    ^------------------------------------^
+2018-13695_tmp.sol:171:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(0, receiver, (amount*1 ether));
+    ^-------------------------------------^
+2018-13695_tmp.sol:60:3: Warning: No visibility specified. Defaulting to "public". 
+  function balanceOf(address who) constant returns (uint);
+  ^------------------------------------------------------^
+2018-13695_tmp.sol:61:3: Warning: No visibility specified. Defaulting to "public". 
+  function allowance(address owner, address spender) constant returns (uint);
+  ^-------------------------------------------------------------------------^
+2018-13695_tmp.sol:63:3: Warning: No visibility specified. Defaulting to "public". 
+  function transfer(address to, uint value) returns (bool ok);
+  ^----------------------------------------------------------^
+2018-13695_tmp.sol:64:3: Warning: No visibility specified. Defaulting to "public". 
+  function transferFrom(address from, address to, uint value) returns (bool ok);
+  ^----------------------------------------------------------------------------^
+2018-13695_tmp.sol:65:3: Warning: No visibility specified. Defaulting to "public". 
+  function approve(address spender, uint value) returns (bool ok);
+  ^--------------------------------------------------------------^
+2018-13695_tmp.sol:89:3: Warning: No visibility specified. Defaulting to "public". 
+  function transfer(address _to, uint _value) returns (bool success) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13695_tmp.sol:97:3: Warning: No visibility specified. Defaulting to "public". 
+  function transferFrom(address _from, address _to, uint _value) returns (bool success) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13695_tmp.sol:108:3: Warning: No visibility specified. Defaulting to "public". 
+  function balanceOf(address _owner) constant returns (uint balance) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13695_tmp.sol:112:3: Warning: No visibility specified. Defaulting to "public". 
+  function approve(address _spender, uint _value) returns (bool success) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13695_tmp.sol:125:3: Warning: No visibility specified. Defaulting to "public". 
+  function allowance(address _owner, address _spender) constant returns (uint remaining) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13695_tmp.sol:158:23: Warning: "msg.value" used in non-payable function. Do you want to add the "payable" modifier to this function?
+      tokenAmount = ((msg.value*rate)/(1 ether));
+                      ^-------^
+2018-13695_tmp.sol:178:5: Warning: No visibility specified. Defaulting to "public". 
+    function () payable {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13695_tmp.sol:290:5: Warning: No visibility specified. Defaulting to "public". 
+    function Burn () {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13695_tmp.sol:32:3: Warning: Function state mutability can be restricted to pure
+  function max64(uint64 a, uint64 b) internal constant returns (uint64) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13695_tmp.sol:36:3: Warning: Function state mutability can be restricted to pure
+  function min64(uint64 a, uint64 b) internal constant returns (uint64) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13695_tmp.sol:40:3: Warning: Function state mutability can be restricted to pure
+  function max256(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13695_tmp.sol:44:3: Warning: Function state mutability can be restricted to pure
+  function min256(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13695_tmp.sol:48:3: Warning: Function state mutability can be restricted to pure
+  function assert(bool assertion) internal {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-13695_tmp.sol:85:3: Warning: Function state mutability can be restricted to pure
+  function isToken() public constant returns (bool weAre) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+- all funcs : 70
+- reachable : 19
+* Generating Paths ... took 0.053522s
+- paths : 1361
+

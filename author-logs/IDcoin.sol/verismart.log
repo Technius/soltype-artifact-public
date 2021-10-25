@@ -1,0 +1,113 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+IDcoin_tmp.sol:118:5: Warning: Function state mutability can be restricted to view
+    function validTransfer(address _from, address _to, uint256 _value, bool _lockCheck) internal {
+    ^ (Relevant source part starts here and spans across multiple lines).
+- all funcs : 112
+- reachable : 23
+* Generating Paths ... took 0.000281s
+- paths : 74
+
+Iter : 10 To explore : 25 Explored : 167 Total elapsed : 2.253348
+Iter : 20 To explore : 55 Explored : 207 Total elapsed : 3.875974
+Iter : 30 To explore : 94 Explored : 256 Total elapsed : 5.7027
+Iter : 40 To explore : 104 Explored : 276 Total elapsed : 7.479631
+Iter : 50 To explore : 104 Explored : 286 Total elapsed : 9.154579
+Iter : 60 To explore : 121 Explored : 313 Total elapsed : 10.906677
+Iter : 70 To explore : 143 Explored : 345 Total elapsed : 12.67453
+Iter : 80 To explore : 147 Explored : 359 Total elapsed : 14.368773
+Iter : 90 To explore : 150 Explored : 372 Total elapsed : 16.086212
+Iter : 100 To explore : 147 Explored : 379 Total elapsed : 17.744453
+Iter : 110 To explore : 171 Explored : 413 Total elapsed : 19.405674
+Iter : 120 To explore : 199 Explored : 451 Total elapsed : 21.077673
+Iter : 130 To explore : 208 Explored : 470 Total elapsed : 22.808139
+Iter : 140 To explore : 215 Explored : 487 Total elapsed : 24.609044
+Iter : 150 To explore : 216 Explored : 498 Total elapsed : 26.400951
+Iter : 160 To explore : 217 Explored : 509 Total elapsed : 28.125626
+Iter : 170 To explore : 214 Explored : 516 Total elapsed : 29.815426
+Iter : 180 To explore : 215 Explored : 527 Total elapsed : 31.530011
+Iter : 190 To explore : 212 Explored : 534 Total elapsed : 33.303394
+Iter : 200 To explore : 206 Explored : 538 Total elapsed : 35.053357
+Iter : 210 To explore : 199 Explored : 541 Total elapsed : 36.820941
+Iter : 220 To explore : 199 Explored : 551 Total elapsed : 38.590375
+Iter : 230 To explore : 195 Explored : 557 Total elapsed : 40.293821
+Iter : 240 To explore : 187 Explored : 559 Total elapsed : 42.037592
+Iter : 250 To explore : 181 Explored : 563 Total elapsed : 43.729748
+Iter : 260 To explore : 190 Explored : 582 Total elapsed : 45.387497
+Iter : 270 To explore : 200 Explored : 602 Total elapsed : 46.994515
+Iter : 280 To explore : 190 Explored : 602 Total elapsed : 48.60609
+Iter : 290 To explore : 197 Explored : 619 Total elapsed : 50.238856
+Iter : 300 To explore : 192 Explored : 624 Total elapsed : 51.868284
+Iter : 310 To explore : 191 Explored : 633 Total elapsed : 53.530975
+Iter : 320 To explore : 193 Explored : 645 Total elapsed : 55.142875
+Iter : 330 To explore : 188 Explored : 650 Total elapsed : 56.801212
+Iter : 340 To explore : 187 Explored : 659 Total elapsed : 58.509642
+Iter : 350 To explore : 181 Explored : 663 Total elapsed : 60.281392
+Iter : 360 To explore : 186 Explored : 678 Total elapsed : 62.152318
+Iter : 370 To explore : 184 Explored : 686 Total elapsed : 63.974575
+Iter : 380 To explore : 181 Explored : 693 Total elapsed : 65.784687
+Iter : 390 To explore : 187 Explored : 709 Total elapsed : 67.641741
+Iter : 400 To explore : 179 Explored : 711 Total elapsed : 69.482919
+Iter : 410 To explore : 179 Explored : 721 Total elapsed : 71.199814
+Iter : 420 To explore : 176 Explored : 728 Total elapsed : 72.796855
+Iter : 430 To explore : 169 Explored : 731 Total elapsed : 74.408162
+Iter : 440 To explore : 164 Explored : 736 Total elapsed : 76.062783
+Iter : 450 To explore : 159 Explored : 741 Total elapsed : 77.714455
+Iter : 460 To explore : 149 Explored : 741 Total elapsed : 79.387988
+Iter : 470 To explore : 141 Explored : 743 Total elapsed : 81.03938
+Iter : 480 To explore : 137 Explored : 749 Total elapsed : 82.730982
+Iter : 490 To explore : 135 Explored : 757 Total elapsed : 84.452845
+Iter : 500 To explore : 130 Explored : 762 Total elapsed : 86.074096
+Iter : 510 To explore : 126 Explored : 768 Total elapsed : 87.7254
+Iter : 520 To explore : 116 Explored : 768 Total elapsed : 89.339087
+Iter : 530 To explore : 106 Explored : 768 Total elapsed : 90.914042
+Iter : 540 To explore : 102 Explored : 774 Total elapsed : 92.498191
+Iter : 550 To explore : 99 Explored : 781 Total elapsed : 94.077294
+Iter : 560 To explore : 99 Explored : 791 Total elapsed : 95.676783
+Iter : 570 To explore : 94 Explored : 796 Total elapsed : 97.296077
+Iter : 580 To explore : 87 Explored : 799 Total elapsed : 98.911367
+Iter : 590 To explore : 86 Explored : 808 Total elapsed : 100.538168
+Iter : 600 To explore : 76 Explored : 808 Total elapsed : 102.157379
+Iter : 610 To explore : 66 Explored : 808 Total elapsed : 103.757963
+Iter : 620 To explore : 56 Explored : 808 Total elapsed : 105.360708
+Iter : 630 To explore : 48 Explored : 810 Total elapsed : 106.990251
+Iter : 640 To explore : 42 Explored : 814 Total elapsed : 108.598936
+Iter : 650 To explore : 37 Explored : 819 Total elapsed : 110.205054
+Iter : 660 To explore : 27 Explored : 819 Total elapsed : 111.811786
+Iter : 670 To explore : 20 Explored : 822 Total elapsed : 113.436001
+Iter : 680 To explore : 12 Explored : 824 Total elapsed : 115.057092
+Iter : 690 To explore : 2 Explored : 824 Total elapsed : 116.675138
+=== Report ===
+[1] [IO] line 140, (user[_to].balance - _value) : proven
+[2] [IO] line 141, (totalSupply - _value) : unproven
+[3] [IO] line 149, (user[msg.sender].balance - _value) : proven
+[4] [IO] line 150, (user[_to].balance + _value) : unproven
+[5] [IO] line 166, (user[_from].balance - _value) : proven
+[6] [IO] line 167, (user[_to].balance + _value) : unproven
+[7] [IO] line 169, (user[_from].allowed[msg.sender] - _value) : proven
+[8] [IO] line 177, (user[msg.sender].balance - _value) : proven
+[9] [IO] line 178, (user[_to].balance + _value) : unproven
+[10] [IO] line 187, (user[_from].balance - _value) : proven
+[11] [IO] line 188, (user[_to].balance + _value) : unproven
+[12] [IO] line 284, (i + 1) : proven
+[13] [IO] line 378, (10 ** uint256(decimals)) : proven
+[14] [IO] line 378, (initialSupply * (10 ** uint256(decimals))) : proven
+
+=== Result Summary ===
+# Queries                : 14
+- integer over/underflow : 14
+- division-by-zero       : 0
+- assertion              : 0
+
+# Alarms                 : 5
+- integer over/underflow : 5
+- division-by-zero       : 0
+- assertion              : 0
+
+# Proven                 : 9
+- integer over/underflow : 9
+- division-by-zero       : 0
+- assertion              : 0
+
+Time Elapsed : 117.012387

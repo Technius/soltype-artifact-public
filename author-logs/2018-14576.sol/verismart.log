@@ -1,0 +1,276 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+2018-14576_tmp.sol:9:3: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+  function owned() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-14576_tmp.sol:14:30: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+    if (msg.sender != owner) throw;
+                             ^---^
+2018-14576_tmp.sol:86:3: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+  function SunContractToken(address _icoAddress) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-14576_tmp.sol:105:47: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+    if (block.number < tokenFrozenUntilBlock) throw;    // Throw if token is frozen
+                                              ^---^
+2018-14576_tmp.sol:106:35: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+    if (restrictedAddresses[_to]) throw;                // Throw if recipient is restricted address
+                                  ^---^
+2018-14576_tmp.sol:107:40: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+    if (balances[msg.sender] < _value) throw;           // Throw if sender has insufficient balance
+                                       ^---^
+2018-14576_tmp.sol:108:49: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+    if (balances[_to] + _value < balances[_to]) throw;  // Throw if owerflow detected
+                                                ^---^
+2018-14576_tmp.sol:117:47: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+    if (block.number < tokenFrozenUntilBlock) throw;    // Throw if token is frozen        
+                                              ^---^
+2018-14576_tmp.sol:133:47: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+    if (block.number < tokenFrozenUntilBlock) throw;    // Throw if token is frozen
+                                              ^---^
+2018-14576_tmp.sol:134:35: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+    if (restrictedAddresses[_to]) throw;                // Throw if recipient is restricted address  
+                                  ^---^
+2018-14576_tmp.sol:135:35: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+    if (balances[_from] < _value) throw;                // Throw if sender does not have enough balance     
+                                  ^---^
+2018-14576_tmp.sol:136:49: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+    if (balances[_to] + _value < balances[_to]) throw;  // Throw if overflow detected    
+                                                ^---^
+2018-14576_tmp.sol:137:49: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+    if (_value > allowances[_from][msg.sender]) throw;  // Throw if you do not have allowance       
+                                                ^---^
+2018-14576_tmp.sol:152:43: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+    if (msg.sender != icoContractAddress) throw;            // Only ICO address can mint tokens        
+                                          ^---^
+2018-14576_tmp.sol:153:35: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+    if (restrictedAddresses[_to]) throw;                    // Throw if user wants to send to restricted address       
+                                  ^---^
+2018-14576_tmp.sol:154:50: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+    if (balances[_to] + _amount < balances[_to]) throw;     // Check for overflows
+                                                 ^---^
+2018-14576_tmp.sol:163:40: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+    if(balances[msg.sender] < _amount) throw;               // Throw if you do not have enough balance
+                                       ^---^
+2018-14576_tmp.sol:164:26: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+    if(supply < _amount) throw;                             // Throw if overflow detected
+                         ^---^
+2018-14576_tmp.sol:5:1: Warning: Source file does not specify required compiler version!Consider adding "pragma solidity ^0.4.26;"
+contract owned {
+^ (Relevant source part starts here and spans across multiple lines).
+2018-14576_tmp.sol:30:44: Warning: This declaration shadows an existing declaration.
+  function totalSupply() constant returns (uint256 totalSupply);
+                                           ^-----------------^
+2018-14576_tmp.sol:30:3: The shadowed declaration is here:
+  function totalSupply() constant returns (uint256 totalSupply);
+  ^------------------------------------------------------------^
+
+2018-14576_tmp.sol:94:44: Warning: This declaration shadows an existing declaration.
+  function totalSupply() constant returns (uint256 totalSupply) {
+                                           ^-----------------^
+2018-14576_tmp.sol:94:3: The shadowed declaration is here:
+  function totalSupply() constant returns (uint256 totalSupply) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+2018-14576_tmp.sol:111:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(msg.sender, _to, _value);                  // Raise Transfer event
+    ^-------------------------------^
+2018-14576_tmp.sol:119:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Approval(msg.sender, _spender, _value);             // Raise Approval event         
+    ^------------------------------------^
+2018-14576_tmp.sol:141:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(_from, _to, _value);                       // Raise Transfer event
+    ^--------------------------^
+2018-14576_tmp.sol:157:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Mint(_to, _amount);                                     // Create Mint event       
+    ^----------------^
+2018-14576_tmp.sol:158:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(0x0, _to, _amount);                            // Create Transfer event from 0x
+    ^-------------------------^
+2018-14576_tmp.sol:168:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Burn(msg.sender, _amount);                              // Raise Burn event
+    ^-----------------------^
+2018-14576_tmp.sol:169:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(msg.sender, 0x0, _amount);                     // Raise transfer to 0x0
+    ^--------------------------------^
+2018-14576_tmp.sol:175:5: Warning: Invoking events without "emit" prefix is deprecated.
+    TokenFrozen(_frozenUntilBlock, _reason);
+    ^-------------------------------------^
+2018-14576_tmp.sol:9:3: Warning: No visibility specified. Defaulting to "public". 
+  function owned() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-14576_tmp.sol:18:3: Warning: No visibility specified. Defaulting to "public". 
+  function transferOwnership(address newOwner) onlyOwner {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-14576_tmp.sol:24:3: Warning: No visibility specified. Defaulting to "public". 
+  function receiveApproval(address _from, uint256 _value, address _token, bytes _extraData);
+  ^----------------------------------------------------------------------------------------^
+2018-14576_tmp.sol:30:3: Warning: No visibility specified. Defaulting to "public". 
+  function totalSupply() constant returns (uint256 totalSupply);
+  ^------------------------------------------------------------^
+2018-14576_tmp.sol:34:3: Warning: No visibility specified. Defaulting to "public". 
+  function balanceOf(address _owner) constant returns (uint256 balance) {}
+  ^----------------------------------------------------------------------^
+2018-14576_tmp.sol:34:22: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+  function balanceOf(address _owner) constant returns (uint256 balance) {}
+                     ^------------^
+2018-14576_tmp.sol:34:56: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+  function balanceOf(address _owner) constant returns (uint256 balance) {}
+                                                       ^-------------^
+2018-14576_tmp.sol:40:3: Warning: No visibility specified. Defaulting to "public". 
+  function transfer(address _to, uint256 _value) returns (bool success) {}
+  ^----------------------------------------------------------------------^
+2018-14576_tmp.sol:40:21: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+  function transfer(address _to, uint256 _value) returns (bool success) {}
+                    ^---------^
+2018-14576_tmp.sol:40:34: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+  function transfer(address _to, uint256 _value) returns (bool success) {}
+                                 ^------------^
+2018-14576_tmp.sol:40:59: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+  function transfer(address _to, uint256 _value) returns (bool success) {}
+                                                          ^----------^
+2018-14576_tmp.sol:47:3: Warning: No visibility specified. Defaulting to "public". 
+  function transferFrom(address _from, address _to, uint256 _value) returns (bool success) {}
+  ^-----------------------------------------------------------------------------------------^
+2018-14576_tmp.sol:47:25: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+  function transferFrom(address _from, address _to, uint256 _value) returns (bool success) {}
+                        ^-----------^
+2018-14576_tmp.sol:47:40: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+  function transferFrom(address _from, address _to, uint256 _value) returns (bool success) {}
+                                       ^---------^
+2018-14576_tmp.sol:47:53: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+  function transferFrom(address _from, address _to, uint256 _value) returns (bool success) {}
+                                                    ^------------^
+2018-14576_tmp.sol:47:78: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+  function transferFrom(address _from, address _to, uint256 _value) returns (bool success) {}
+                                                                             ^----------^
+2018-14576_tmp.sol:53:3: Warning: No visibility specified. Defaulting to "public". 
+  function approve(address _spender, uint256 _value) returns (bool success) {}
+  ^--------------------------------------------------------------------------^
+2018-14576_tmp.sol:53:20: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+  function approve(address _spender, uint256 _value) returns (bool success) {}
+                   ^--------------^
+2018-14576_tmp.sol:53:38: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+  function approve(address _spender, uint256 _value) returns (bool success) {}
+                                     ^------------^
+2018-14576_tmp.sol:53:63: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+  function approve(address _spender, uint256 _value) returns (bool success) {}
+                                                              ^----------^
+2018-14576_tmp.sol:58:3: Warning: No visibility specified. Defaulting to "public". 
+  function allowance(address _owner, address _spender) constant returns (uint256 remaining) {}
+  ^------------------------------------------------------------------------------------------^
+2018-14576_tmp.sol:58:22: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+  function allowance(address _owner, address _spender) constant returns (uint256 remaining) {}
+                     ^------------^
+2018-14576_tmp.sol:58:38: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+  function allowance(address _owner, address _spender) constant returns (uint256 remaining) {}
+                                     ^--------------^
+2018-14576_tmp.sol:58:74: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+  function allowance(address _owner, address _spender) constant returns (uint256 remaining) {}
+                                                                         ^---------------^
+2018-14576_tmp.sol:86:3: Warning: No visibility specified. Defaulting to "public". 
+  function SunContractToken(address _icoAddress) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-14576_tmp.sol:94:3: Warning: No visibility specified. Defaulting to "public". 
+  function totalSupply() constant returns (uint256 totalSupply) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-14576_tmp.sol:99:3: Warning: No visibility specified. Defaulting to "public". 
+  function balanceOf(address _owner) constant returns (uint256 balance) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-14576_tmp.sol:104:3: Warning: No visibility specified. Defaulting to "public". 
+  function transfer(address _to, uint256 _value) returns (bool success) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-14576_tmp.sol:116:3: Warning: No visibility specified. Defaulting to "public". 
+  function approve(address _spender, uint256 _value) returns (bool success) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-14576_tmp.sol:124:3: Warning: No visibility specified. Defaulting to "public". 
+  function approveAndCall(address _spender, uint256 _value, bytes _extraData) returns (bool success) {            
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-14576_tmp.sol:132:3: Warning: No visibility specified. Defaulting to "public". 
+  function transferFrom(address _from, address _to, uint256 _value) returns (bool success) {      
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-14576_tmp.sol:146:3: Warning: No visibility specified. Defaulting to "public". 
+  function allowance(address _owner, address _spender) constant returns (uint256 remaining) {         
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-14576_tmp.sol:151:3: Warning: No visibility specified. Defaulting to "public". 
+  function mintTokens(address _to, uint256 _amount) {         
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-14576_tmp.sol:162:3: Warning: No visibility specified. Defaulting to "public". 
+  function burnTokens(uint256 _amount) onlyOwner {
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-14576_tmp.sol:173:3: Warning: No visibility specified. Defaulting to "public". 
+  function freezeTransfersUntil(uint256 _frozenUntilBlock, string _reason) onlyOwner {      
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-14576_tmp.sol:178:3: Warning: No visibility specified. Defaulting to "public". 
+  function isRestrictedAddress(address _querryAddress) constant returns (bool answer){
+  ^ (Relevant source part starts here and spans across multiple lines).
+2018-14576_tmp.sol:34:3: Warning: Function state mutability can be restricted to pure
+  function balanceOf(address _owner) constant returns (uint256 balance) {}
+  ^----------------------------------------------------------------------^
+2018-14576_tmp.sol:40:3: Warning: Function state mutability can be restricted to pure
+  function transfer(address _to, uint256 _value) returns (bool success) {}
+  ^----------------------------------------------------------------------^
+2018-14576_tmp.sol:47:3: Warning: Function state mutability can be restricted to pure
+  function transferFrom(address _from, address _to, uint256 _value) returns (bool success) {}
+  ^-----------------------------------------------------------------------------------------^
+2018-14576_tmp.sol:53:3: Warning: Function state mutability can be restricted to pure
+  function approve(address _spender, uint256 _value) returns (bool success) {}
+  ^--------------------------------------------------------------------------^
+2018-14576_tmp.sol:58:3: Warning: Function state mutability can be restricted to pure
+  function allowance(address _owner, address _spender) constant returns (uint256 remaining) {}
+  ^------------------------------------------------------------------------------------------^
+- all funcs : 38
+- reachable : 18
+* Generating Paths ... took 7.1e-05s
+- paths : 37
+
+Iter : 10 To explore : 86 Explored : 166 Total elapsed : 13.465948
+Iter : 20 To explore : 89 Explored : 342 Total elapsed : 23.537407
+Iter : 30 To explore : 128 Explored : 391 Total elapsed : 45.174466
+Iter : 40 To explore : 222 Explored : 495 Total elapsed : 60.259894
+Iter : 50 To explore : 303 Explored : 586 Total elapsed : 77.540187
+Iter : 60 To explore : 365 Explored : 658 Total elapsed : 116.735233
+Iter : 70 To explore : 389 Explored : 692 Total elapsed : 162.767518
+Iter : 80 To explore : 423 Explored : 736 Total elapsed : 194.583641
+Iter : 90 To explore : 427 Explored : 750 Total elapsed : 206.70118
+Iter : 100 To explore : 484 Explored : 817 Total elapsed : 219.619605
+Iter : 110 To explore : 525 Explored : 868 Total elapsed : 283.741014
+Iter : 120 To explore : 552 Explored : 905 Total elapsed : 296.773501
+Iter : 130 To explore : 560 Explored : 923 Total elapsed : 336.79406
+Iter : 140 To explore : 557 Explored : 930 Total elapsed : 403.785482
+Iter : 150 To explore : 548 Explored : 931 Total elapsed : 456.976312
+Iter : 160 To explore : 552 Explored : 945 Total elapsed : 465.021754
+Iter : 170 To explore : 650 Explored : 1053 Total elapsed : 466.561321
+Iter : 180 To explore : 712 Explored : 1125 Total elapsed : 471.560608
+Iter : 190 To explore : 742 Explored : 1165 Total elapsed : 488.938164
+=== Report ===
+[1] [IO] line 108, (balances[_to] + _value) : unproven
+[2] [IO] line 109, (balances[msg.sender] - _value) : proven
+[3] [IO] line 110, (balances[_to] + _value) : proven
+[4] [IO] line 136, (balances[_to] + _value) : unproven
+[5] [IO] line 138, (balances[_from] - _value) : proven
+[6] [IO] line 139, (balances[_to] + _value) : proven
+[7] [IO] line 140, (allowances[_from][msg.sender] - _value) : proven
+[8] [IO] line 154, (balances[_to] + _amount) : unproven
+[9] [IO] line 155, (supply + _amount) : unproven
+[10] [IO] line 156, (balances[_to] + _amount) : proven
+[11] [IO] line 166, (supply - _amount) : proven
+[12] [IO] line 167, (balances[msg.sender] - _amount) : proven
+
+=== Result Summary ===
+# Queries                : 12
+- integer over/underflow : 12
+- division-by-zero       : 0
+- assertion              : 0
+
+# Alarms                 : 4
+- integer over/underflow : 4
+- division-by-zero       : 0
+- assertion              : 0
+
+# Proven                 : 8
+- integer over/underflow : 8
+- division-by-zero       : 0
+- assertion              : 0
+
+Time Elapsed : 536.535693

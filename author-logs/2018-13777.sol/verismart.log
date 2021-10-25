@@ -1,0 +1,94 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+2018-13777_tmp.sol:4:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function owned() public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13777_tmp.sol:44:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function TokenERC20(
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13777_tmp.sol:145:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function RRToken() TokenERC20(initialSupply, tokenName, tokenSymbol) public {}
+    ^----------------------------------------------------------------------------^
+2018-13777_tmp.sol:1:1: Warning: Source file does not specify required compiler version!Consider adding "pragma solidity ^0.4.26;"
+contract owned {
+^ (Relevant source part starts here and spans across multiple lines).
+2018-13777_tmp.sol:20:5: Warning: Functions in interfaces should be declared external.
+    function receiveApproval(address _from, uint256 _value, address _token, bytes _extraData) public; 
+    ^-----------------------------------------------------------------------------------------------^
+2018-13777_tmp.sol:71:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(_from, _to, _value);
+        ^--------------------------^
+2018-13777_tmp.sol:154:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(_from, _to, _value);
+        ^--------------------------^
+2018-13777_tmp.sol:163:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(0, this, mintedAmount);
+        ^-----------------------------^
+2018-13777_tmp.sol:164:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(this, target, mintedAmount);
+        ^----------------------------------^
+- all funcs : 28
+- reachable : 11
+* Generating Paths ... took 4.1e-05s
+- paths : 21
+
+Iter : 10 To explore : 251 Explored : 506 Total elapsed : 20.661609
+Iter : 20 To explore : 276 Explored : 798 Total elapsed : 41.272718
+Iter : 30 To explore : 396 Explored : 928 Total elapsed : 61.89573
+Iter : 40 To explore : 522 Explored : 1064 Total elapsed : 62.502456
+Iter : 50 To explore : 608 Explored : 1160 Total elapsed : 63.110765
+Iter : 60 To explore : 588 Explored : 1792 Total elapsed : 63.769535
+Iter : 70 To explore : 583 Explored : 1797 Total elapsed : 64.384649
+Iter : 80 To explore : 600 Explored : 1824 Total elapsed : 85.002646
+Iter : 90 To explore : 242 Explored : 2053 Total elapsed : 105.664926
+Iter : 100 To explore : 237 Explored : 2058 Total elapsed : 106.287347
+Iter : 110 To explore : 253 Explored : 2329 Total elapsed : 106.989932
+Iter : 120 To explore : 228 Explored : 2519 Total elapsed : 127.669863
+Iter : 130 To explore : 245 Explored : 2546 Total elapsed : 128.336575
+Iter : 140 To explore : 268 Explored : 2579 Total elapsed : 128.993574
+Iter : 150 To explore : 280 Explored : 2601 Total elapsed : 129.64452
+Iter : 160 To explore : 305 Explored : 2636 Total elapsed : 130.302441
+Iter : 170 To explore : 402 Explored : 2743 Total elapsed : 130.959777
+Iter : 180 To explore : 491 Explored : 2842 Total elapsed : 212.316786
+Iter : 190 To explore : 571 Explored : 2932 Total elapsed : 233.161511
+Iter : 200 To explore : 634 Explored : 3005 Total elapsed : 233.829166
+Iter : 210 To explore : 707 Explored : 3088 Total elapsed : 234.617809
+Iter : 220 To explore : 769 Explored : 3160 Total elapsed : 255.633324
+Iter : 230 To explore : 822 Explored : 3223 Total elapsed : 256.311591
+Iter : 240 To explore : 898 Explored : 3309 Total elapsed : 256.94741
+Iter : 250 To explore : 934 Explored : 3355 Total elapsed : 299.4161
+Iter : 260 To explore : 983 Explored : 3414 Total elapsed : 305.962086
+Iter : 270 To explore : 1014 Explored : 3455 Total elapsed : 386.917931
+Iter : 280 To explore : 1060 Explored : 3511 Total elapsed : 419.526512
+Iter : 290 To explore : 1105 Explored : 3566 Total elapsed : 443.698483
+Iter : 300 To explore : 1116 Explored : 3587 Total elapsed : 504.817384
+Iter : 310 To explore : 1130 Explored : 3611 Total elapsed : 516.918325
+Iter : 320 To explore : 1143 Explored : 3634 Total elapsed : 525.721525
+=== Report ===
+[1] [IO] line 49, (10 ** uint256(18)) : proven
+[2] [IO] line 49, (initialSupply * (10 ** uint256(18))) : proven
+[3] [IO] line 99, (allowance[_from][msg.sender] - _value) : proven
+[4] [IO] line 151, (balanceOf[_to] + _value) : unproven
+[5] [IO] line 152, (balanceOf[_from] - _value) : proven
+[6] [IO] line 153, (balanceOf[_to] + _value) : proven
+[7] [IO] line 161, (balanceOf[target] + mintedAmount) : unproven
+[8] [IO] line 162, (totalSupply + mintedAmount) : unproven
+
+=== Result Summary ===
+# Queries                : 8
+- integer over/underflow : 8
+- division-by-zero       : 0
+- assertion              : 0
+
+# Alarms                 : 3
+- integer over/underflow : 3
+- division-by-zero       : 0
+- assertion              : 0
+
+# Proven                 : 5
+- integer over/underflow : 5
+- division-by-zero       : 0
+- assertion              : 0
+
+Time Elapsed : 534.595687

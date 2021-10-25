@@ -1,0 +1,223 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+WEE_tmp.sol:26:3: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+  function Ownable() public {
+  ^ (Relevant source part starts here and spans across multiple lines).
+WEE_tmp.sol:135:2: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+	function WEE(){
+ ^ (Relevant source part starts here and spans across multiple lines).
+WEE_tmp.sol:243:3: Warning: Variable is declared as a storage pointer. Use an explicit "storage" keyword to silence this warning.
+		epoch[] epochs = lockEpochsMap[msg.sender];
+		^------------^
+WEE_tmp.sol:272:3: Warning: Variable is declared as a storage pointer. Use an explicit "storage" keyword to silence this warning.
+		epoch[] epochs = lockEpochsMap[_from];
+		^------------^
+WEE_tmp.sol:46:5: Warning: Invoking events without "emit" prefix is deprecated.
+    OwnershipTransferred(owner, newOwner);
+    ^-----------------------------------^
+WEE_tmp.sol:183:23: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+		if(!msg.sender.send(this.balance)) revert();
+		                    ^----------^
+WEE_tmp.sol:193:3: Warning: Invoking events without "emit" prefix is deprecated.
+		CreateWEE(receiver,amount);
+		^------------------------^
+WEE_tmp.sol:194:3: Warning: Invoking events without "emit" prefix is deprecated.
+		Transfer(0x0, receiver, amount);
+		^-----------------------------^
+WEE_tmp.sol:258:3: Warning: Invoking events without "emit" prefix is deprecated.
+		Transfer(msg.sender, _to, _value);
+		^-------------------------------^
+WEE_tmp.sol:289:3: Warning: Invoking events without "emit" prefix is deprecated.
+		Transfer(_from, _to, _value);
+		^--------------------------^
+WEE_tmp.sol:296:3: Warning: Invoking events without "emit" prefix is deprecated.
+		Approval(msg.sender, _spender, _value);
+		^------------------------------------^
+WEE_tmp.sol:135:2: Warning: No visibility specified. Defaulting to "public". 
+	function WEE(){
+ ^ (Relevant source part starts here and spans across multiple lines).
+- all funcs : 69
+- reachable : 33
+* Generating Paths ... took 0.000115s
+- paths : 67
+
+Iter : 10 To explore : 9981 Explored : 9990 Total elapsed : 65.323208
+Iter : 20 To explore : 20831 Explored : 20850 Total elapsed : 65.624738
+Iter : 30 To explore : 31679 Explored : 31708 Total elapsed : 65.974294
+Iter : 40 To explore : 42659 Explored : 42698 Total elapsed : 66.695498
+Iter : 50 To explore : 53626 Explored : 53675 Total elapsed : 67.040392
+Iter : 60 To explore : 64531 Explored : 64590 Total elapsed : 67.407286
+Iter : 70 To explore : 75331 Explored : 75400 Total elapsed : 67.878158
+Iter : 80 To explore : 86116 Explored : 86195 Total elapsed : 68.241554
+Iter : 90 To explore : 96934 Explored : 97023 Total elapsed : 68.958465
+Iter : 100 To explore : 106637 Explored : 106736 Total elapsed : 69.294925
+Iter : 110 To explore : 117600 Explored : 117709 Total elapsed : 69.670491
+Iter : 120 To explore : 128523 Explored : 128642 Total elapsed : 70.03691
+Iter : 130 To explore : 139424 Explored : 139553 Total elapsed : 70.824699
+Iter : 140 To explore : 150234 Explored : 150373 Total elapsed : 71.22867
+Iter : 150 To explore : 161051 Explored : 161200 Total elapsed : 71.596962
+Iter : 160 To explore : 171870 Explored : 172029 Total elapsed : 72.31427
+Iter : 170 To explore : 181509 Explored : 181678 Total elapsed : 72.765978
+Iter : 180 To explore : 192166 Explored : 192345 Total elapsed : 73.514529
+Iter : 190 To explore : 203122 Explored : 203311 Total elapsed : 73.920592
+Iter : 200 To explore : 213967 Explored : 214166 Total elapsed : 74.298707
+Iter : 210 To explore : 223943 Explored : 447890 Total elapsed : 199.435713
+Iter : 220 To explore : 223933 Explored : 447890 Total elapsed : 202.654041
+Iter : 230 To explore : 223923 Explored : 447890 Total elapsed : 205.837882
+Iter : 240 To explore : 223914 Explored : 447891 Total elapsed : 208.974945
+Iter : 250 To explore : 223904 Explored : 447891 Total elapsed : 212.232649
+Iter : 260 To explore : 223894 Explored : 447891 Total elapsed : 215.590071
+Iter : 270 To explore : 223884 Explored : 447891 Total elapsed : 218.744113
+Iter : 280 To explore : 223874 Explored : 447891 Total elapsed : 222.176421
+Iter : 290 To explore : 223864 Explored : 447891 Total elapsed : 225.523759
+Iter : 300 To explore : 223854 Explored : 447891 Total elapsed : 228.774149
+Iter : 310 To explore : 223844 Explored : 447891 Total elapsed : 232.191739
+Iter : 320 To explore : 223834 Explored : 447891 Total elapsed : 235.586012
+Iter : 330 To explore : 223824 Explored : 447891 Total elapsed : 238.939743
+Iter : 340 To explore : 223814 Explored : 447891 Total elapsed : 242.133165
+Iter : 350 To explore : 223804 Explored : 447891 Total elapsed : 245.637183
+Iter : 360 To explore : 223794 Explored : 447891 Total elapsed : 248.939026
+Iter : 370 To explore : 223784 Explored : 447891 Total elapsed : 252.144307
+Iter : 380 To explore : 223774 Explored : 447891 Total elapsed : 255.539261
+Iter : 390 To explore : 223764 Explored : 447891 Total elapsed : 258.971268
+Iter : 400 To explore : 223755 Explored : 447892 Total elapsed : 262.190612
+Iter : 410 To explore : 223745 Explored : 447892 Total elapsed : 265.388716
+Iter : 420 To explore : 233742 Explored : 457899 Total elapsed : 268.787601
+Iter : 430 To explore : 244861 Explored : 469028 Total elapsed : 272.076022
+Iter : 440 To explore : 255913 Explored : 480090 Total elapsed : 275.367886
+Iter : 450 To explore : 266870 Explored : 491057 Total elapsed : 278.899829
+Iter : 460 To explore : 277760 Explored : 501957 Total elapsed : 282.433402
+Iter : 470 To explore : 288825 Explored : 513032 Total elapsed : 285.763752
+Iter : 480 To explore : 299798 Explored : 524015 Total elapsed : 289.174881
+Iter : 490 To explore : 310664 Explored : 534891 Total elapsed : 292.495174
+Iter : 500 To explore : 321712 Explored : 545949 Total elapsed : 295.890704
+Iter : 510 To explore : 332799 Explored : 557046 Total elapsed : 299.284145
+Iter : 520 To explore : 343793 Explored : 568050 Total elapsed : 302.705645
+Iter : 530 To explore : 354714 Explored : 578981 Total elapsed : 306.055746
+Iter : 540 To explore : 365815 Explored : 590092 Total elapsed : 309.659834
+Iter : 550 To explore : 376911 Explored : 601198 Total elapsed : 313.035873
+Iter : 560 To explore : 387924 Explored : 612221 Total elapsed : 316.426915
+Iter : 570 To explore : 398839 Explored : 623146 Total elapsed : 319.744001
+Iter : 580 To explore : 409671 Explored : 633988 Total elapsed : 323.221074
+Iter : 590 To explore : 420419 Explored : 644746 Total elapsed : 326.602041
+Iter : 600 To explore : 431212 Explored : 655549 Total elapsed : 330.074201
+Iter : 610 To explore : 441942 Explored : 666289 Total elapsed : 333.472836
+Iter : 620 To explore : 452616 Explored : 676973 Total elapsed : 337.322634
+Iter : 630 To explore : 463425 Explored : 687792 Total elapsed : 340.750304
+Iter : 640 To explore : 474330 Explored : 698707 Total elapsed : 344.12848
+Iter : 650 To explore : 485035 Explored : 709422 Total elapsed : 347.532222
+Iter : 660 To explore : 495750 Explored : 720147 Total elapsed : 350.898078
+Iter : 670 To explore : 506619 Explored : 731026 Total elapsed : 354.360941
+Iter : 680 To explore : 517372 Explored : 741789 Total elapsed : 357.695897
+Iter : 690 To explore : 528027 Explored : 752454 Total elapsed : 361.020614
+Iter : 700 To explore : 538960 Explored : 763397 Total elapsed : 364.408257
+Iter : 710 To explore : 550030 Explored : 774477 Total elapsed : 367.712943
+Iter : 720 To explore : 561031 Explored : 785488 Total elapsed : 371.298075
+Iter : 730 To explore : 571943 Explored : 796410 Total elapsed : 374.656852
+Iter : 740 To explore : 582961 Explored : 807438 Total elapsed : 378.189883
+Iter : 750 To explore : 593980 Explored : 818467 Total elapsed : 381.773954
+Iter : 760 To explore : 604969 Explored : 829466 Total elapsed : 385.498576
+Iter : 770 To explore : 615996 Explored : 840503 Total elapsed : 389.249844
+Iter : 780 To explore : 626963 Explored : 851480 Total elapsed : 392.659027
+Iter : 790 To explore : 637934 Explored : 862461 Total elapsed : 396.008032
+Iter : 800 To explore : 648826 Explored : 873363 Total elapsed : 399.400262
+Iter : 810 To explore : 657700 Explored : 882247 Total elapsed : 402.807818
+Iter : 820 To explore : 668768 Explored : 893325 Total elapsed : 406.191252
+Iter : 830 To explore : 679793 Explored : 904360 Total elapsed : 409.398262
+Iter : 840 To explore : 690769 Explored : 915346 Total elapsed : 413.24068
+Iter : 850 To explore : 701629 Explored : 926216 Total elapsed : 416.52606
+Iter : 860 To explore : 712579 Explored : 937176 Total elapsed : 419.89168
+Iter : 870 To explore : 723564 Explored : 948171 Total elapsed : 423.268481
+Iter : 880 To explore : 734448 Explored : 959065 Total elapsed : 426.596016
+Iter : 890 To explore : 745364 Explored : 969991 Total elapsed : 430.040047
+Iter : 900 To explore : 756327 Explored : 980964 Total elapsed : 433.374358
+Iter : 910 To explore : 767299 Explored : 991946 Total elapsed : 436.902243
+Iter : 920 To explore : 778208 Explored : 1002865 Total elapsed : 440.512439
+Iter : 930 To explore : 789018 Explored : 1013685 Total elapsed : 444.190628
+Iter : 940 To explore : 800001 Explored : 1024678 Total elapsed : 447.510953
+Iter : 950 To explore : 811062 Explored : 1035749 Total elapsed : 451.148514
+Iter : 960 To explore : 822096 Explored : 1046793 Total elapsed : 454.711944
+Iter : 970 To explore : 833029 Explored : 1057736 Total elapsed : 458.405969
+Iter : 980 To explore : 843894 Explored : 1068611 Total elapsed : 461.939283
+Iter : 990 To explore : 854812 Explored : 1079539 Total elapsed : 465.561144
+Iter : 1000 To explore : 865551 Explored : 1090288 Total elapsed : 469.123466
+Iter : 1010 To explore : 876541 Explored : 1101288 Total elapsed : 472.658665
+Iter : 1020 To explore : 887495 Explored : 1112252 Total elapsed : 476.09242
+Iter : 1030 To explore : 898373 Explored : 1123140 Total elapsed : 479.310665
+Iter : 1040 To explore : 909138 Explored : 1133915 Total elapsed : 483.466314
+Iter : 1050 To explore : 919818 Explored : 1144605 Total elapsed : 486.883749
+Iter : 1060 To explore : 930786 Explored : 1155583 Total elapsed : 490.830509
+Iter : 1070 To explore : 941702 Explored : 1166509 Total elapsed : 494.108587
+Iter : 1080 To explore : 952541 Explored : 1177358 Total elapsed : 497.601793
+Iter : 1090 To explore : 963512 Explored : 1188339 Total elapsed : 500.970294
+Iter : 1100 To explore : 974403 Explored : 1199240 Total elapsed : 504.23088
+Iter : 1110 To explore : 985242 Explored : 1210089 Total elapsed : 507.796594
+Iter : 1120 To explore : 996258 Explored : 1221115 Total elapsed : 511.053026
+Iter : 1130 To explore : 1007184 Explored : 1232051 Total elapsed : 514.954084
+Iter : 1140 To explore : 1018172 Explored : 1243049 Total elapsed : 518.303586
+Iter : 1150 To explore : 1029172 Explored : 1254059 Total elapsed : 521.597275
+Iter : 1160 To explore : 1040076 Explored : 1264973 Total elapsed : 525.205225
+Iter : 1170 To explore : 1051027 Explored : 1275934 Total elapsed : 528.553415
+=== Report ===
+[1] [IO] line 90, (10 ** decimals) : proven
+[2] [IO] line 90, (270000000 * (10 ** decimals)) : proven
+[3] [IO] line 92, (10 ** decimals) : proven
+[4] [IO] line 92, (648000000 * (10 ** decimals)) : proven
+[5] [IO] line 94, (10 ** decimals) : proven
+[6] [IO] line 94, (270000000 * (10 ** decimals)) : proven
+[7] [IO] line 96, (10 ** decimals) : proven
+[8] [IO] line 96, (90000000 * (10 ** decimals)) : proven
+[9] [IO] line 98, (((PARTNER_SUPPLY + MAX_PRIVATE_FUNDING_SUPPLY) + COOPERATE_REWARD) + ADVISOR_REWARD) : proven
+[10] [IO] line 98, ((PARTNER_SUPPLY + MAX_PRIVATE_FUNDING_SUPPLY) + COOPERATE_REWARD) : proven
+[11] [IO] line 98, (PARTNER_SUPPLY + MAX_PRIVATE_FUNDING_SUPPLY) : proven
+[12] [IO] line 100, (10 ** decimals) : proven
+[13] [IO] line 100, (180000000 * (10 ** decimals)) : proven
+[14] [IO] line 102, (10 ** decimals) : proven
+[15] [IO] line 102, (342000000 * (10 ** decimals)) : proven
+[16] [IO] line 104, ((COMMON_WITHDRAW_SUPPLY + MAX_PUBLIC_FUNDING_SUPPLY) + TEAM_KEEPING) : proven
+[17] [IO] line 104, (COMMON_WITHDRAW_SUPPLY + MAX_PUBLIC_FUNDING_SUPPLY) : proven
+[18] [IO] line 151, (_value * _rate) : unproven
+[19] [IO] line 151, (totalSupply + (_value * _rate)) : unproven
+[20] [IO] line 156, (_value * _rate) : unproven
+[21] [IO] line 156, (totalPublicFundingSupply + (_value * _rate)) : unproven
+[22] [IO] line 161, (_value * _rate) : unproven
+[23] [IO] line 161, (totalCommonWithdrawSupply + (_value * _rate)) : unproven
+[24] [IO] line 190, (_value * _rate) : unproven
+[25] [IO] line 191, (totalSupply + amount) : unproven
+[26] [IO] line 192, (balances[receiver] + amount) : unproven
+[27] [IO] line 205, (totalCommonWithdrawSupply + _value) : unproven
+[28] [IO] line 227, (userPublicFundingEthCountMap[msg.sender] + msg.value) : unproven
+[29] [IO] line 230, (msg.value * rate) : unproven
+[30] [IO] line 231, (totalPublicFundingSupply + amount) : unproven
+[31] [IO] line 233, (userPublicFundingEthCountMap[msg.sender] + msg.value) : unproven
+[32] [IO] line 245, (i + 1) : proven
+[33] [IO] line 249, (needLockBalance + epochs[i].lockAmount) : unproven
+[34] [IO] line 253, (balances[msg.sender] - _value) : unproven
+[35] [IO] line 256, (balances[msg.sender] - _value) : unproven
+[36] [IO] line 257, (balances[_to] + _value) : unproven
+[37] [IO] line 274, (i + 1) : proven
+[38] [IO] line 278, (needLockBalance + epochs[i].lockAmount) : unproven
+[39] [IO] line 282, (balances[_from] - _value) : unproven
+[40] [IO] line 286, (balances[_from] - _value) : unproven
+[41] [IO] line 287, (balances[_to] + _value) : unproven
+[42] [IO] line 288, (_allowance - _value) : unproven
+[43] [IO] line 316, (i + 1) : proven
+
+=== Result Summary ===
+# Queries                : 43
+- integer over/underflow : 43
+- division-by-zero       : 0
+- assertion              : 0
+
+# Alarms                 : 23
+- integer over/underflow : 23
+- division-by-zero       : 0
+- assertion              : 0
+
+# Proven                 : 20
+- integer over/underflow : 20
+- division-by-zero       : 0
+- assertion              : 0
+
+Time Elapsed : 530.233929

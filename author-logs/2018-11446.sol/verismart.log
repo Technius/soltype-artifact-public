@@ -1,0 +1,288 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+2018-11446_tmp.sol:6:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function owned() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-11446_tmp.sol:88:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function GRX() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-11446_tmp.sol:30:5: Warning: Functions in interfaces should be declared external.
+    function receiveApproval(address _from, uint256 _value, address _token, bytes _extraData);
+    ^----------------------------------------------------------------------------------------^
+2018-11446_tmp.sol:111:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(0, owner, increaseBy);
+        ^----------------------------^
+2018-11446_tmp.sol:112:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(owner, target, increaseBy);
+        ^---------------------------------^
+2018-11446_tmp.sol:141:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Frozen(target, froze);
+        ^-------------------^
+2018-11446_tmp.sol:172:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(_from, _to, _value);
+        ^--------------------------^
+2018-11446_tmp.sol:231:13: Warning: Invoking events without "emit" prefix is deprecated.
+            Transfer(msg.sender, _to, _value);
+            ^-------------------------------^
+2018-11446_tmp.sol:234:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Reward(msg.sender, _to, _value, data, now);
+        ^----------------------------------------^
+2018-11446_tmp.sol:256:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(msg.sender, _to, _value);
+        ^-------------------------------^
+2018-11446_tmp.sol:277:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Unlock(addr, msg.sender, _value);
+        ^------------------------------^
+2018-11446_tmp.sol:342:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Burn(msg.sender, _value);
+        ^----------------------^
+2018-11446_tmp.sol:360:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Burn(_from, _value);
+        ^-----------------^
+2018-11446_tmp.sol:398:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(this, msg.sender, amount);               // execute an event reflecting the change
+        ^--------------------------------^
+2018-11446_tmp.sol:413:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(msg.sender, this, amount);               // executes an event reflecting on the change
+        ^--------------------------------^
+2018-11446_tmp.sol:422:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Withdrawn(target, amount);
+        ^-----------------------^
+2018-11446_tmp.sol:6:5: Warning: No visibility specified. Defaulting to "public". 
+    function owned() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-11446_tmp.sol:21:5: Warning: No visibility specified. Defaulting to "public". 
+    function transferOwnership(address newOwner) onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-11446_tmp.sol:24:5: Warning: No visibility specified. Defaulting to "public". 
+    function makeAdmin(address newAdmin, bool isAdmin) onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-11446_tmp.sol:30:5: Warning: No visibility specified. Defaulting to "public". In interfaces it defaults to external.
+    function receiveApproval(address _from, uint256 _value, address _token, bytes _extraData);
+    ^----------------------------------------------------------------------------------------^
+2018-11446_tmp.sol:88:5: Warning: No visibility specified. Defaulting to "public". 
+    function GRX() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-11446_tmp.sol:108:5: Warning: No visibility specified. Defaulting to "public". 
+    function increaseTotalSupply (address target,  uint256 increaseBy )  onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-11446_tmp.sol:115:5: Warning: No visibility specified. Defaulting to "public". 
+    function  usersCanUnFreeze(bool can) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-11446_tmp.sol:119:5: Warning: No visibility specified. Defaulting to "public". 
+    function setMinBalance(uint minimumBalanceInWei) onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-11446_tmp.sol:128:5: Warning: No visibility specified. Defaulting to "public". 
+    function transferAndFreeze (address target,  uint256 amount )  onlyAdmin {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-11446_tmp.sol:151:5: Warning: No visibility specified. Defaulting to "public". 
+    function freeze (address target, bool froze )   {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-11446_tmp.sol:183:5: Warning: No visibility specified. Defaulting to "public". 
+    function transfer(address _to, uint256 _value) notICO {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-11446_tmp.sol:210:5: Warning: No visibility specified. Defaulting to "public". 
+    function reward(address _to, uint256 _value, bool locked, string data) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-11446_tmp.sol:245:5: Warning: No visibility specified. Defaulting to "public". 
+    function transferReward(address _to, uint256 _value) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-11446_tmp.sol:267:5: Warning: No visibility specified. Defaulting to "public". 
+    function unlockReward(address addr, uint256 _value) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-11446_tmp.sol:291:5: Warning: No visibility specified. Defaulting to "public". 
+    function transferFrom(address _from, address _to, uint256 _value) returns (bool success) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-11446_tmp.sol:307:5: Warning: No visibility specified. Defaulting to "public". 
+    function approve(address _spender, uint256 _value)
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-11446_tmp.sol:322:5: Warning: No visibility specified. Defaulting to "public". 
+    function approveAndCall(address _spender, uint256 _value, bytes _extraData) onlyOwner
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-11446_tmp.sol:338:5: Warning: No visibility specified. Defaulting to "public". 
+    function burn(uint256 _value) onlyOwner returns (bool success) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-11446_tmp.sol:354:5: Warning: No visibility specified. Defaulting to "public". 
+    function burnFrom(address _from, uint256 _value)  returns (bool success) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-11446_tmp.sol:379:5: Warning: No visibility specified. Defaulting to "public". 
+    function setPrices(uint256 newSellPrice, uint256 newBuyPrice) onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-11446_tmp.sol:383:5: Warning: No visibility specified. Defaulting to "public". 
+    function setUsersCanTrade(bool trade) onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-11446_tmp.sol:386:5: Warning: No visibility specified. Defaulting to "public". 
+    function setCanTrade(address addr, bool trade) onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-11446_tmp.sol:391:5: Warning: No visibility specified. Defaulting to "public". 
+    function buy() payable returns (uint256 amount){
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-11446_tmp.sol:403:5: Warning: No visibility specified. Defaulting to "public". 
+    function sell(uint256 amount) returns (uint revenue){
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-11446_tmp.sol:417:5: Warning: No visibility specified. Defaulting to "public". 
+    function() payable {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-11446_tmp.sol:420:5: Warning: No visibility specified. Defaulting to "public". 
+    function withdraw(address target, uint256 amount) onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-11446_tmp.sol:425:5: Warning: No visibility specified. Defaulting to "public". 
+    function setAdmin(address addr, bool enabled) onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-11446_tmp.sol:429:5: Warning: No visibility specified. Defaulting to "public". 
+    function setICO(bool enabled) onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+- all funcs : 50
+- reachable : 32
+* Generating Paths ... took 0.000405s
+- paths : 133
+
+Iter : 10 To explore : 1333 Explored : 1342 Total elapsed : 22.032352
+Iter : 20 To explore : 2718 Explored : 2737 Total elapsed : 25.013872
+Iter : 30 To explore : 4003 Explored : 4032 Total elapsed : 27.960127
+Iter : 40 To explore : 5157 Explored : 5196 Total elapsed : 30.989647
+Iter : 50 To explore : 6011 Explored : 6060 Total elapsed : 33.704656
+Iter : 60 To explore : 6638 Explored : 13221 Total elapsed : 37.13565
+Iter : 70 To explore : 7259 Explored : 13852 Total elapsed : 40.212584
+Iter : 80 To explore : 7863 Explored : 14466 Total elapsed : 43.289661
+Iter : 90 To explore : 8600 Explored : 15213 Total elapsed : 54.946534
+Iter : 100 To explore : 9273 Explored : 15896 Total elapsed : 57.984384
+Iter : 110 To explore : 9694 Explored : 16327 Total elapsed : 61.056038
+Iter : 120 To explore : 10112 Explored : 16755 Total elapsed : 64.344604
+Iter : 130 To explore : 10501 Explored : 17154 Total elapsed : 72.536083
+Iter : 140 To explore : 10957 Explored : 17620 Total elapsed : 75.571757
+Iter : 150 To explore : 11366 Explored : 18039 Total elapsed : 78.625561
+Iter : 160 To explore : 11944 Explored : 18627 Total elapsed : 81.642669
+Iter : 170 To explore : 12237 Explored : 31170 Total elapsed : 85.73945
+Iter : 180 To explore : 12257 Explored : 31200 Total elapsed : 88.868236
+Iter : 190 To explore : 12277 Explored : 31230 Total elapsed : 92.396017
+Iter : 200 To explore : 12297 Explored : 31260 Total elapsed : 115.014825
+Iter : 210 To explore : 12690 Explored : 31663 Total elapsed : 118.102751
+Iter : 220 To explore : 13428 Explored : 32411 Total elapsed : 121.141721
+Iter : 230 To explore : 14055 Explored : 33048 Total elapsed : 124.210432
+Iter : 240 To explore : 14621 Explored : 33624 Total elapsed : 127.289478
+Iter : 250 To explore : 15323 Explored : 34336 Total elapsed : 130.447583
+Iter : 260 To explore : 15917 Explored : 34940 Total elapsed : 133.551263
+Iter : 270 To explore : 16322 Explored : 35355 Total elapsed : 136.667274
+Iter : 280 To explore : 16621 Explored : 35664 Total elapsed : 139.709815
+Iter : 290 To explore : 16830 Explored : 35883 Total elapsed : 142.851675
+Iter : 300 To explore : 17076 Explored : 36139 Total elapsed : 149.186591
+Iter : 310 To explore : 17711 Explored : 36784 Total elapsed : 152.595327
+Iter : 320 To explore : 18329 Explored : 55840 Total elapsed : 171.352014
+Iter : 330 To explore : 18620 Explored : 56141 Total elapsed : 174.372881
+Iter : 340 To explore : 19570 Explored : 57101 Total elapsed : 177.527074
+Iter : 350 To explore : 20298 Explored : 57839 Total elapsed : 180.746083
+Iter : 360 To explore : 20778 Explored : 58329 Total elapsed : 183.94983
+Iter : 370 To explore : 21159 Explored : 58720 Total elapsed : 200.883875
+Iter : 380 To explore : 21749 Explored : 59320 Total elapsed : 204.04721
+Iter : 390 To explore : 22500 Explored : 60081 Total elapsed : 207.116445
+Iter : 400 To explore : 23144 Explored : 60735 Total elapsed : 229.557408
+Iter : 410 To explore : 23794 Explored : 61395 Total elapsed : 235.724267
+Iter : 420 To explore : 23808 Explored : 61419 Total elapsed : 239.172125
+Iter : 430 To explore : 23848 Explored : 61469 Total elapsed : 242.422418
+Iter : 440 To explore : 24406 Explored : 62037 Total elapsed : 245.577603
+Iter : 450 To explore : 25107 Explored : 62748 Total elapsed : 248.746372
+Iter : 460 To explore : 25735 Explored : 63386 Total elapsed : 251.851353
+Iter : 470 To explore : 26212 Explored : 63873 Total elapsed : 254.970096
+Iter : 480 To explore : 26626 Explored : 64297 Total elapsed : 258.099121
+Iter : 490 To explore : 27030 Explored : 64711 Total elapsed : 261.20466
+Iter : 500 To explore : 27305 Explored : 64996 Total elapsed : 264.263722
+Iter : 510 To explore : 27510 Explored : 65211 Total elapsed : 267.349817
+Iter : 520 To explore : 27597 Explored : 65308 Total elapsed : 270.522
+Iter : 530 To explore : 27474 Explored : 93039 Total elapsed : 277.727796
+Iter : 540 To explore : 27474 Explored : 93049 Total elapsed : 288.857431
+Iter : 550 To explore : 27474 Explored : 93059 Total elapsed : 292.374888
+Iter : 560 To explore : 27474 Explored : 93069 Total elapsed : 303.717925
+Iter : 570 To explore : 27667 Explored : 93272 Total elapsed : 307.089252
+Iter : 580 To explore : 28168 Explored : 93783 Total elapsed : 310.389657
+Iter : 590 To explore : 28581 Explored : 94206 Total elapsed : 313.639156
+Iter : 600 To explore : 28823 Explored : 122995 Total elapsed : 321.632374
+Iter : 610 To explore : 29470 Explored : 123652 Total elapsed : 325.134817
+Iter : 620 To explore : 29980 Explored : 124172 Total elapsed : 340.193326
+Iter : 630 To explore : 30831 Explored : 125033 Total elapsed : 343.598355
+Iter : 640 To explore : 31433 Explored : 125645 Total elapsed : 347.292141
+Iter : 650 To explore : 32001 Explored : 126223 Total elapsed : 350.844983
+Iter : 660 To explore : 32443 Explored : 126675 Total elapsed : 354.31389
+Iter : 670 To explore : 32966 Explored : 127208 Total elapsed : 365.409594
+Iter : 680 To explore : 33772 Explored : 128024 Total elapsed : 368.65059
+Iter : 690 To explore : 34314 Explored : 128576 Total elapsed : 371.952911
+Iter : 700 To explore : 34700 Explored : 128972 Total elapsed : 375.215437
+Iter : 710 To explore : 35287 Explored : 129569 Total elapsed : 378.429374
+Iter : 720 To explore : 35888 Explored : 130180 Total elapsed : 381.657497
+Iter : 730 To explore : 36464 Explored : 130766 Total elapsed : 384.871364
+Iter : 740 To explore : 36956 Explored : 131268 Total elapsed : 388.070698
+Iter : 750 To explore : 37347 Explored : 131669 Total elapsed : 391.323503
+Iter : 760 To explore : 37678 Explored : 132010 Total elapsed : 394.627966
+Iter : 770 To explore : 37990 Explored : 132332 Total elapsed : 397.94828
+Iter : 780 To explore : 38276 Explored : 132628 Total elapsed : 401.299778
+Iter : 790 To explore : 38476 Explored : 132838 Total elapsed : 422.258966
+Iter : 800 To explore : 38561 Explored : 132933 Total elapsed : 450.048529
+Iter : 810 To explore : 38562 Explored : 132944 Total elapsed : 453.452863
+Iter : 820 To explore : 38588 Explored : 132980 Total elapsed : 470.215983
+Iter : 830 To explore : 37566 Explored : 170213 Total elapsed : 481.117055
+Iter : 840 To explore : 37556 Explored : 170213 Total elapsed : 494.870368
+Iter : 850 To explore : 37546 Explored : 170213 Total elapsed : 498.954357
+Iter : 860 To explore : 37536 Explored : 170213 Total elapsed : 509.170124
+Iter : 870 To explore : 37585 Explored : 170272 Total elapsed : 512.662346
+Iter : 880 To explore : 37701 Explored : 170398 Total elapsed : 516.360792
+Iter : 890 To explore : 37942 Explored : 170649 Total elapsed : 523.093821
+Iter : 900 To explore : 37957 Explored : 170674 Total elapsed : 526.567664
+=== Report ===
+[1] [IO] line 109, (balanceOf[target] + increaseBy) : unproven
+[2] [IO] line 110, (totalSupply + increaseBy) : unproven
+[3] [IO] line 169, (balanceOf[_to] + _value) : unproven
+[4] [IO] line 170, (balanceOf[_from] - _value) : proven
+[5] [IO] line 171, (balanceOf[_to] + _value) : proven
+[6] [IO] line 186, ((minBalanceForAccounts - msg.sender.balance) * sellPrice) : unproven
+[7] [IO] line 186, (minBalanceForAccounts - msg.sender.balance) : proven
+[8] [IO] line 214, ((minBalanceForAccounts - msg.sender.balance) * sellPrice) : unproven
+[9] [IO] line 214, (minBalanceForAccounts - msg.sender.balance) : proven
+[10] [IO] line 221, (totalLockedRewardsOf[_to] + _value) : unproven
+[11] [IO] line 222, (balanceOf[msg.sender] - _value) : proven
+[12] [IO] line 223, (totalLockedRewardsOf[_to] + _value) : proven
+[13] [IO] line 224, (lockedRewardsOf[_to][msg.sender] + _value) : unproven
+[14] [IO] line 226, (userRewarderCount[_to] + 1) : unproven
+[15] [IO] line 229, (userRewardCount[_to][msg.sender] + 1) : unproven
+[16] [IO] line 230, (totalRewardIssuedOut[msg.sender] + _value) : unproven
+[17] [IO] line 251, ((minBalanceForAccounts - msg.sender.balance) * sellPrice) : unproven
+[18] [IO] line 251, (minBalanceForAccounts - msg.sender.balance) : proven
+[19] [IO] line 253, (totalLockedRewardsOf[msg.sender] - _value) : proven
+[20] [IO] line 254, (lockedRewardsOf[msg.sender][_to] - _value) : proven
+[21] [IO] line 255, (balanceOf[_to] + _value) : unproven
+[22] [IO] line 272, ((minBalanceForAccounts - msg.sender.balance) * sellPrice) : unproven
+[23] [IO] line 272, (minBalanceForAccounts - msg.sender.balance) : proven
+[24] [IO] line 274, (totalLockedRewardsOf[addr] - _value) : unproven
+[25] [IO] line 275, (lockedRewardsOf[addr][msg.sender] - _value) : proven
+[26] [IO] line 276, (balanceOf[addr] + _value) : unproven
+[27] [IO] line 294, (allowance[_from][msg.sender] - _value) : proven
+[28] [IO] line 340, (balanceOf[msg.sender] - _value) : proven
+[29] [IO] line 341, (totalSupply - _value) : unproven
+[30] [IO] line 357, (balanceOf[_from] - _value) : proven
+[31] [IO] line 358, (allowance[_from][msg.sender] - _value) : proven
+[32] [IO] line 359, (totalSupply - _value) : unproven
+[33] [IO] line 393, (msg.value * buyPrice) : unproven
+[34] [IO] line 396, (balanceOf[msg.sender] + amount) : unproven
+[35] [IO] line 397, (balanceOf[this] - amount) : unproven
+[36] [IO] line 409, (balanceOf[this] + amount) : unproven
+[37] [IO] line 410, (balanceOf[msg.sender] - amount) : unproven
+[38] [DZ] line 406, (amount / sellPrice) : unproven
+[39] [DZ] line 411, (amount / sellPrice) : unproven
+
+=== Result Summary ===
+# Queries                : 39
+- integer over/underflow : 37
+- division-by-zero       : 2
+- assertion              : 0
+
+# Alarms                 : 24
+- integer over/underflow : 22
+- division-by-zero       : 2
+- assertion              : 0
+
+# Proven                 : 15
+- integer over/underflow : 15
+- division-by-zero       : 0
+- assertion              : 0
+
+Time Elapsed : 540.395273

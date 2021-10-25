@@ -1,0 +1,201 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+0xddd460bbd9f79847ea08681563e8a9696867210c_tmp.sol:102:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function Owned() public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0xddd460bbd9f79847ea08681563e8a9696867210c_tmp.sol:193:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function Spendcoin() public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+- all funcs : 48
+- reachable : 17
+* Generating Paths ... took 3e-05s
+- paths : 22
+
+Iter : 10 To explore : 409 Explored : 824 Total elapsed : 5.888829
+Iter : 20 To explore : 1043 Explored : 1468 Total elapsed : 7.332628
+Iter : 30 To explore : 1648 Explored : 2083 Total elapsed : 8.176484
+Iter : 40 To explore : 1851 Explored : 4421 Total elapsed : 13.832897
+Iter : 50 To explore : 2144 Explored : 4724 Total elapsed : 14.776796
+Iter : 60 To explore : 2553 Explored : 5143 Total elapsed : 36.770367
+Iter : 70 To explore : 2933 Explored : 5533 Total elapsed : 37.768323
+Iter : 80 To explore : 3226 Explored : 5836 Total elapsed : 38.737453
+Iter : 90 To explore : 3486 Explored : 6106 Total elapsed : 39.683386
+Iter : 100 To explore : 3133 Explored : 9304 Total elapsed : 49.963373
+Iter : 110 To explore : 3137 Explored : 9318 Total elapsed : 51.833495
+Iter : 120 To explore : 3136 Explored : 12481 Total elapsed : 82.378345
+Iter : 130 To explore : 1664 Explored : 14091 Total elapsed : 95.018508
+Iter : 140 To explore : 1959 Explored : 14396 Total elapsed : 96.017475
+Iter : 150 To explore : 2228 Explored : 14675 Total elapsed : 98.232992
+Iter : 160 To explore : 2514 Explored : 14971 Total elapsed : 99.230628
+Iter : 170 To explore : 2825 Explored : 15292 Total elapsed : 100.303886
+Iter : 180 To explore : 3039 Explored : 15516 Total elapsed : 101.298787
+Iter : 190 To explore : 3267 Explored : 15754 Total elapsed : 102.293913
+Iter : 200 To explore : 3438 Explored : 15935 Total elapsed : 103.347716
+Iter : 210 To explore : 3567 Explored : 16074 Total elapsed : 104.390737
+Iter : 220 To explore : 3715 Explored : 16232 Total elapsed : 105.360849
+Iter : 230 To explore : 3840 Explored : 16367 Total elapsed : 106.378387
+Iter : 240 To explore : 4004 Explored : 16541 Total elapsed : 107.477032
+Iter : 250 To explore : 3975 Explored : 20563 Total elapsed : 119.902218
+Iter : 260 To explore : 3984 Explored : 20582 Total elapsed : 120.892324
+Iter : 270 To explore : 4076 Explored : 20684 Total elapsed : 123.211485
+Iter : 280 To explore : 4169 Explored : 20787 Total elapsed : 124.130584
+Iter : 290 To explore : 4239 Explored : 20867 Total elapsed : 125.048405
+Iter : 300 To explore : 4280 Explored : 20918 Total elapsed : 125.961653
+Iter : 310 To explore : 4437 Explored : 21085 Total elapsed : 126.992688
+Iter : 320 To explore : 4280 Explored : 25335 Total elapsed : 140.520529
+Iter : 330 To explore : 4299 Explored : 25364 Total elapsed : 143.561205
+Iter : 340 To explore : 4281 Explored : 29505 Total elapsed : 158.153163
+Iter : 350 To explore : 4442 Explored : 29676 Total elapsed : 160.857233
+Iter : 360 To explore : 4541 Explored : 29785 Total elapsed : 161.80079
+Iter : 370 To explore : 4714 Explored : 29968 Total elapsed : 162.802764
+Iter : 380 To explore : 4809 Explored : 30073 Total elapsed : 163.761417
+Iter : 390 To explore : 4996 Explored : 30270 Total elapsed : 164.773091
+Iter : 400 To explore : 5085 Explored : 30369 Total elapsed : 165.761281
+Iter : 410 To explore : 5200 Explored : 30494 Total elapsed : 166.762145
+Iter : 420 To explore : 5301 Explored : 30605 Total elapsed : 167.732484
+Iter : 430 To explore : 5364 Explored : 30678 Total elapsed : 168.728885
+Iter : 440 To explore : 5465 Explored : 30789 Total elapsed : 169.690132
+Iter : 450 To explore : 4479 Explored : 35112 Total elapsed : 183.31676
+Iter : 460 To explore : 4626 Explored : 35269 Total elapsed : 185.700609
+Iter : 470 To explore : 4736 Explored : 35389 Total elapsed : 186.693122
+Iter : 480 To explore : 4830 Explored : 35493 Total elapsed : 187.649667
+Iter : 490 To explore : 4994 Explored : 35667 Total elapsed : 188.636943
+Iter : 500 To explore : 5180 Explored : 35863 Total elapsed : 189.571152
+Iter : 510 To explore : 5305 Explored : 35998 Total elapsed : 190.578371
+Iter : 520 To explore : 4942 Explored : 40867 Total elapsed : 204.768671
+Iter : 530 To explore : 5095 Explored : 41030 Total elapsed : 207.800129
+Iter : 540 To explore : 5186 Explored : 41131 Total elapsed : 208.758125
+Iter : 550 To explore : 5354 Explored : 41309 Total elapsed : 209.749307
+Iter : 560 To explore : 5465 Explored : 41430 Total elapsed : 210.767877
+Iter : 570 To explore : 5696 Explored : 41671 Total elapsed : 211.844178
+Iter : 580 To explore : 5777 Explored : 41762 Total elapsed : 212.886537
+Iter : 590 To explore : 5909 Explored : 41904 Total elapsed : 213.889954
+Iter : 600 To explore : 5977 Explored : 41982 Total elapsed : 214.948927
+Iter : 610 To explore : 5625 Explored : 47618 Total elapsed : 229.898542
+Iter : 620 To explore : 5718 Explored : 47721 Total elapsed : 230.8641
+Iter : 630 To explore : 5855 Explored : 47868 Total elapsed : 232.924999
+Iter : 640 To explore : 6015 Explored : 48038 Total elapsed : 233.944155
+Iter : 650 To explore : 6030 Explored : 54136 Total elapsed : 249.392431
+Iter : 660 To explore : 6126 Explored : 54242 Total elapsed : 251.266504
+Iter : 670 To explore : 6355 Explored : 54481 Total elapsed : 252.323914
+Iter : 680 To explore : 6529 Explored : 54665 Total elapsed : 253.509148
+Iter : 690 To explore : 6711 Explored : 54857 Total elapsed : 254.71066
+Iter : 700 To explore : 6959 Explored : 55115 Total elapsed : 255.846387
+Iter : 710 To explore : 7156 Explored : 55322 Total elapsed : 256.939165
+Iter : 720 To explore : 7261 Explored : 55437 Total elapsed : 258.126339
+Iter : 730 To explore : 7369 Explored : 55555 Total elapsed : 259.391157
+Iter : 740 To explore : 7471 Explored : 55667 Total elapsed : 260.58334
+Iter : 750 To explore : 7593 Explored : 55799 Total elapsed : 261.715281
+Iter : 760 To explore : 7156 Explored : 62886 Total elapsed : 277.259707
+Iter : 770 To explore : 7295 Explored : 63035 Total elapsed : 278.326857
+Iter : 780 To explore : 7384 Explored : 63134 Total elapsed : 280.538643
+Iter : 790 To explore : 7504 Explored : 63264 Total elapsed : 281.720774
+Iter : 800 To explore : 7550 Explored : 63320 Total elapsed : 282.938463
+Iter : 810 To explore : 7870 Explored : 63650 Total elapsed : 283.973555
+Iter : 820 To explore : 8022 Explored : 63812 Total elapsed : 285.083328
+Iter : 830 To explore : 8082 Explored : 63882 Total elapsed : 286.287208
+Iter : 840 To explore : 8171 Explored : 63981 Total elapsed : 287.47679
+Iter : 850 To explore : 8446 Explored : 64266 Total elapsed : 288.502763
+Iter : 860 To explore : 8497 Explored : 64327 Total elapsed : 289.708836
+Iter : 870 To explore : 8562 Explored : 64402 Total elapsed : 290.888338
+Iter : 880 To explore : 8668 Explored : 64518 Total elapsed : 292.062958
+Iter : 890 To explore : 8743 Explored : 64603 Total elapsed : 293.217533
+Iter : 900 To explore : 8800 Explored : 64670 Total elapsed : 294.356396
+Iter : 910 To explore : 9058 Explored : 64938 Total elapsed : 335.45558
+Iter : 920 To explore : 9440 Explored : 65330 Total elapsed : 340.62146
+Iter : 930 To explore : 9910 Explored : 65810 Total elapsed : 375.822661
+Iter : 940 To explore : 10339 Explored : 66249 Total elapsed : 397.910604
+Iter : 950 To explore : 10794 Explored : 66714 Total elapsed : 398.988398
+Iter : 960 To explore : 11245 Explored : 67175 Total elapsed : 400.051804
+Iter : 970 To explore : 11679 Explored : 67619 Total elapsed : 401.181717
+Iter : 980 To explore : 11926 Explored : 67876 Total elapsed : 402.466371
+Iter : 990 To explore : 12284 Explored : 68244 Total elapsed : 403.529675
+Iter : 1000 To explore : 12563 Explored : 68533 Total elapsed : 404.59435
+Iter : 1010 To explore : 12742 Explored : 68722 Total elapsed : 405.662266
+Iter : 1020 To explore : 12817 Explored : 68807 Total elapsed : 406.718435
+Iter : 1030 To explore : 12987 Explored : 68987 Total elapsed : 407.838035
+Iter : 1040 To explore : 13387 Explored : 69397 Total elapsed : 408.923804
+Iter : 1050 To explore : 13711 Explored : 69731 Total elapsed : 409.9902
+Iter : 1060 To explore : 14068 Explored : 70098 Total elapsed : 411.057942
+Iter : 1070 To explore : 14325 Explored : 70365 Total elapsed : 412.109565
+Iter : 1080 To explore : 14502 Explored : 70552 Total elapsed : 413.151348
+Iter : 1090 To explore : 14695 Explored : 70755 Total elapsed : 414.192062
+Iter : 1100 To explore : 14820 Explored : 70890 Total elapsed : 415.254044
+Iter : 1110 To explore : 14863 Explored : 70943 Total elapsed : 416.313748
+Iter : 1120 To explore : 15211 Explored : 71301 Total elapsed : 417.545235
+Iter : 1130 To explore : 15477 Explored : 71577 Total elapsed : 418.746344
+Iter : 1140 To explore : 15792 Explored : 71902 Total elapsed : 421.633404
+Iter : 1150 To explore : 16073 Explored : 72193 Total elapsed : 422.935855
+Iter : 1160 To explore : 16331 Explored : 72461 Total elapsed : 424.179927
+Iter : 1170 To explore : 16660 Explored : 72800 Total elapsed : 425.26806
+Iter : 1180 To explore : 16987 Explored : 73137 Total elapsed : 426.404299
+Iter : 1190 To explore : 17334 Explored : 73494 Total elapsed : 431.23754
+Iter : 1200 To explore : 17586 Explored : 73756 Total elapsed : 437.312782
+Iter : 1210 To explore : 17958 Explored : 74138 Total elapsed : 443.156148
+Iter : 1220 To explore : 18282 Explored : 74472 Total elapsed : 444.244496
+Iter : 1230 To explore : 18550 Explored : 74750 Total elapsed : 448.657604
+Iter : 1240 To explore : 18763 Explored : 74973 Total elapsed : 451.360443
+Iter : 1250 To explore : 18990 Explored : 75210 Total elapsed : 456.223545
+Iter : 1260 To explore : 19264 Explored : 75494 Total elapsed : 457.317045
+Iter : 1270 To explore : 19603 Explored : 75843 Total elapsed : 460.88753
+Iter : 1280 To explore : 19974 Explored : 76224 Total elapsed : 462.791534
+Iter : 1290 To explore : 20292 Explored : 76552 Total elapsed : 466.782205
+Iter : 1300 To explore : 20542 Explored : 76812 Total elapsed : 470.339694
+Iter : 1310 To explore : 20954 Explored : 77234 Total elapsed : 471.421918
+Iter : 1320 To explore : 21219 Explored : 77509 Total elapsed : 472.563546
+Iter : 1330 To explore : 21467 Explored : 77767 Total elapsed : 473.635883
+Iter : 1340 To explore : 21811 Explored : 78121 Total elapsed : 474.719894
+Iter : 1350 To explore : 22148 Explored : 78468 Total elapsed : 476.888264
+Iter : 1360 To explore : 22463 Explored : 78793 Total elapsed : 477.958113
+Iter : 1370 To explore : 22673 Explored : 79013 Total elapsed : 479.015638
+Iter : 1380 To explore : 22825 Explored : 79175 Total elapsed : 480.075774
+Iter : 1390 To explore : 23154 Explored : 79514 Total elapsed : 481.144517
+Iter : 1400 To explore : 23422 Explored : 79792 Total elapsed : 482.228083
+Iter : 1410 To explore : 23716 Explored : 80096 Total elapsed : 483.433595
+Iter : 1420 To explore : 24054 Explored : 80444 Total elapsed : 484.509424
+Iter : 1430 To explore : 24368 Explored : 80768 Total elapsed : 485.587855
+Iter : 1440 To explore : 24550 Explored : 80960 Total elapsed : 495.000455
+Iter : 1450 To explore : 24796 Explored : 81216 Total elapsed : 501.720158
+Iter : 1460 To explore : 25015 Explored : 81445 Total elapsed : 503.040134
+Iter : 1470 To explore : 25189 Explored : 81629 Total elapsed : 504.220618
+Iter : 1480 To explore : 25451 Explored : 81901 Total elapsed : 505.444255
+Iter : 1490 To explore : 25670 Explored : 82130 Total elapsed : 506.585415
+Iter : 1500 To explore : 25906 Explored : 82376 Total elapsed : 507.761335
+Iter : 1510 To explore : 26093 Explored : 82573 Total elapsed : 511.034751
+Iter : 1520 To explore : 26420 Explored : 82910 Total elapsed : 512.611885
+Iter : 1530 To explore : 26613 Explored : 83113 Total elapsed : 514.262466
+Iter : 1540 To explore : 26660 Explored : 83170 Total elapsed : 515.338265
+Iter : 1550 To explore : 26836 Explored : 83356 Total elapsed : 516.491964
+Iter : 1560 To explore : 27050 Explored : 83580 Total elapsed : 519.557978
+Iter : 1570 To explore : 27268 Explored : 83808 Total elapsed : 520.709042
+Iter : 1580 To explore : 27425 Explored : 83975 Total elapsed : 525.143251
+Iter : 1590 To explore : 27599 Explored : 84159 Total elapsed : 526.382597
+Iter : 1600 To explore : 27784 Explored : 84354 Total elapsed : 527.52254
+=== Report ===
+[1] [IO] line 201, (10 ** uint256(decimals)) : proven
+[2] [IO] line 201, (2000000000 * (10 ** uint256(decimals))) : proven
+[3] [IO] line 219, (_totalSupply - balances[address(0)]) : unproven
+[4] [IO] line 251, (balances[msg.sender] - tokens) : unproven
+[5] [IO] line 253, (balances[to] + tokens) : unproven
+[6] [IO] line 311, (balances[from] - tokens) : unproven
+[7] [IO] line 313, (allowed[from][msg.sender] - tokens) : unproven
+[8] [IO] line 315, (balances[to] + tokens) : unproven
+
+=== Result Summary ===
+# Queries                : 8
+- integer over/underflow : 8
+- division-by-zero       : 0
+- assertion              : 0
+
+# Alarms                 : 6
+- integer over/underflow : 6
+- division-by-zero       : 0
+- assertion              : 0
+
+# Proven                 : 2
+- integer over/underflow : 2
+- division-by-zero       : 0
+- assertion              : 0
+
+Time Elapsed : 530.027684

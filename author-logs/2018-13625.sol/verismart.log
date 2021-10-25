@@ -1,0 +1,268 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+2018-13625_tmp.sol:6:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function owned() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13625_tmp.sol:58:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function token(
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13625_tmp.sol:133:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function Krown(
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13625_tmp.sol:78:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(msg.sender, _to, _value);                      // Notify anyone listening that this transfer took place
+        ^-------------------------------^
+2018-13625_tmp.sol:85:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Approval (msg.sender, _spender, _value);
+        ^-------------------------------------^
+2018-13625_tmp.sol:108:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(_from, _to, _value);
+        ^--------------------------^
+2018-13625_tmp.sol:152:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(msg.sender, _to, _value);                      // Notify anyone listening that this transfer took place
+        ^-------------------------------^
+2018-13625_tmp.sol:165:9: Warning: Invoking events without "emit" prefix is deprecated.
+        InterestFreeLending(msg.sender, _to, _value, _duration_in_days);    // Notify anyone listening that this transfer took place
+        ^-------------------------------------------------------------^
+2018-13625_tmp.sol:177:9: Warning: Invoking events without "emit" prefix is deprecated.
+        LoanRepaid(msg.sender, _to, _value, _reference);                   // Notify anyone listening that this transfer took place
+        ^---------------------------------------------^
+2018-13625_tmp.sol:188:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Settlement( _from, _to, _value, _notes, _reference);
+        ^-------------------------------------------------^
+2018-13625_tmp.sol:197:9: Warning: Invoking events without "emit" prefix is deprecated.
+        AuthorityNotified( _notes, _reference);
+        ^------------------------------------^
+2018-13625_tmp.sol:203:9: Warning: Invoking events without "emit" prefix is deprecated.
+        ClientsNotified( _notes, _reference);
+        ^----------------------------------^
+2018-13625_tmp.sol:206:9: Warning: Invoking events without "emit" prefix is deprecated.
+        EconomyTaxed( _base_value, _target_value, _tax_rate, _taxed_value, _notes);
+        ^------------------------------------------------------------------------^
+2018-13625_tmp.sol:210:9: Warning: Invoking events without "emit" prefix is deprecated.
+        EconomyRebated( _base_value, _target_value, _rebate_rate, _rebated_value, _notes);
+        ^-------------------------------------------------------------------------------^
+2018-13625_tmp.sol:214:9: Warning: Invoking events without "emit" prefix is deprecated.
+        PlutocracyAchieved( _value, _notes);
+        ^---------------------------------^
+2018-13625_tmp.sol:226:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(_from, _to, _value);
+        ^--------------------------^
+2018-13625_tmp.sol:233:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(0, this, mintedAmount);
+        ^-----------------------------^
+2018-13625_tmp.sol:234:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(this, target, mintedAmount);
+        ^----------------------------------^
+2018-13625_tmp.sol:242:9: Warning: Invoking events without "emit" prefix is deprecated.
+        TokenBurnt(_from, _value);
+        ^-----------------------^
+2018-13625_tmp.sol:248:9: Warning: Invoking events without "emit" prefix is deprecated.
+        FrozenFunds(target, freeze);
+        ^-------------------------^
+2018-13625_tmp.sol:6:5: Warning: No visibility specified. Defaulting to "public". 
+    function owned() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13625_tmp.sol:21:5: Warning: No visibility specified. Defaulting to "public". 
+    function transfekbolOwnership(address newOwner) onlyPlutocrat {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13625_tmp.sol:25:5: Warning: No visibility specified. Defaulting to "public". 
+    function transfekbolPlutocrat(address newPlutocrat) onlyPlutocrat {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13625_tmp.sol:30:27: Warning: No visibility specified. Defaulting to "public". 
+contract tokenRecipient { function receiveApproval(address _from, uint256 _value, address _token, bytes _extraData); }
+                          ^----------------------------------------------------------------------------------------^
+2018-13625_tmp.sol:58:5: Warning: No visibility specified. Defaulting to "public". 
+    function token(
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13625_tmp.sol:72:5: Warning: No visibility specified. Defaulting to "public". 
+    function transfer(address _to, uint256 _value) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13625_tmp.sol:82:5: Warning: No visibility specified. Defaulting to "public". 
+    function approve(address _spender, uint256 _value)
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13625_tmp.sol:90:5: Warning: No visibility specified. Defaulting to "public". 
+    function approveAndCall(address _spender, uint256 _value, bytes _extraData)
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13625_tmp.sol:100:5: Warning: No visibility specified. Defaulting to "public". 
+    function transferFrom(address _from, address _to, uint256 _value) returns (bool success) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13625_tmp.sol:113:5: Warning: No visibility specified. Defaulting to "public". 
+    function () {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13625_tmp.sol:133:5: Warning: No visibility specified. Defaulting to "public". 
+    function Krown(
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13625_tmp.sol:145:5: Warning: No visibility specified. Defaulting to "public". 
+    function transfer(address _to, uint256 _value) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13625_tmp.sol:157:2: Warning: No visibility specified. Defaulting to "public". 
+	function lend(address _to, uint256 _value, uint256 _duration_in_days) {
+ ^ (Relevant source part starts here and spans across multiple lines).
+2018-13625_tmp.sol:169:5: Warning: No visibility specified. Defaulting to "public". 
+    function repayLoan(address _to, uint256 _value, string _reference) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13625_tmp.sol:180:5: Warning: No visibility specified. Defaulting to "public". 
+    function settlvlement(address _from, uint256 _value, address _to, string _notes, string _reference) onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13625_tmp.sol:191:5: Warning: No visibility specified. Defaulting to "public". 
+    function notifyAuthority(string _notes, string _reference) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13625_tmp.sol:200:5: Warning: No visibility specified. Defaulting to "public". 
+    function notifylvlClients(string _notes, string _reference) onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13625_tmp.sol:205:5: Warning: No visibility specified. Defaulting to "public". 
+    function taxlvlEconomy(string _base_value, string _target_value, string _tax_rate, string _taxed_value, string _notes) onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13625_tmp.sol:209:5: Warning: No visibility specified. Defaulting to "public". 
+    function rebatelvlEconomy(string _base_value, string _target_value, string _rebate_rate, string _rebated_value, string _notes) onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13625_tmp.sol:213:5: Warning: No visibility specified. Defaulting to "public". 
+    function plutocracylvlAchieved(string _value, string _notes) onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13625_tmp.sol:217:5: Warning: No visibility specified. Defaulting to "public". 
+    function transferFrom(address _from, address _to, uint256 _value) returns (bool success) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13625_tmp.sol:230:5: Warning: No visibility specified. Defaulting to "public". 
+    function mintlvlToken(address target, uint256 mintedAmount) onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13625_tmp.sol:237:5: Warning: No visibility specified. Defaulting to "public". 
+    function burnlvlToken(address _from, uint256 _value) onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13625_tmp.sol:245:5: Warning: No visibility specified. Defaulting to "public". 
+    function freezelvlAccount(address target, bool freeze) onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13625_tmp.sol:251:5: Warning: No visibility specified. Defaulting to "public". 
+    function setlvlSign(string newSign) onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13625_tmp.sol:255:5: Warning: No visibility specified. Defaulting to "public". 
+    function setlvlNominalValue(string newNominalValue) onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13625_tmp.sol:259:5: Warning: No visibility specified. Defaulting to "public". 
+    function setlvlUpdate(string newUpdate) onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13625_tmp.sol:263:5: Warning: No visibility specified. Defaulting to "public". 
+    function setlvlWebsite(string newWebsite) onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+2018-13625_tmp.sol:267:5: Warning: No visibility specified. Defaulting to "public". 
+    function setlvlNfee(uint256 newFee) onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+- all funcs : 71
+- reachable : 30
+* Generating Paths ... took 0.000122s
+- paths : 79
+
+Iter : 10 To explore : 106 Explored : 115 Total elapsed : 5.409833
+Iter : 20 To explore : 166 Explored : 307 Total elapsed : 7.03934
+Iter : 30 To explore : 168 Explored : 319 Total elapsed : 12.684488
+Iter : 40 To explore : 212 Explored : 373 Total elapsed : 14.3946
+Iter : 50 To explore : 256 Explored : 427 Total elapsed : 16.089053
+Iter : 60 To explore : 339 Explored : 520 Total elapsed : 23.062695
+Iter : 70 To explore : 426 Explored : 617 Total elapsed : 41.128512
+Iter : 80 To explore : 498 Explored : 699 Total elapsed : 44.576659
+Iter : 90 To explore : 554 Explored : 765 Total elapsed : 46.314249
+Iter : 100 To explore : 581 Explored : 802 Total elapsed : 47.977241
+Iter : 110 To explore : 629 Explored : 860 Total elapsed : 49.871577
+Iter : 120 To explore : 700 Explored : 941 Total elapsed : 55.82619
+Iter : 130 To explore : 748 Explored : 999 Total elapsed : 61.40063
+Iter : 140 To explore : 772 Explored : 1033 Total elapsed : 67.668953
+Iter : 150 To explore : 792 Explored : 1063 Total elapsed : 73.72
+Iter : 160 To explore : 824 Explored : 1105 Total elapsed : 75.734773
+Iter : 170 To explore : 900 Explored : 1191 Total elapsed : 81.663727
+Iter : 180 To explore : 966 Explored : 1267 Total elapsed : 87.723681
+Iter : 190 To explore : 1032 Explored : 1343 Total elapsed : 109.360106
+Iter : 200 To explore : 1088 Explored : 1409 Total elapsed : 124.570045
+Iter : 210 To explore : 1098 Explored : 1429 Total elapsed : 126.400421
+Iter : 220 To explore : 1119 Explored : 1460 Total elapsed : 128.470929
+Iter : 230 To explore : 1190 Explored : 1541 Total elapsed : 145.09093
+Iter : 240 To explore : 1245 Explored : 1606 Total elapsed : 152.669079
+Iter : 250 To explore : 1303 Explored : 1674 Total elapsed : 158.586646
+Iter : 260 To explore : 1349 Explored : 1730 Total elapsed : 163.613266
+Iter : 270 To explore : 1382 Explored : 1773 Total elapsed : 165.437252
+Iter : 280 To explore : 1402 Explored : 1803 Total elapsed : 173.357425
+Iter : 290 To explore : 1424 Explored : 1835 Total elapsed : 175.3894
+Iter : 300 To explore : 1430 Explored : 1851 Total elapsed : 177.385154
+Iter : 310 To explore : 1452 Explored : 1883 Total elapsed : 179.135622
+Iter : 320 To explore : 1473 Explored : 1914 Total elapsed : 180.872567
+Iter : 330 To explore : 1475 Explored : 1926 Total elapsed : 182.559054
+Iter : 340 To explore : 1489 Explored : 1950 Total elapsed : 192.383181
+Iter : 350 To explore : 1496 Explored : 1967 Total elapsed : 194.47418
+Iter : 360 To explore : 1501 Explored : 1982 Total elapsed : 201.688614
+Iter : 370 To explore : 1521 Explored : 2012 Total elapsed : 203.664355
+Iter : 380 To explore : 1535 Explored : 2036 Total elapsed : 205.344096
+Iter : 390 To explore : 1538 Explored : 2049 Total elapsed : 221.931776
+Iter : 400 To explore : 1546 Explored : 2067 Total elapsed : 223.782396
+Iter : 410 To explore : 1558 Explored : 2089 Total elapsed : 246.927036
+Iter : 420 To explore : 1587 Explored : 2128 Total elapsed : 264.606763
+Iter : 430 To explore : 1597 Explored : 2148 Total elapsed : 278.497612
+Iter : 440 To explore : 1602 Explored : 2163 Total elapsed : 300.345745
+Iter : 450 To explore : 1615 Explored : 2186 Total elapsed : 312.895555
+Iter : 460 To explore : 1684 Explored : 2265 Total elapsed : 316.209202
+Iter : 470 To explore : 1743 Explored : 2334 Total elapsed : 319.783053
+Iter : 480 To explore : 1795 Explored : 2396 Total elapsed : 324.115007
+Iter : 490 To explore : 1815 Explored : 2426 Total elapsed : 327.463254
+Iter : 500 To explore : 1851 Explored : 2472 Total elapsed : 330.047214
+Iter : 510 To explore : 1881 Explored : 2512 Total elapsed : 335.593669
+Iter : 520 To explore : 1942 Explored : 2583 Total elapsed : 373.05236
+Iter : 530 To explore : 1993 Explored : 2644 Total elapsed : 380.926212
+Iter : 540 To explore : 2015 Explored : 2676 Total elapsed : 383.838333
+Iter : 550 To explore : 2035 Explored : 2706 Total elapsed : 385.805885
+Iter : 560 To explore : 2097 Explored : 2778 Total elapsed : 391.780116
+Iter : 570 To explore : 2126 Explored : 2817 Total elapsed : 395.568465
+Iter : 580 To explore : 2141 Explored : 2842 Total elapsed : 400.148287
+Iter : 590 To explore : 2162 Explored : 2873 Total elapsed : 402.620722
+Iter : 600 To explore : 2212 Explored : 2933 Total elapsed : 408.086133
+Iter : 610 To explore : 2249 Explored : 2980 Total elapsed : 415.226474
+Iter : 620 To explore : 2262 Explored : 3003 Total elapsed : 416.924802
+Iter : 630 To explore : 2328 Explored : 3079 Total elapsed : 432.359195
+Iter : 640 To explore : 2395 Explored : 3156 Total elapsed : 435.831139
+Iter : 650 To explore : 2455 Explored : 3226 Total elapsed : 447.962306
+Iter : 660 To explore : 2493 Explored : 3274 Total elapsed : 480.281939
+Iter : 670 To explore : 2501 Explored : 3292 Total elapsed : 488.930881
+Iter : 680 To explore : 2508 Explored : 3309 Total elapsed : 495.827258
+Iter : 690 To explore : 2560 Explored : 3371 Total elapsed : 498.480977
+Iter : 700 To explore : 2601 Explored : 3422 Total elapsed : 501.513028
+Iter : 710 To explore : 2647 Explored : 3478 Total elapsed : 527.23985
+Iter : 720 To explore : 2679 Explored : 3520 Total elapsed : 529.982004
+=== Report ===
+[1] [IO] line 148, (balanceOf[_to] + _value) : unproven
+[2] [IO] line 150, (balanceOf[msg.sender] - _value) : proven
+[3] [IO] line 151, (balanceOf[_to] + _value) : proven
+[4] [IO] line 160, (balanceOf[_to] + _value) : unproven
+[5] [IO] line 163, (balanceOf[msg.sender] - _value) : proven
+[6] [IO] line 164, (balanceOf[_to] + _value) : proven
+[7] [IO] line 172, (balanceOf[_to] + _value) : unproven
+[8] [IO] line 175, (balanceOf[msg.sender] - _value) : proven
+[9] [IO] line 176, (balanceOf[_to] + _value) : proven
+[10] [IO] line 184, (balanceOf[_to] + _value) : unproven
+[11] [IO] line 186, (balanceOf[_from] - _value) : proven
+[12] [IO] line 187, (balanceOf[_to] + _value) : proven
+[13] [IO] line 195, (balanceOf[msg.sender] - notificationFee) : proven
+[14] [IO] line 196, (balanceOf[centralAuthority] + notificationFee) : unproven
+[15] [IO] line 221, (balanceOf[_to] + _value) : unproven
+[16] [IO] line 223, (balanceOf[_from] - _value) : proven
+[17] [IO] line 224, (balanceOf[_to] + _value) : proven
+[18] [IO] line 225, (allowance[_from][msg.sender] - _value) : proven
+[19] [IO] line 231, (balanceOf[target] + mintedAmount) : unproven
+[20] [IO] line 232, (totalSupply + mintedAmount) : unproven
+[21] [IO] line 240, (balanceOf[_from] - _value) : proven
+[22] [IO] line 241, (totalSupply - _value) : unproven
+
+=== Result Summary ===
+# Queries                : 22
+- integer over/underflow : 22
+- division-by-zero       : 0
+- assertion              : 0
+
+# Alarms                 : 9
+- integer over/underflow : 9
+- division-by-zero       : 0
+- assertion              : 0
+
+# Proven                 : 13
+- integer over/underflow : 13
+- division-by-zero       : 0
+- assertion              : 0
+
+Time Elapsed : 530.173561

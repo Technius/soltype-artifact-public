@@ -1,0 +1,98 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+0xd07d9fe2d2cc067015e2b4917d24933804f42cfa_tmp.sol:222:5: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    address _from,
+    ^-----------^
+0xd07d9fe2d2cc067015e2b4917d24933804f42cfa_tmp.sol:223:5: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    uint256 _value,
+    ^------------^
+0xd07d9fe2d2cc067015e2b4917d24933804f42cfa_tmp.sol:224:5: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    bytes _data
+    ^---------^
+0xd07d9fe2d2cc067015e2b4917d24933804f42cfa_tmp.sol:600:3: Warning: Function state mutability can be restricted to pure
+  function finalization() internal {
+  ^ (Relevant source part starts here and spans across multiple lines).
+- all funcs : 193
+- reachable : 61
+* Generating Paths ... took 0.000137s
+- paths : 111
+
+Iter : 10 To explore : 326 Explored : 438 Total elapsed : 41.942753
+Iter : 20 To explore : 345 Explored : 1149 Total elapsed : 72.394894
+Iter : 30 To explore : 424 Explored : 1647 Total elapsed : 101.311985
+Iter : 40 To explore : 599 Explored : 2425 Total elapsed : 115.50333
+Iter : 50 To explore : 675 Explored : 2511 Total elapsed : 130.229172
+Iter : 60 To explore : 711 Explored : 3251 Total elapsed : 165.598045
+Iter : 70 To explore : 702 Explored : 3252 Total elapsed : 179.564639
+Iter : 80 To explore : 754 Explored : 3314 Total elapsed : 188.84341
+Iter : 90 To explore : 637 Explored : 3921 Total elapsed : 240.398952
+Iter : 100 To explore : 833 Explored : 4127 Total elapsed : 242.053699
+Iter : 110 To explore : 989 Explored : 4293 Total elapsed : 248.043002
+Iter : 120 To explore : 1238 Explored : 4552 Total elapsed : 250.607188
+Iter : 130 To explore : 1423 Explored : 4747 Total elapsed : 252.358512
+Iter : 140 To explore : 1567 Explored : 4901 Total elapsed : 254.097979
+Iter : 150 To explore : 1711 Explored : 5055 Total elapsed : 255.791226
+Iter : 160 To explore : 1863 Explored : 5217 Total elapsed : 257.475903
+Iter : 170 To explore : 2005 Explored : 5369 Total elapsed : 259.174197
+Iter : 180 To explore : 2186 Explored : 5560 Total elapsed : 260.868283
+Iter : 190 To explore : 2383 Explored : 5767 Total elapsed : 262.550707
+Iter : 200 To explore : 2502 Explored : 5896 Total elapsed : 264.238756
+Iter : 210 To explore : 2547 Explored : 5951 Total elapsed : 265.914743
+Iter : 220 To explore : 2618 Explored : 6032 Total elapsed : 267.57366
+Iter : 230 To explore : 2744 Explored : 6168 Total elapsed : 269.210899
+Iter : 240 To explore : 2843 Explored : 6277 Total elapsed : 270.860767
+Iter : 250 To explore : 2973 Explored : 6417 Total elapsed : 272.51741
+Iter : 260 To explore : 3110 Explored : 6564 Total elapsed : 274.176091
+Iter : 270 To explore : 3242 Explored : 6706 Total elapsed : 275.836548
+Iter : 280 To explore : 3404 Explored : 6878 Total elapsed : 277.507705
+Iter : 290 To explore : 3476 Explored : 6960 Total elapsed : 279.174014
+Iter : 300 To explore : 3603 Explored : 7097 Total elapsed : 280.819466
+Iter : 310 To explore : 3687 Explored : 7191 Total elapsed : 282.493957
+Iter : 320 To explore : 3810 Explored : 7324 Total elapsed : 284.169632
+Iter : 330 To explore : 3941 Explored : 7465 Total elapsed : 285.841177
+Iter : 340 To explore : 4005 Explored : 7539 Total elapsed : 287.508706
+Iter : 350 To explore : 3209 Explored : 10723 Total elapsed : 292.633607
+Iter : 360 To explore : 3205 Explored : 10729 Total elapsed : 298.484859
+Iter : 370 To explore : 2809 Explored : 13154 Total elapsed : 305.919574
+Iter : 380 To explore : 2811 Explored : 13166 Total elapsed : 309.31612
+Iter : 390 To explore : 2771 Explored : 15925 Total elapsed : 318.915396
+Iter : 400 To explore : 2761 Explored : 15925 Total elapsed : 321.47981
+Iter : 410 To explore : 2761 Explored : 15935 Total elapsed : 327.746054
+Iter : 420 To explore : 2754 Explored : 15938 Total elapsed : 382.261705
+Iter : 430 To explore : 451 Explored : 16369 Total elapsed : 391.389748
+Iter : 440 To explore : 447 Explored : 16375 Total elapsed : 425.157289
+Iter : 450 To explore : 430 Explored : 16781 Total elapsed : 485.180843
+Iter : 460 To explore : 425 Explored : 16786 Total elapsed : 490.707708
+Iter : 470 To explore : 424 Explored : 16795 Total elapsed : 524.72523
+=== Report ===
+[1] [IO] line 369, (balances[msg.sender] - _value) : proven
+[2] [IO] line 370, (balances[_to] + _value) : unproven
+[3] [IO] line 409, (balances[_who] - _value) : proven
+[4] [IO] line 410, (totalSupply_ - _value) : proven
+[5] [IO] line 448, (balances[_from] - _value) : proven
+[6] [IO] line 449, (balances[_to] + _value) : proven
+[7] [IO] line 450, (allowed[_from][msg.sender] - _value) : proven
+[8] [IO] line 504, (allowed[msg.sender][_spender] + _addedValue) : unproven
+[9] [IO] line 529, (oldValue - _subtractedValue) : proven
+[10] [IO] line 554, (allowed[_from][msg.sender] - _value) : proven
+[11] [IO] line 677, (10 ** uint256(DECIMALS)) : proven
+[12] [IO] line 677, (1000000000 * (10 ** uint256(DECIMALS))) : proven
+
+=== Result Summary ===
+# Queries                : 12
+- integer over/underflow : 12
+- division-by-zero       : 0
+- assertion              : 0
+
+# Alarms                 : 2
+- integer over/underflow : 2
+- division-by-zero       : 0
+- assertion              : 0
+
+# Proven                 : 10
+- integer over/underflow : 10
+- division-by-zero       : 0
+- assertion              : 0
+
+Time Elapsed : 555.973935

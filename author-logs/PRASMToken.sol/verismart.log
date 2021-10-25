@@ -1,0 +1,78 @@
+ON: integer over/underflow
+ON: division-by-zero
+
+- all funcs : 71
+- reachable : 22
+* Generating Paths ... took 0.000155s
+- paths : 66
+
+Iter : 10 To explore : 874 Explored : 883 Total elapsed : 26.824003
+Iter : 20 To explore : 1207 Explored : 2349 Total elapsed : 38.180364
+Iter : 30 To explore : 1602 Explored : 2754 Total elapsed : 68.030535
+Iter : 40 To explore : 2003 Explored : 3165 Total elapsed : 94.52064
+Iter : 50 To explore : 2091 Explored : 5275 Total elapsed : 102.1263
+Iter : 60 To explore : 2436 Explored : 5630 Total elapsed : 117.131973
+Iter : 70 To explore : 2692 Explored : 5896 Total elapsed : 160.603689
+Iter : 80 To explore : 2440 Explored : 8344 Total elapsed : 183.144875
+Iter : 90 To explore : 2596 Explored : 8510 Total elapsed : 217.549416
+Iter : 100 To explore : 2777 Explored : 8701 Total elapsed : 234.519558
+Iter : 110 To explore : 3059 Explored : 8993 Total elapsed : 257.568215
+Iter : 120 To explore : 3241 Explored : 9185 Total elapsed : 268.128481
+Iter : 130 To explore : 3463 Explored : 9417 Total elapsed : 282.663919
+Iter : 140 To explore : 2818 Explored : 12444 Total elapsed : 305.525786
+Iter : 150 To explore : 3049 Explored : 12685 Total elapsed : 307.732383
+Iter : 160 To explore : 3270 Explored : 12916 Total elapsed : 345.17863
+Iter : 170 To explore : 3619 Explored : 13275 Total elapsed : 349.588412
+Iter : 180 To explore : 3919 Explored : 13585 Total elapsed : 356.543339
+Iter : 190 To explore : 4216 Explored : 13892 Total elapsed : 362.404858
+Iter : 200 To explore : 4512 Explored : 14198 Total elapsed : 368.063463
+Iter : 210 To explore : 4788 Explored : 14484 Total elapsed : 386.763485
+Iter : 220 To explore : 4924 Explored : 14630 Total elapsed : 397.746552
+Iter : 230 To explore : 5087 Explored : 14803 Total elapsed : 420.519203
+Iter : 240 To explore : 5364 Explored : 15090 Total elapsed : 428.287371
+Iter : 250 To explore : 5760 Explored : 15496 Total elapsed : 429.792383
+Iter : 260 To explore : 6128 Explored : 15874 Total elapsed : 431.300581
+Iter : 270 To explore : 5645 Explored : 21524 Total elapsed : 433.393129
+Iter : 280 To explore : 6014 Explored : 21903 Total elapsed : 435.994418
+Iter : 290 To explore : 6329 Explored : 22228 Total elapsed : 455.236734
+Iter : 300 To explore : 6680 Explored : 22589 Total elapsed : 460.869298
+Iter : 310 To explore : 6908 Explored : 22827 Total elapsed : 473.261433
+Iter : 320 To explore : 7171 Explored : 23100 Total elapsed : 482.266164
+Iter : 330 To explore : 7485 Explored : 23424 Total elapsed : 489.579202
+Iter : 340 To explore : 7653 Explored : 23602 Total elapsed : 514.217622
+=== Report ===
+[1] [IO] line 114, ((30 * 24) * 3600) : proven
+[2] [IO] line 114, (30 * 24) : proven
+[3] [IO] line 143, (10 ** uint256(decimals)) : proven
+[4] [IO] line 143, (initialSupply * (10 ** uint256(decimals))) : proven
+[5] [IO] line 175, (balances[_holder] + lockupInfo[_holder].lockupBalance) : unproven
+[6] [IO] line 187, (balances[_from] - _value) : proven
+[7] [IO] line 188, (balances[_to] + _value) : unproven
+[8] [IO] line 189, (allowed[_from][msg.sender] - _value) : proven
+[9] [IO] line 216, (balances[_holder] - _amount) : proven
+[10] [IO] line 217, ((_amount / 100) * _releaseRate) : unproven
+[11] [IO] line 234, (balances[_holder] + releaseAmount) : unproven
+[12] [IO] line 251, (balances[owner] - _value) : proven
+[13] [IO] line 252, (balances[_to] + _value) : unproven
+[14] [IO] line 289, (lockupInfo[_holder].releaseTime + MONTH) : unproven
+[15] [IO] line 290, (lockupInfo[_holder].lockupBalance - releaseAmount) : proven
+[16] [IO] line 293, (balances[_holder] + releaseAmount) : unproven
+[17] [DZ] line 217, (_amount / 100) : proven
+
+=== Result Summary ===
+# Queries                : 17
+- integer over/underflow : 16
+- division-by-zero       : 1
+- assertion              : 0
+
+# Alarms                 : 7
+- integer over/underflow : 7
+- division-by-zero       : 0
+- assertion              : 0
+
+# Proven                 : 10
+- integer over/underflow : 9
+- division-by-zero       : 1
+- assertion              : 0
+
+Time Elapsed : 534.439816
